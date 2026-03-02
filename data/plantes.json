@@ -1,162 +1,32 @@
-[
-  {
-    "slug": "monstera-deliciosa",
-    "nom": "Monstera deliciosa",
-    "categorie": "plante tropicale",
-    "risque_principal": "excès d’arrosage",
-    "climat_reference": "climat tempéré intérieur",
-    "usage": "intérieur lumineux",
-    "saison_reference": "printemps",
-    "image": "https://upload.wikimedia.org/wikipedia/commons/9/9d/Monstera_deliciosa2.jpg",
-    "chips": ["feuillage XXL", "facile", "croissance rapide", "tropicale"],
-    "intro": "Plante tropicale robuste au grand feuillage découpé. Adaptée aux intérieurs lumineux, elle redémarre activement sa croissance au printemps.",
-    "arrosage": [
-      {"pot": "12 cm", "dose": "20 cl", "freq": "tous les 7 jours"},
-      {"pot": "18 cm", "dose": "40 cl", "freq": "tous les 7 jours"},
-      {"pot": "24 cm", "dose": "70 cl", "freq": "tous les 7 jours"}
-    ],
-    "ajustements": [
-      {"titre": "Lumière faible", "desc": "Réduire la dose d’arrosage de 20% et espacer la fréquence de 30%."},
-      {"titre": "Chaleur supérieure à 25°C", "desc": "Augmenter la fréquence d’arrosage de 20%."}
-    ],
-    "lumiere": "Exposition lumineuse indirecte, à moins de 2 m d’une fenêtre orientée est ou ouest.",
-    "temperature": "18°C à 26°C. Éviter les courants d’air froids inférieurs à 15°C.",
-    "sos": [
-      {"q": "Feuilles jaunes", "a": "Substrat détrempé → laisser sécher 5 jours puis réduire l’arrosage de 30%."},
-      {"q": "Feuilles sans découpe", "a": "Manque de lumière → rapprocher de 1 m d’une source lumineuse."},
-      {"q": "Bords bruns secs", "a": "Air trop sec → augmenter l’humidité ambiante de 20%."}
-    ],
-    "solution": {
-      "titre": "Substrat drainant obligatoire",
-      "desc": "Rempoter au printemps dans un mélange 70% terreau plantes vertes et 30% perlite ou billes d’argile."
-    }
-  },
-
-  {
-    "slug": "monstera-adansonii",
-    "nom": "Monstera adansonii",
-    "categorie": "plante tropicale",
-    "risque_principal": "excès d’arrosage",
-    "climat_reference": "climat tempéré intérieur",
-    "usage": "intérieur lumineux",
-    "saison_reference": "toute saison",
-    "image": "monstera_adansonii.jpg",
-    "chips": ["feuillage perforé", "plante grimpante", "croissance rapide", "tropicale"],
-    "intro": "Plante tropicale à feuillage perforé décoratif. Pousse vite en intérieur lumineux avec arrosage contrôlé.",
-    "arrosage": [
-      {"pot": "12 cm", "dose": "25 cl", "freq": "tous les 7 jours en été ; tous les 12 jours en hiver"},
-      {"pot": "17 cm", "dose": "45 cl", "freq": "tous les 7 jours en été ; tous les 14 jours en hiver"}
-    ],
-    "ajustements": [
-      {"titre": "Pièce chauffée en hiver", "desc": "Augmenter la fréquence d’arrosage de 20% si température > 22°C."},
-      {"titre": "Faible luminosité", "desc": "Réduire la dose de 30% et espacer de 20%."}
-    ],
-    "lumiere": "Lumière indirecte minimum 6h/jour.",
-    "temperature": "18–26°C.",
-    "sos": [
-      {"q": "Feuilles jaunes", "a": "Excès d’eau → laisser sécher 7 jours puis réduire de 30%."},
-      {"q": "Feuilles brunes sèches", "a": "Air trop sec → augmenter humidité de 20%."},
-      {"q": "Tiges molles", "a": "Racines asphyxiées → rempoter et réduire fréquence de 30%."}
-    ],
-    "solution": {
-      "titre": "Substrat drainant obligatoire",
-      "desc": "Mélange 60% terreau, 20% perlite, 20% écorces."
-    }
-  },
-
-  {
-    "slug": "ficus-elastica",
-    "nom": "Ficus elastica",
-    "categorie": "plante verte d’intérieur",
-    "risque_principal": "excès d’arrosage",
-    "climat_reference": "climat tempéré intérieur",
-    "usage": "intérieur lumineux",
-    "saison_reference": "toute saison",
-    "image": "ficus_elastica.jpg",
-    "chips": ["feuilles épaisses", "croissance verticale", "robuste"],
-    "intro": "Plante robuste à feuilles brillantes. Tolère les oublis mais pas l’excès d’eau.",
-    "arrosage": [
-      {"pot": "14 cm", "dose": "30 cl", "freq": "tous les 10 jours en été ; tous les 18 jours en hiver"},
-      {"pot": "20 cm", "dose": "60 cl", "freq": "tous les 10 jours en été ; tous les 21 jours en hiver"}
-    ],
-    "ajustements": [
-      {"titre": "Pièce lumineuse", "desc": "Augmenter fréquence de 20%."},
-      {"titre": "Pièce sombre", "desc": "Réduire dose de 25% et espacer de 20%."}
-    ],
-    "lumiere": "Lumière vive indirecte minimum 5h/jour.",
-    "temperature": "18–27°C.",
-    "sos": [
-      {"q": "Feuilles jaunes", "a": "Excès d’eau → réduire dose de 30% et vérifier drainage."},
-      {"q": "Feuilles qui tombent", "a": "Manque de lumière → rapprocher d’une fenêtre."},
-      {"q": "Taches brunes sèches", "a": "Air trop sec → augmenter humidité de 20%."}
-    ],
-    "solution": {
-      "titre": "Contrôle strict du drainage",
-      "desc": "Pot percé + billes d’argile + substrat drainant."
-    }
-  },
-
-  {
-    "slug": "ficus-lyrata",
-    "nom": "Ficus lyrata",
-    "categorie": "plante verte d’intérieur",
-    "risque_principal": "excès d’arrosage",
-    "climat_reference": "climat tempéré intérieur",
-    "usage": "intérieur lumineux",
-    "saison_reference": "toute saison",
-    "image": "ficus_lyrata.jpg",
-    "chips": ["grandes feuilles", "plante graphique"],
-    "intro": "Plante à grandes feuilles en forme de violon. Exige lumière intense et arrosage précis.",
-    "arrosage": [
-      {"pot": "17 cm", "dose": "40 cl", "freq": "tous les 8 jours en été ; tous les 15 jours en hiver"},
-      {"pot": "24 cm", "dose": "75 cl", "freq": "tous les 8 jours en été ; tous les 18 jours en hiver"}
-    ],
-    "ajustements": [
-      {"titre": "Température > 22°C", "desc": "Augmenter fréquence de 15%."},
-      {"titre": "Manque de lumière", "desc": "Réduire dose de 30% et espacer de 20%."}
-    ],
-    "lumiere": "Minimum 6h lumière vive indirecte.",
-    "temperature": "18–26°C stable.",
-    "sos": [
-      {"q": "Taches brunes au centre", "a": "Excès d’eau → réduire de 30% et vérifier drainage."},
-      {"q": "Chute soudaine des feuilles", "a": "Choc thermique → stabiliser température."},
-      {"q": "Bords secs", "a": "Air trop sec → augmenter humidité de 20%."}
-    ],
-    "solution": {
-      "titre": "Arrosage fractionné contrôlé",
-      "desc": "Verser la dose en deux apports espacés de 10 minutes."
-    }
-  },
-
-  {
-    "slug": "ficus-benjamina",
-    "nom": "Ficus benjamina",
-    "categorie": "plante verte d’intérieur",
-    "risque_principal": "variations environnementales",
-    "climat_reference": "climat tempéré intérieur",
-    "usage": "intérieur lumineux",
-    "saison_reference": "toute saison",
-    "image": "ficus_benjamina.jpg",
-    "chips": ["feuillage dense", "sensible aux déplacements"],
-    "intro": "Arbre d’intérieur au feuillage fin. Déteste les changements brusques.",
-    "arrosage": [
-      {"pot": "14 cm", "dose": "28 cl", "freq": "tous les 9 jours en été ; tous les 16 jours en hiver"},
-      {"pot": "22 cm", "dose": "65 cl", "freq": "tous les 9 jours en été ; tous les 20 jours en hiver"}
-    ],
-    "ajustements": [
-      {"titre": "Température > 23°C", "desc": "Augmenter fréquence de 20%."},
-      {"titre": "Faible luminosité", "desc": "Réduire dose de 25% et espacer de 20%."}
-    ],
-    "lumiere": "Minimum 6h lumière indirecte.",
-    "temperature": "18–25°C stable.",
-    "sos": [
-      {"q": "Chute soudaine des feuilles", "a": "Changement d’environnement → stabiliser 30 jours sans déplacer."},
-      {"q": "Feuilles jaunes", "a": "Excès d’eau → réduire dose de 30%."},
-      {"q": "Pointes brunes", "a": "Air trop sec → augmenter humidité de 20%."}
-    ],
-    "solution": {
-      "titre": "Stabilité absolue",
-      "desc": "Choisir un emplacement définitif et éviter tout déplacement pendant 60 jours."
-    }
+{
+  "slug": "monstera-deliciosa",
+  "nom": "Monstera deliciosa",
+  "categorie": "Plante tropicale",
+  "risque_principal": "Excès d’arrosage",
+  "climat_reference": "climat tempéré intérieur",
+  "usage": "intérieur lumineux",
+  "saison_reference": "printemps",
+  "image": "https://upload.wikimedia.org/wikipedia/commons/9/9d/Monstera_deliciosa2.jpg",
+  "chips": ["feuillage XXL", "facile", "croissance rapide", "tropicale"],
+  "intro": "Plante tropicale robuste au grand feuillage découpé. Adaptée aux intérieurs lumineux, elle redémarre activement sa croissance au printemps.",
+  "arrosage": [
+  {"pot": "12 cm", "dose": "20 cl", "freq": "tous les 7 jours"},
+  {"pot": "18 cm", "dose": "40 cl", "freq": "tous les 7 jours"},
+  {"pot": "24 cm", "dose": "70 cl", "freq": "tous les 7 jours"}
+  ],
+  "ajustements": [
+  {"titre": "Lumière faible", "desc": "Réduire la dose d’arrosage de 20% et espacer la fréquence de 30%."},
+  {"titre": "Chaleur supérieure à 25°C", "desc": "Augmenter la fréquence d’arrosage de 20%."}
+  ],
+  "lumiere": "Exposition lumineuse indirecte, à moins de 2 m d’une fenêtre orientée est ou ouest.",
+  "temperature": "18°C à 26°C. Éviter les courants d’air froids inférieurs à 15°C.",
+  "sos": [
+  {"q": "Feuilles jaunes → substrat détrempé → laisser sécher 5 jours puis réduire l’arrosage de 30%."},
+  {"q": "Feuilles sans découpe → manque de lumière → rapprocher de 1 m d’une source lumineuse."},
+  {"q": "Bords bruns secs → air trop sec → augmenter l’humidité ambiante de 20%."}
+  ],
+  "solution": {
+  "titre": "Substrat drainant obligatoire",
+  "desc": "Rempoter au printemps dans un mélange 70% terreau plantes vertes et 30% perlite ou billes d’argile pour éviter l’excès d’eau."
   }
-]
+}
