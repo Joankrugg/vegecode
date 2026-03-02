@@ -22,9 +22,18 @@
     "lumiere": "Exposition lumineuse indirecte, à moins de 2 m d’une fenêtre orientée est ou ouest.",
     "temperature": "18°C à 26°C. Éviter les courants d’air froids inférieurs à 15°C.",
     "sos": [
-    {"q": "Feuilles jaunes → substrat détrempé → laisser sécher 5 jours puis réduire l’arrosage de 30%."},
-    {"q": "Feuilles sans découpe → manque de lumière → rapprocher de 1 m d’une source lumineuse."},
-    {"q": "Bords bruns secs → air trop sec → augmenter l’humidité ambiante de 20%."}
+      {
+        "q": "Feuilles jaunes",
+        "a": "Substrat détrempé → laisser sécher 5 jours puis réduire l’arrosage de 30%."
+      },
+      {
+        "q": "Feuilles sans découpe",
+        "a": "Manque de lumière → rapprocher de 1 m d’une source lumineuse."
+      },
+      {
+        "q": "Bords bruns secs",
+        "a": "Air trop sec → augmenter l’humidité ambiante de 20%."
+      }
     ],
     "solution": {
     "titre": "Substrat drainant obligatoire",
