@@ -1,0 +1,209 @@
+<!doctype html>
+<html lang="fr">
+<head>
+  <meta charset="utf-8"/>
+  <meta name="viewport" content="width=device-width, initial-scale=1"/>
+  <title>Plantes — conseils concrets</title>
+
+  <!-- Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=Playfair+Display:wght@500;600&display=swap" rel="stylesheet">
+
+  <link rel="stylesheet" href="assets/css/style.css"/>
+</head>
+<body>
+
+  <!-- HERO -->
+  <header class="hero">
+    <div class="heroMedia">
+      <!-- Remplace l'URL par une image Unsplash (plante, ambiance sombre & calme) -->
+      <div class="bg" style="background-image:url('https://images.unsplash.com/photo-1643730484055-abc29f2de73c?q=80&w=2942&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D?auto=format&fit=crop&w=2400&q=80');"></div>
+
+      <div class="container heroContent">
+        <div class="topbar">
+          <div class="meta">
+            <div><span class="kicker">Conseils</span><strong>concrets</strong></div>
+            <div><span class="kicker">Arrosage</span><strong>en centilitres</strong></div>
+            <div><span class="kicker">Format</span><strong>QR → mobile</strong></div>
+          </div>
+          <div class="small">Version pilote</div>
+        </div>
+
+        <div class="heroGrid">
+          <div>
+            <p class="brand">Guide apaisant pour plantes (et humains)</p>
+            <h1>Des fiches simples.<br/>Des gestes précis.</h1>
+            <p class="lead">
+              Scannez, appliquez, observez. Ici on évite “un peu / beaucoup”.
+              On parle en <strong>cl</strong>, en <strong>fréquences</strong> et en <strong>actions</strong>.
+            </p>
+            <div class="ctaRow">
+              <a class="pill primary" href="#plantes">Voir les plantes</a>
+              <a class="pill secondary" href="#faq">FAQ</a>
+            </div>
+          </div>
+
+          <div class="heroAside">
+            <p class="small" style="color:rgba(255,255,255,.78);margin:0">
+              Pour pépiniéristes & acheteurs : le conseil humain reste au centre.
+              Cette page sert juste quand on est seul à la maison, face à une feuille triste.
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </header>
+
+  <!-- SECTION: 2 cards like your example -->
+  <section class="section">
+    <div class="container">
+      <div class="grid2">
+        <article class="card">
+          <div class="cardMedia" style="background-image:url('https://images.unsplash.com/photo-1680124744736-859f16257ef0?q=80&w=4140&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D?auto=format&fit=crop&w=1200&q=80');"></div>
+          <div class="cardPad">
+            <h2 class="cardTitle">Une méthode lisible</h2>
+            <p class="small">
+              Même structure pour chaque plante : arrosage chiffré, lumière, température,
+              puis un diagnostic express “symptôme → cause → action”.
+            </p>
+            <div class="badgeRow">
+              <span class="badge">Mobile first</span>
+              <span class="badge">Sans jargon</span>
+              <span class="badge">Rassurant</span>
+            </div>
+          </div>
+        </article>
+
+        <article class="card">
+          <div class="cardPad">
+            <p class="small" style="margin:0">Objectif</p>
+            <div class="stat">Plantes vivantes<br/>+ humains sereins</div>
+            <p class="small">
+              Les erreurs bêtes font mourir plus de plantes que les “maladies rares”.
+              On cible donc : eau, drainage, lumière, et 3 symptômes fréquents.
+            </p>
+            <div class="hr"></div>
+            <p class="small" style="margin:0">
+              Plus tard : une seule recommandation produit, utile et non intrusive.
+            </p>
+          </div>
+        </article>
+      </div>
+    </div>
+  </section>
+
+  <!-- PLANTS GRID -->
+  <section class="section" id="plantes">
+    <div class="container">
+      <div class="sectionHeader">
+        <h2 class="sectionTitle">Plantes</h2>
+        <p class="sectionSub">Conseils concrets par usage et catégorie.</p>
+      </div>
+
+      <div class="plantGrid" id="plantList"></div>
+    </div>
+  </section>
+
+  <script>
+  fetch("data/plantes.json")
+  .then(res => res.json())
+  .then(data => {
+
+    const list = document.getElementById("plantList");
+
+    data.forEach(plante => {
+
+      const card = `
+        <a class="plantCard" href="plante.html?slug=${plante.slug}">
+          <div class="thumb" style="background-image:url('${plante.image || "assets/images/placeholder.jpg"}')"></div>
+          <div class="info">
+            <h3>${plante.nom}</h3>
+            <p>${plante.categorie} · ${plante.usage}</p>
+          </div>
+        </a>
+      `;
+
+      list.innerHTML += card;
+    });
+
+  });
+  </script>
+
+  <!-- DARK BAND like “Program flow” -->
+  <section class="section">
+    <div class="container">
+      <div class="band">
+        <div class="bandMedia">
+          <div class="bg" style="background-image:url('https://images.unsplash.com/photo-1441974231531-c6227db76b6e?auto=format&fit=crop&w=2400&q=80');"></div>
+          <div class="bandInner">
+            <div>
+              <p class="kicker">Le mode d’emploi</p>
+              <h2>Scanner → appliquer → ajuster</h2>
+              <p class="small" style="color:rgba(255,255,255,.78)">
+                Le but : décider vite, avec des repères chiffrés et des actions simples.
+              </p>
+              <div class="ctaRow">
+                <a class="pill primary" href="plantes/monstera.html">Voir un exemple</a>
+              </div>
+            </div>
+
+            <div class="list">
+              <div class="row"><strong>Étape 1</strong><span>Arrosage (cl + fréquence)</span></div>
+              <div class="row"><strong>Étape 2</strong><span>Lumière (repère visuel)</span></div>
+              <div class="row"><strong>Étape 3</strong><span>Drainage (non négociable)</span></div>
+              <div class="row"><strong>Étape 4</strong><span>SOS (symptôme → action)</span></div>
+              <div class="row"><strong>Étape 5</strong><span>1 solution recommandée</span></div>
+            </div>
+
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- FAQ -->
+  <section class="section" id="faq">
+    <div class="container">
+      <div class="sectionHeader">
+        <h2 class="sectionTitle">FAQ</h2>
+        <p class="sectionSub">Simple, clair, et sans “ça dépend” (sauf quand ça dépend vraiment).</p>
+      </div>
+
+      <div class="faq">
+        <details>
+          <summary>Pourquoi des centilitres plutôt que “un peu” ?</summary>
+          <p>Parce que “un peu” dépend du pot, de la saison et de la main de chacun. Un volume chiffré, c’est reproductible.</p>
+        </details>
+        <details>
+          <summary>Est-ce que ça remplace le conseil du pépiniériste ?</summary>
+          <p>Non. Ça prolonge le conseil quand tu es chez toi et que tu doutes.</p>
+        </details>
+        <details>
+          <summary>Et si ma plante n’est pas dans la liste ?</summary>
+          <p>Commence par la grille d’arrosage liée au pot, puis ajuste avec les symptômes. On ajoute les fiches au fur et à mesure.</p>
+        </details>
+        <details>
+          <summary>Pourquoi une seule recommandation produit ?</summary>
+          <p>Pour rester crédible. Une solution utile, pas un supermarché.</p>
+        </details>
+      </div>
+    </div>
+  </section>
+
+  <footer class="footer">
+    <div class="container">
+      <div class="footerRow">
+        <div>© <span id="y"></span> — Guide plantes</div>
+        <div class="small">
+          <a href="#">Mentions</a> · <a href="#">Contact</a>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <script>
+    document.getElementById('y').textContent = new Date().getFullYear();
+  </script>
+</body>
+</html>

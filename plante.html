@@ -1,0 +1,170 @@
+<!doctype html>
+<html lang="fr">
+<head>
+<meta charset="utf-8"/>
+<meta name="viewport" content="width=device-width, initial-scale=1"/>
+<title>Plante</title>
+<meta name="description" content="Fiche plante pratique avec arrosage chiffré et conseils concrets."/>
+<link rel="stylesheet" href="assets/css/style.css"/>
+</head>
+<body>
+
+<div class="container" id="app"></div>
+
+<script>
+const params = new URLSearchParams(window.location.search);
+const slug = params.get("slug");
+
+const app = document.getElementById("app");
+
+if (!slug) {
+  app.innerHTML = `
+    <section class="section">
+      <h1>Plante non spécifiée</h1>
+      <p class="small">Utilise : plante.html?slug=nom-de-la-plante</p>
+      <a href="index.html">Retour accueil</a>
+    </section>
+  `;
+} else {
+
+fetch("data/plantes.json")
+.then(res => res.json())
+.then(data => {
+
+  const plante = data.find(p => p.slug === slug);
+
+  if (!plante) {
+    app.innerHTML = `
+      <section class="section">
+        <h1>Plante introuvable</h1>
+        <a href="index.html">Retour accueil</a>
+      </section>
+    `;
+    return;
+  }
+
+  // --- SEO dynamique ---
+  document.title = plante.nom + " — mode d’emploi";
+  document.querySelector("meta[name=description]").setAttribute(
+    "content",
+    `Conseils concrets pour ${plante.nom} : arrosage en centilitres, ajustements, diagnostic rapide.`
+  );
+
+  const image = plante.image || "assets/images/placeholder.jpg";
+
+  app.innerHTML = `
+  <div class="small" style="margin-top:18px">
+    <a href="index.html">← Retour</a>
+  </div>
+
+  <section class="plantHero">
+    <div class="plantHeroMedia">
+      <div class="bg" style="background-image:url('${image}')"></div>
+      <div class="plantHeroContent">
+        <div class="kicker">${plante.categorie || "Fiche plante"}</div>
+        <h1>${plante.nom}</h1>
+
+        <div class="chips">
+          ${(plante.chips || []).map(c => `<span class="chip">${c}</span>`).join("")}
+        </div>
+
+        <p class="small" style="color:rgba(255,255,255,.78);max-width:70ch;margin:0">
+          ${plante.intro || ""}
+        </p>
+      </div>
+    </div>
+  </section>
+
+  <section class="section">
+    <div class="sectionHeader">
+      <h2 class="sectionTitle">Arrosage</h2>
+      <p class="sectionSub">
+        Référence pour ${plante.climat_reference || "climat standard"} —
+        ${plante.saison_reference || "saison actuelle"}
+      </p>
+    </div>
+
+    <table class="table">
+      <tr><th>Pot</th><th>Dose</th><th>Fréquence</th></tr>
+      ${(plante.arrosage || []).map(a => `
+        <tr>
+          <td>${a.pot}</td>
+          <td><strong>${a.dose}</strong></td>
+          <td>${a.freq}</td>
+        </tr>
+      `).join("")}
+    </table>
+
+    <div class="callout" style="margin-top:14px">
+      <strong>Risque principal :</strong> ${plante.risque_principal || "—"}
+    </div>
+  </section>
+
+  <section class="section">
+    <div class="sectionHeader">
+      <h2 class="sectionTitle">Ajustements</h2>
+      <p class="sectionSub">Observe → applique → réévalue sous 7 jours.</p>
+    </div>
+
+    ${(plante.ajustements || []).map(a => `
+      <p><strong>${a.titre}</strong><br/>
+      <span class="small">${a.desc}</span></p>
+    `).join("")}
+  </section>
+
+  <section class="section">
+    <div class="grid2">
+      <div class="card"><div class="cardPad">
+        <h2>Lumière</h2>
+        <p class="small">${plante.lumiere || ""}</p>
+      </div></div>
+
+      <div class="card"><div class="cardPad">
+        <h2>Température</h2>
+        <p class="small">${plante.temperature || ""}</p>
+      </div></div>
+    </div>
+  </section>
+
+  <section class="section">
+    <div class="sectionHeader">
+      <h2 class="sectionTitle">SOS</h2>
+      <p class="sectionSub">${plante.usage || ""}</p>
+    </div>
+
+    <div class="faq">
+      ${(plante.sos || []).map(s => `
+        <details>
+          <summary>${s.q}</summary>
+          <p>${s.a}</p>
+        </details>
+      `).join("")}
+    </div>
+  </section>
+
+  <section class="section">
+    <div class="sectionHeader">
+      <h2 class="sectionTitle">Solution recommandée</h2>
+    </div>
+
+    <div class="solution">
+      <strong>${plante.solution?.titre || ""}</strong>
+      <div class="small">${plante.solution?.desc || ""}</div>
+    </div>
+  </section>
+
+  <section class="section" style="padding-top:0">
+    <div class="small">
+      Catégorie : ${plante.categorie || ""} ·
+      Usage : ${plante.usage || ""} ·
+      Climat : ${plante.climat_reference || ""} ·
+      Saison : ${plante.saison_reference || ""}
+    </div>
+  </section>
+  `;
+});
+}
+</script>
+
+</body>
+</html>
