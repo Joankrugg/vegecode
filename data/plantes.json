@@ -1,32 +1,35 @@
-{
-  "slug": "monstera-deliciosa",
-  "nom": "Monstera deliciosa",
-  "categorie": "Plante tropicale",
-  "risque_principal": "Excès d’arrosage",
-  "climat_reference": "climat tempéré intérieur",
-  "usage": "intérieur lumineux",
-  "saison_reference": "printemps",
-  "image": "https://upload.wikimedia.org/wikipedia/commons/9/9d/Monstera_deliciosa2.jpg",
-  "chips": ["feuillage XXL", "facile", "croissance rapide", "tropicale"],
-  "intro": "Plante tropicale robuste au grand feuillage découpé. Adaptée aux intérieurs lumineux, elle redémarre activement sa croissance au printemps.",
-  "arrosage": [
-  {"pot": "12 cm", "dose": "20 cl", "freq": "tous les 7 jours"},
-  {"pot": "18 cm", "dose": "40 cl", "freq": "tous les 7 jours"},
-  {"pot": "24 cm", "dose": "70 cl", "freq": "tous les 7 jours"}
-  ],
-  "ajustements": [
-  {"titre": "Lumière faible", "desc": "Réduire la dose d’arrosage de 20% et espacer la fréquence de 30%."},
-  {"titre": "Chaleur supérieure à 25°C", "desc": "Augmenter la fréquence d’arrosage de 20%."}
-  ],
-  "lumiere": "Exposition lumineuse indirecte, à moins de 2 m d’une fenêtre orientée est ou ouest.",
-  "temperature": "18°C à 26°C. Éviter les courants d’air froids inférieurs à 15°C.",
-  "sos": [
-  {"q": "Feuilles jaunes → substrat détrempé → laisser sécher 5 jours puis réduire l’arrosage de 30%."},
-  {"q": "Feuilles sans découpe → manque de lumière → rapprocher de 1 m d’une source lumineuse."},
-  {"q": "Bords bruns secs → air trop sec → augmenter l’humidité ambiante de 20%."}
-  ],
-  "solution": {
-  "titre": "Substrat drainant obligatoire",
-  "desc": "Rempoter au printemps dans un mélange 70% terreau plantes vertes et 30% perlite ou billes d’argile pour éviter l’excès d’eau."
+[
+  {
+    "slug": "monstera",
+    "nom": "Monstera deliciosa",
+    "image": "https://images.unsplash.com/photo-1524593119775-291a1e3f2cde?auto=format&fit=crop&w=2400&q=80",
+    "chips": ["🌤️ lumière indirecte", "💧 arrosage chiffré", "🪴 pot percé obligatoire"],
+    "intro": "Cette fiche est faite pour décider vite. Si elle va bien : ne change rien.",
+
+    "arrosage": [
+      {"pot": "12–14 cm", "dose": "10 cl", "freq": "4–5 jours"},
+      {"pot": "17–18 cm", "dose": "15 cl", "freq": "5 jours"},
+      {"pot": "20–22 cm", "dose": "25 cl", "freq": "5–6 jours"},
+      {"pot": "24–26 cm", "dose": "30 cl", "freq": "6 jours"}
+    ],
+
+    "ajustements": [
+      {"titre": "Feuilles qui \"pleurent\"", "desc": "Réduis la dose de 30%"},
+      {"titre": "Feuilles molles + terre sèche", "desc": "Augmente de 20%"},
+      {"titre": "Feuilles jaunes", "desc": "Saute 1 arrosage"}
+    ],
+
+    "lumiere": "Place à 1–2 m d'une fenêtre. Soleil matin OK.",
+    "temperature": "18–26°C. Évite les courants froids.",
+
+    "sos": [
+      {"q": "Feuilles jaunes", "a": "Excès d’eau → pause 7 jours"},
+      {"q": "Feuilles molles", "a": "Manque d’eau → +20%"}
+    ],
+
+    "solution": {
+      "titre": "Savon noir végétal",
+      "desc": "Suffisant pour la majorité des parasites légers."
+    }
   }
-}
+]
