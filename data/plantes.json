@@ -30,7 +30,9 @@
     "titre": "Substrat drainant obligatoire",
     "desc": "Rempoter au printemps dans un mélange 70% terreau plantes vertes et 30% perlite ou billes d’argile pour éviter l’excès d’eau."
     }
-  },
+  }
+],
+[
   {
     "slug": "monstera-adansonii",
     "nom": "Monstera adansonii",
@@ -61,7 +63,9 @@
     "titre": "Substrat drainant obligatoire",
     "desc": "Rempoter dans un mélange composé de 60 % terreau plantes vertes, 20 % perlite et 20 % écorces pour stabiliser l’humidité et éviter l’excès d’eau."
     }
-  },
+  }    
+],
+[
   {
     "slug": "ficus-elastica",
     "nom": "Ficus elastica",
@@ -92,7 +96,9 @@
     "titre": "Contrôle strict du drainage",
     "desc": "Utiliser un pot percé avec 3 cm de billes d’argile et un substrat composé de 70 % terreau plantes vertes et 30 % perlite pour limiter les risques d’asphyxie racinaire."
     }
-  },
+  }
+],
+[
   {
     "slug": "ficus-lyrata",
     "nom": "Ficus lyrata",
@@ -123,7 +129,9 @@
     "titre": "Arrosage fractionné contrôlé",
     "desc": "Verser la dose en deux apports espacés de 10 minutes pour humidifier uniformément le substrat sans saturer les racines."
     }
-  },
+  }
+],
+[
   {
     "slug": "ficus-benjamina",
     "nom": "Ficus benjamina",
