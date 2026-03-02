@@ -72,5 +72,156 @@
       "titre": "Substrat aéré obligatoire",
       "desc": "Mélange 60% terreau, 20% perlite et 20% écorces pour favoriser l’oxygénation des racines."
     }
+  },
+  {
+    "slug": "ficus-elastica",
+    "nom": "Ficus elastica",
+    "categorie": "plante verte d’intérieur",
+    "risque_principal": "excès d’eau",
+    "climat_reference": "climat tempéré intérieur",
+    "usage": "intérieur lumineux",
+    "saison_reference": "toute saison",
+    "image": "assets/images/ficus_elastica.jpg",
+    "chips": ["feuilles épaisses", "robuste", "croissance verticale"],
+    "intro": "Plante résistante à grandes feuilles brillantes. Tolère les oublis d’arrosage mais craint l’excès d’eau.",
+    "arrosage": [
+      {"pot": "14 cm", "dose": "22 cl", "freq": "tous les 8 jours"},
+      {"pot": "20 cm", "dose": "45 cl", "freq": "tous les 9 jours"},
+      {"pot": "24 cm", "dose": "65 cl", "freq": "tous les 10 jours"}
+    ],
+    "ajustements": [
+      {"titre": "Lumière faible", "desc": "Réduire la dose de 25% et espacer de 20%."},
+      {"titre": "Température > 26°C", "desc": "Augmenter la fréquence de 20%."}
+    ],
+    "lumiere": "Lumière vive indirecte, à moins de 2 m d’une fenêtre.",
+    "temperature": "18 à 27°C stable.",
+    "sos": [
+      {"q": "Feuilles jaunes", "a": "Excès d’eau → réduire la dose de 30% et vérifier le drainage."},
+      {"q": "Feuilles ternes", "a": "Manque de lumière → rapprocher d’une fenêtre lumineuse."}
+    ],
+    "solution": {
+      "titre": "Drainage renforcé",
+      "desc": "Pot percé + 3 cm de billes d’argile au fond pour éviter l’asphyxie racinaire."
+    }
+  },
+  {
+    "slug": "ficus-lyrata",
+    "nom": "Ficus lyrata",
+    "categorie": "plante verte d’intérieur",
+    "risque_principal": "excès d’eau",
+    "climat_reference": "climat tempéré intérieur",
+    "usage": "intérieur très lumineux",
+    "saison_reference": "toute saison",
+    "image": "assets/images/ficus_lyrata.jpg",
+    "chips": ["feuilles XXL", "plante graphique"],
+    "intro": "Plante décorative à grandes feuilles en forme de violon. Demande stabilité et lumière intense.",
+    "arrosage": [
+      {"pot": "17 cm", "dose": "28 cl", "freq": "tous les 7 jours"},
+      {"pot": "24 cm", "dose": "55 cl", "freq": "tous les 8 jours"}
+    ],
+    "ajustements": [
+      {"titre": "Air sec", "desc": "Augmenter humidité ambiante de 20%."},
+      {"titre": "Pièce sombre", "desc": "Réduire dose de 30% et déplacer plus près d’une fenêtre."}
+    ],
+    "lumiere": "Minimum 6 heures de lumière vive indirecte.",
+    "temperature": "18 à 26°C constante.",
+    "sos": [
+      {"q": "Taches brunes centrales", "a": "Excès d’eau → réduire arrosage de 30%."},
+      {"q": "Chute soudaine des feuilles", "a": "Variation thermique → stabiliser température."}
+    ],
+    "solution": {
+      "titre": "Arrosage fractionné",
+      "desc": "Verser la dose en deux fois espacées de 10 minutes."
+    }
+  },
+  {
+    "slug": "ficus-benjamina",
+    "nom": "Ficus benjamina",
+    "categorie": "plante verte d’intérieur",
+    "risque_principal": "variations environnementales",
+    "climat_reference": "climat tempéré intérieur",
+    "usage": "intérieur lumineux stable",
+    "saison_reference": "toute saison",
+    "image": "assets/images/ficus_benjamina.jpg",
+    "chips": ["feuillage dense", "sensible aux déplacements"],
+    "intro": "Arbre d’intérieur au feuillage fin. Déteste les changements brusques de lumière ou de température.",
+    "arrosage": [
+      {"pot": "14 cm", "dose": "20 cl", "freq": "tous les 9 jours"},
+      {"pot": "22 cm", "dose": "50 cl", "freq": "tous les 10 jours"}
+    ],
+    "ajustements": [
+      {"titre": "Chaleur > 25°C", "desc": "Augmenter fréquence de 15%."},
+      {"titre": "Faible luminosité", "desc": "Réduire dose de 25%."}
+    ],
+    "lumiere": "Lumière vive indirecte, sans soleil direct prolongé.",
+    "temperature": "18 à 25°C stable.",
+    "sos": [
+      {"q": "Chute importante de feuilles", "a": "Changement d’environnement → stabiliser sans déplacer 30 jours."},
+      {"q": "Feuilles jaunes", "a": "Excès d’eau → réduire dose de 30%."}
+    ],
+    "solution": {
+      "titre": "Emplacement définitif",
+      "desc": "Éviter tout déplacement fréquent pour limiter le stress."
+    }
+  },
+  {
+    "slug": "pothos-epipremnum-aureum",
+    "nom": "Pothos (Epipremnum aureum)",
+    "categorie": "plante verte d’intérieur",
+    "risque_principal": "excès d’eau",
+    "climat_reference": "climat tempéré intérieur",
+    "usage": "intérieur lumineux à ombragé",
+    "saison_reference": "toute saison",
+    "image": "assets/images/pothos.jpg",
+    "chips": ["facile", "retombante", "tolère l’ombre"],
+    "intro": "Plante idéale pour débuter. Supporte lumière moyenne et variations légères.",
+    "arrosage": [
+      {"pot": "12 cm", "dose": "15 cl", "freq": "tous les 6 jours"},
+      {"pot": "18 cm", "dose": "28 cl", "freq": "tous les 7 jours"}
+    ],
+    "ajustements": [
+      {"titre": "Pièce sombre", "desc": "Réduire dose de 25%."},
+      {"titre": "Température > 27°C", "desc": "Augmenter fréquence de 20%."}
+    ],
+    "lumiere": "Tolère lumière moyenne, croissance optimale en lumière vive indirecte.",
+    "temperature": "18 à 28°C.",
+    "sos": [
+      {"q": "Feuilles jaunes", "a": "Excès d’eau → réduire de 30%."},
+      {"q": "Feuilles pâles", "a": "Manque de lumière → rapprocher de 1 m d’une fenêtre."}
+    ],
+    "solution": {
+      "titre": "Substrat léger",
+      "desc": "Ajouter 30% perlite pour éviter la stagnation d’eau."
+    }
+  },
+  {
+    "slug": "scindapsus-pictus",
+    "nom": "Scindapsus pictus",
+    "categorie": "plante verte d’intérieur",
+    "risque_principal": "excès d’eau",
+    "climat_reference": "climat tempéré intérieur",
+    "usage": "intérieur lumineux indirect",
+    "saison_reference": "toute saison",
+    "image": "assets/images/scindapsus_pictus.jpg",
+    "chips": ["feuillage argenté", "retombante", "facile"],
+    "intro": "Plante décorative au feuillage argenté. Demande lumière indirecte et arrosage maîtrisé.",
+    "arrosage": [
+      {"pot": "12 cm", "dose": "14 cl", "freq": "tous les 6 jours"},
+      {"pot": "18 cm", "dose": "30 cl", "freq": "tous les 7 jours"}
+    ],
+    "ajustements": [
+      {"titre": "Air sec", "desc": "Augmenter humidité de 20%."},
+      {"titre": "Faible lumière", "desc": "Réduire dose de 20%."}
+    ],
+    "lumiere": "Lumière vive indirecte sans soleil direct.",
+    "temperature": "18 à 26°C.",
+    "sos": [
+      {"q": "Feuilles ternes", "a": "Manque de lumière → déplacer plus près d’une fenêtre."},
+      {"q": "Tiges molles", "a": "Excès d’eau → réduire fréquence de 30%."}
+    ],
+    "solution": {
+      "titre": "Pot percé obligatoire",
+      "desc": "Toujours utiliser un pot drainant pour éviter l’asphyxie racinaire."
+    }
   }
 ]
