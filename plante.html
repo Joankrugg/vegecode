@@ -26,7 +26,12 @@
       `;
     } else {
       fetch("data/plantes.json")
-        .then(res => res.json())
+        .then(res => {
+          if (!res.ok) {
+            throw new Error(\`HTTP \${res.status}\`);
+          }
+          return res.json();
+        })
         .then(data => {
           const plante = data.find(p => p.slug === slug);
 
@@ -40,13 +45,56 @@
             return;
           }
 
-          document.title = plante.nom + " — mode d’emploi";
+          document.title = `${plante.nom} — mode d’emploi`;
           document.querySelector("meta[name=description]").setAttribute(
             "content",
             `Conseils concrets pour ${plante.nom} : arrosage en centilitres, ajustements, diagnostic rapide.`
           );
 
           const image = plante.image || "assets/images/placeholder.jpg";
+          const chipsHtml = (plante.chips || []).map(c => `<span class="chip">${c}</span>`).join("");
+
+          const arrosageHtml = (plante.arrosage || []).map(a => `
+            <tr>
+              <td>${a.pot || ""}</td>
+              <td><strong>${a.dose || ""}</strong></td>
+              <td>${a.freq || ""}</td>
+            </tr>
+          `).join("");
+
+          const ajustementsHtml = (plante.ajustements || []).map(a => `
+            <p>
+              <strong>${a.titre || ""}</strong><br/>
+              <span class="small">${a.desc || ""}</span>
+            </p>
+          `).join("");
+
+          const sosHtml = (plante.sos || []).map(s => `
+            <details>
+              <summary>${s.q || ""}</summary>
+              <p>${s.a || ""}</p>
+            </details>
+          `).join("");
+
+          const erreursHtml = Array.isArray(plante.erreurs) && plante.erreurs.length > 0
+            ? `
+              <section class="section">
+                <div class="sectionHeader">
+                  <h2 class="sectionTitle">Erreurs fréquentes</h2>
+                  <p class="sectionSub">Les faux bons réflexes qui abîment la plante plus vite que l’oubli.</p>
+                </div>
+
+                <div class="faq">
+                  ${plante.erreurs.map(e => `
+                    <details>
+                      <summary>${typeof e === "string" ? e : (e.titre || "")}</summary>
+                      <p>${typeof e === "string" ? "" : (e.desc || "")}</p>
+                    </details>
+                  `).join("")}
+                </div>
+              </section>
+            `
+            : "";
 
           app.innerHTML = `
             <div class="small" style="margin-top:18px">
@@ -58,10 +106,10 @@
                 <div class="bg" style="background-image:url('${image}')"></div>
                 <div class="plantHeroContent">
                   <div class="kicker">${plante.categorie || "Fiche plante"}</div>
-                  <h1>${plante.nom}</h1>
+                  <h1>${plante.nom || ""}</h1>
 
                   <div class="chips">
-                    ${(plante.chips || []).map(c => `<span class="chip">${c}</span>`).join("")}
+                    ${chipsHtml}
                   </div>
 
                   <p class="small" style="color:rgba(255,255,255,.78);max-width:70ch;margin:0">
@@ -82,13 +130,7 @@
 
               <table class="table">
                 <tr><th>Pot</th><th>Dose</th><th>Fréquence</th></tr>
-                ${(plante.arrosage || []).map(a => `
-                  <tr>
-                    <td>${a.pot}</td>
-                    <td><strong>${a.dose}</strong></td>
-                    <td>${a.freq}</td>
-                  </tr>
-                `).join("")}
+                ${arrosageHtml}
               </table>
 
               <div class="callout" style="margin-top:14px">
@@ -102,10 +144,7 @@
                 <p class="sectionSub">Observe → applique → réévalue sous 7 jours.</p>
               </div>
 
-              ${(plante.ajustements || []).map(a => `
-                <p><strong>${a.titre}</strong><br/>
-                <span class="small">${a.desc}</span></p>
-              `).join("")}
+              ${ajustementsHtml || `<p class="small">Aucun ajustement renseigné.</p>`}
             </section>
 
             <section class="section">
@@ -126,6 +165,8 @@
               </div>
             </section>
 
+            ${erreursHtml}
+
             <section class="section">
               <div class="sectionHeader">
                 <h2 class="sectionTitle">SOS</h2>
@@ -133,12 +174,7 @@
               </div>
 
               <div class="faq">
-                ${(plante.sos || []).map(s => `
-                  <details>
-                    <summary>${s.q}</summary>
-                    <p>${s.a}</p>
-                  </details>
-                `).join("")}
+                ${sosHtml || `<p class="small">Aucun diagnostic rapide renseigné.</p>`}
               </div>
             </section>
 
