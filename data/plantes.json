@@ -494,5 +494,156 @@
     "titre": "Humidité renforcée",
     "desc": "Placer la plante loin des radiateurs et maintenir une ambiance plus humide."
   }
+},
+  {
+  "slug": "kentia",
+  "nom": "Kentia",
+  "categorie": "plante tropicale",
+  "risque_principal": "excès d’eau",
+  "climat_reference": "climat tempéré intérieur",
+  "usage": "intérieur lumineux à mi-ombre",
+  "saison_reference": "toute saison",
+  "image": "assets/images/kentia.jpg",
+  "chips": ["palmier élégant", "résistant", "faible entretien"],
+  "intro": "Palmier d’intérieur très résistant. Supporte les oublis et une lumière moyenne.",
+  "arrosage": [
+    {"pot": "20 cm", "dose": "30 cl", "freq": "tous les 7 jours"},
+    {"pot": "30 cm", "dose": "60 cl", "freq": "tous les 8 jours"}
+  ],
+  "ajustements": [
+    {"titre": "Air sec", "desc": "Augmenter humidité ambiante de 20%."},
+    {"titre": "Faible lumière", "desc": "Réduire dose de 20%."}
+  ],
+  "lumiere": "Lumière indirecte, tolère la mi-ombre.",
+  "temperature": "18 à 26°C.",
+  "sos": [
+    {"q": "Pointes brunes", "a": "Air trop sec → augmenter humidité."},
+    {"q": "Feuilles jaunes", "a": "Excès d’eau → réduire arrosage de 30%."}
+  ],
+  "solution": {
+    "titre": "Arrosage modéré",
+    "desc": "Toujours laisser sécher légèrement le substrat entre deux arrosages."
+  }
+},
+  {
+  "slug": "zamioculcas",
+  "nom": "Zamioculcas",
+  "categorie": "plante verte d’intérieur",
+  "risque_principal": "excès d’eau",
+  "climat_reference": "climat tempéré intérieur",
+  "usage": "intérieur sombre",
+  "saison_reference": "toute saison",
+  "image": "assets/images/zamioculcas.jpg",
+  "chips": ["ultra résistante", "faible lumière", "débutant"],
+  "intro": "Plante extrêmement robuste. Parfaite pour les pièces peu lumineuses.",
+  "arrosage": [
+    {"pot": "14 cm", "dose": "10 cl", "freq": "tous les 12 jours"},
+    {"pot": "20 cm", "dose": "25 cl", "freq": "tous les 15 jours"}
+  ],
+  "ajustements": [
+    {"titre": "Lumière faible", "desc": "Espacer la fréquence de 30%."},
+    {"titre": "Chaleur > 26°C", "desc": "Augmenter fréquence de 15%."}
+  ],
+  "lumiere": "Tolère lumière faible à moyenne.",
+  "temperature": "18 à 28°C.",
+  "sos": [
+    {"q": "Tiges molles", "a": "Excès d’eau → stopper arrosage 10 jours."},
+    {"q": "Feuilles ternes", "a": "Manque de lumière → déplacer vers zone plus claire."}
+  ],
+  "solution": {
+    "titre": "Arrosage minimal",
+    "desc": "Toujours attendre que la terre soit totalement sèche."
+  }
+},
+  {
+  "slug": "spathiphyllum",
+  "nom": "Spathiphyllum",
+  "categorie": "plante tropicale",
+  "risque_principal": "manque d’eau",
+  "climat_reference": "climat tempéré intérieur",
+  "usage": "intérieur lumineux indirect",
+  "saison_reference": "toute saison",
+  "image": "assets/images/spathiphyllum.jpg",
+  "chips": ["floraison blanche", "plante facile", "dépolluante"],
+  "intro": "Plante expressive : elle indique immédiatement quand elle a soif.",
+  "arrosage": [
+    {"pot": "12 cm", "dose": "18 cl", "freq": "tous les 4 jours"},
+    {"pot": "18 cm", "dose": "35 cl", "freq": "tous les 5 jours"}
+  ],
+  "ajustements": [
+    {"titre": "Chaleur > 25°C", "desc": "Augmenter fréquence de 20%."},
+    {"titre": "Faible lumière", "desc": "Réduire dose de 20%."}
+  ],
+  "lumiere": "Lumière indirecte, éviter soleil direct.",
+  "temperature": "18 à 26°C.",
+  "sos": [
+    {"q": "Feuilles tombantes", "a": "Manque d’eau → arroser immédiatement."},
+    {"q": "Feuilles jaunes", "a": "Excès d’eau → réduire dose de 25%."}
+  ],
+  "solution": {
+    "titre": "Arrosage régulier",
+    "desc": "Maintenir une terre légèrement humide sans excès."
+  }
+},
+  {
+  "slug": "peperomia-obtusifolia",
+  "nom": "Peperomia obtusifolia",
+  "categorie": "plante d’intérieur",
+  "risque_principal": "excès d’eau",
+  "climat_reference": "climat tempéré intérieur",
+  "usage": "intérieur lumineux",
+  "saison_reference": "toute saison",
+  "image": "assets/images/peperomia.jpg",
+  "chips": ["compacte", "feuilles épaisses", "facile"],
+  "intro": "Petite plante compacte qui stocke l’eau dans ses feuilles.",
+  "arrosage": [
+    {"pot": "10 cm", "dose": "10 cl", "freq": "tous les 7 jours"},
+    {"pot": "14 cm", "dose": "18 cl", "freq": "tous les 8 jours"}
+  ],
+  "ajustements": [
+    {"titre": "Faible lumière", "desc": "Espacer la fréquence de 20%."},
+    {"titre": "Température > 27°C", "desc": "Augmenter fréquence de 15%."}
+  ],
+  "lumiere": "Lumière vive indirecte.",
+  "temperature": "18 à 26°C.",
+  "sos": [
+    {"q": "Feuilles molles", "a": "Excès d’eau → réduire arrosage de 30%."},
+    {"q": "Feuilles ternes", "a": "Manque de lumière → rapprocher d’une fenêtre."}
+  ],
+  "solution": {
+    "titre": "Substrat drainant",
+    "desc": "Ajouter perlite pour éviter l’humidité stagnante."
+  }
+},
+  {
+  "slug": "calathea-orbifolia",
+  "nom": "Calathea orbifolia",
+  "categorie": "plante tropicale",
+  "risque_principal": "air trop sec",
+  "climat_reference": "climat tempéré intérieur",
+  "usage": "intérieur lumineux indirect",
+  "saison_reference": "toute saison",
+  "image": "assets/images/calathea.jpg",
+  "chips": ["feuillage graphique", "sensible", "tropicale"],
+  "intro": "Plante décorative exigeante. Demande humidité et régularité.",
+  "arrosage": [
+    {"pot": "14 cm", "dose": "20 cl", "freq": "tous les 5 jours"},
+    {"pot": "20 cm", "dose": "35 cl", "freq": "tous les 6 jours"}
+  ],
+  "ajustements": [
+    {"titre": "Air sec", "desc": "Augmenter humidité de 30%."},
+    {"titre": "Température élevée", "desc": "Augmenter fréquence de 15%."}
+  ],
+  "lumiere": "Lumière indirecte, jamais de soleil direct.",
+  "temperature": "18 à 25°C.",
+  "sos": [
+    {"q": "Bords bruns", "a": "Air trop sec → augmenter humidité ambiante."},
+    {"q": "Feuilles qui s’enroulent", "a": "Manque d’eau → augmenter dose de 20%."}
+  ],
+  "solution": {
+    "titre": "Humidité élevée",
+    "desc": "Maintenir un environnement humide (plateau d’eau ou regroupement de plantes)."
+  }
 }
+  
 ]
