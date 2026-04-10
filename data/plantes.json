@@ -794,5 +794,155 @@
     "titre": "Arrosage régulier",
     "desc": "Maintenir la terre humide en continu."
   }
+},
+  {
+  "slug": "olivier",
+  "nom": "Olivier",
+  "categorie": "plante méditerranéenne",
+  "risque_principal": "excès d’eau",
+  "climat_reference": "climat océanique sud-ouest",
+  "usage": "extérieur plein soleil",
+  "saison_reference": "été",
+  "image": "assets/images/olivier.jpg",
+  "chips": ["plein soleil", "méditerranéen", "résistant"],
+  "intro": "Arbre méditerranéen robuste. Préfère la sécheresse à l’humidité.",
+  "arrosage": [
+    {"pot": "25 cm", "dose": "35 cl", "freq": "tous les 6 jours"},
+    {"pot": "40 cm", "dose": "80 cl", "freq": "tous les 7 jours"}
+  ],
+  "ajustements": [
+    {"titre": "Pluie fréquente", "desc": "Stopper l’arrosage."},
+    {"titre": "Canicule", "desc": "Augmenter fréquence de 20%."}
+  ],
+  "lumiere": "Plein soleil minimum 8h.",
+  "temperature": "Supporte -5°C à 35°C.",
+  "sos": [
+    {"q": "Feuilles ternes", "a": "Manque de soleil → exposer plein sud."},
+    {"q": "Feuilles qui tombent", "a": "Excès d’eau → réduire arrosage de 30%."}
+  ],
+  "solution": {
+    "titre": "Drainage obligatoire",
+    "desc": "Substrat très drainant avec 40% de sable ou graviers."
+  }
+},
+  {
+  "slug": "citronnier",
+  "nom": "Citronnier",
+  "categorie": "plante fruitière",
+  "risque_principal": "manque d’eau",
+  "climat_reference": "climat tempéré",
+  "usage": "extérieur ensoleillé ou véranda",
+  "saison_reference": "printemps-été",
+  "image": "assets/images/citronnier.jpg",
+  "chips": ["fruitier", "soleil", "exigeant"],
+  "intro": "Arbre fruitier gourmand en eau et en nutriments. Très sensible aux oublis.",
+  "arrosage": [
+    {"pot": "30 cm", "dose": "60 cl", "freq": "tous les 3 jours"},
+    {"pot": "50 cm", "dose": "120 cl", "freq": "tous les 3 jours"}
+  ],
+  "ajustements": [
+    {"titre": "Température > 30°C", "desc": "Arroser tous les 2 jours avec +20%."},
+    {"titre": "Temps humide", "desc": "Réduire fréquence de 20%."}
+  ],
+  "lumiere": "Plein soleil minimum 6h.",
+  "temperature": "10 à 35°C. Sensible au gel.",
+  "sos": [
+    {"q": "Feuilles qui s’enroulent", "a": "Manque d’eau → augmenter arrosage de 30%."},
+    {"q": "Feuilles jaunes", "a": "Carence ou excès d’eau → vérifier drainage et fertilisation."}
+  ],
+  "solution": {
+    "titre": "Arrosage régulier + engrais",
+    "desc": "Apporter engrais agrumes toutes les 2 semaines en saison."
+  }
+},
+  {
+  "slug": "lavande",
+  "nom": "Lavande",
+  "categorie": "plante méditerranéenne",
+  "risque_principal": "excès d’eau",
+  "climat_reference": "climat océanique",
+  "usage": "extérieur plein soleil",
+  "saison_reference": "été",
+  "image": "assets/images/lavande.jpg",
+  "chips": ["sec", "soleil", "résistante"],
+  "intro": "Plante qui préfère sécher plutôt que trop boire.",
+  "arrosage": [
+    {"pot": "20 cm", "dose": "20 cl", "freq": "tous les 7 jours"},
+    {"pot": "30 cm", "dose": "40 cl", "freq": "tous les 8 jours"}
+  ],
+  "ajustements": [
+    {"titre": "Pluie fréquente", "desc": "Stopper arrosage complètement."},
+    {"titre": "Canicule", "desc": "Augmenter fréquence de 15%."}
+  ],
+  "lumiere": "Plein soleil obligatoire.",
+  "temperature": "10 à 35°C.",
+  "sos": [
+    {"q": "Base noire", "a": "Excès d’eau → stopper arrosage immédiatement."},
+    {"q": "Peu de fleurs", "a": "Manque de soleil → déplacer plein sud."}
+  ],
+  "solution": {
+    "titre": "Substrat sableux",
+    "desc": "Ajouter 50% de sable pour éviter l’humidité stagnante."
+  }
+},
+  {
+  "slug": "rosier-pot",
+  "nom": "Rosier en pot",
+  "categorie": "plante florale",
+  "risque_principal": "manque d’eau",
+  "climat_reference": "climat tempéré",
+  "usage": "extérieur ensoleillé",
+  "saison_reference": "printemps-été",
+  "image": "assets/images/rosier.jpg",
+  "chips": ["floraison", "soleil", "classique"],
+  "intro": "Plante exigeante en eau et en nutriments, surtout en période de floraison.",
+  "arrosage": [
+    {"pot": "25 cm", "dose": "40 cl", "freq": "tous les 3 jours"},
+    {"pot": "40 cm", "dose": "80 cl", "freq": "tous les 3 jours"}
+  ],
+  "ajustements": [
+    {"titre": "Chaleur > 30°C", "desc": "Arroser tous les 2 jours."},
+    {"titre": "Temps humide", "desc": "Réduire fréquence de 20%."}
+  ],
+  "lumiere": "Plein soleil minimum 6h.",
+  "temperature": "10 à 30°C.",
+  "sos": [
+    {"q": "Feuilles flétries", "a": "Manque d’eau → arroser immédiatement."},
+    {"q": "Taches noires", "a": "Maladie fongique → traiter rapidement."}
+  ],
+  "solution": {
+    "titre": "Arrosage + fertilisation",
+    "desc": "Arroser régulièrement et ajouter engrais floraison toutes les 2 semaines."
+  }
+},
+  {
+  "slug": "hortensia",
+  "nom": "Hortensia",
+  "categorie": "plante florale",
+  "risque_principal": "manque d’eau",
+  "climat_reference": "climat océanique",
+  "usage": "extérieur mi-ombre",
+  "saison_reference": "printemps-été",
+  "image": "assets/images/hortensia.jpg",
+  "chips": ["floraison abondante", "ombre", "eau"],
+  "intro": "Plante gourmande en eau. Déteste les périodes sèches prolongées.",
+  "arrosage": [
+    {"pot": "25 cm", "dose": "50 cl", "freq": "tous les 2 jours"},
+    {"pot": "40 cm", "dose": "90 cl", "freq": "tous les 2 jours"}
+  ],
+  "ajustements": [
+    {"titre": "Chaleur > 28°C", "desc": "Arroser tous les jours."},
+    {"titre": "Temps humide", "desc": "Réduire fréquence de 20%."}
+  ],
+  "lumiere": "Mi-ombre, éviter soleil direct l’après-midi.",
+  "temperature": "10 à 28°C.",
+  "sos": [
+    {"q": "Feuilles molles", "a": "Manque d’eau → arroser immédiatement."},
+    {"q": "Fleurs fanées rapidement", "a": "Manque d’eau → augmenter fréquence de 30%."}
+  ],
+  "solution": {
+    "titre": "Arrosage abondant",
+    "desc": "Maintenir un sol humide en permanence sans stagnation."
+  }
 }
 ]
