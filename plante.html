@@ -226,7 +226,56 @@
               Saison : ${plante.saison_reference || ""}
             </div>
           </section>
+
+          <section class="section" style="padding-top:0">
+            <div class="sectionHeader">
+              <h2 class="sectionTitle">QR code</h2>
+              <p class="sectionSub">Créer, enregistrer ou partager le QR de cette fiche.</p>
+            </div>
+
+            <div class="card">
+              <div class="cardPad">
+                <div class="ctaRow">
+                  <button class="pill" id="generateQrBtn" type="button">Générer le QR code</button>
+                  <a class="pill" id="downloadQrBtn" href="#" download="qr-code-plante.png" style="display:none;">Télécharger le QR</a>
+                  <a class="pill" id="openQrBtn" href="#" target="_blank" rel="noopener" style="display:none;">Ouvrir l’image du QR</a>
+                </div>
+
+                <div id="qrContainer" style="margin-top:18px; display:none;">
+                  <img
+                    id="qrImage"
+                    alt="QR code de la fiche plante"
+                    style="max-width:220px; border-radius:16px; background:#fff; padding:12px; border:1px solid rgba(0,0,0,.08);"
+                  />
+                  <p class="small" style="margin-top:12px;">Ce QR code pointe vers cette page exacte.</p>
+                </div>
+              </div>
+            </div>
+          </section>
         `;
+
+        const generateQrBtn = document.getElementById("generateQrBtn");
+        const downloadQrBtn = document.getElementById("downloadQrBtn");
+        const openQrBtn = document.getElementById("openQrBtn");
+        const qrContainer = document.getElementById("qrContainer");
+        const qrImage = document.getElementById("qrImage");
+
+        if (generateQrBtn && qrImage && downloadQrBtn && openQrBtn && qrContainer) {
+          generateQrBtn.addEventListener("click", () => {
+            const pageUrl = window.location.href;
+            const qrUrl = `https://api.qrserver.com/v1/create-qr-code/?size=600x600&data=${encodeURIComponent(pageUrl)}`;
+
+            qrImage.src = qrUrl;
+            qrContainer.style.display = "block";
+
+            downloadQrBtn.href = qrUrl;
+            downloadQrBtn.style.display = "inline-flex";
+            downloadQrBtn.setAttribute("download", `qr-${plante.slug}.png`);
+
+            openQrBtn.href = qrUrl;
+            openQrBtn.style.display = "inline-flex";
+          });
+        }
 
       } catch (error) {
         console.error("Erreur chargement plante :", error);
