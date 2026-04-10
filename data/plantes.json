@@ -374,37 +374,6 @@
       "desc": "Mélange 70% terreau plantes vertes et 30% perlite pour garder un sol aéré."
     }
   },
-  {
-  "slug": "sansevieria",
-  "nom": "Sansevieria",
-  "categorie": "plante verte d’intérieur",
-  "risque_principal": "excès d’eau",
-  "climat_reference": "climat tempéré intérieur",
-  "usage": "intérieur peu lumineux",
-  "saison_reference": "toute saison",
-  "image": "assets/images/sansevieria.jpg",
-  "chips": ["très résistante", "graphique", "faible arrosage"],
-  "intro": "Plante très résistante idéale pour les oublieux. Elle préfère clairement le manque d’eau à l’excès.",
-  "arrosage": [
-    {"pot": "12 cm", "dose": "8 cl", "freq": "tous les 12 jours"},
-    {"pot": "18 cm", "dose": "18 cl", "freq": "tous les 15 jours"},
-    {"pot": "24 cm", "dose": "30 cl", "freq": "tous les 18 jours"}
-  ],
-  "ajustements": [
-    {"titre": "Pièce sombre", "desc": "Espacer la fréquence de 25%."},
-    {"titre": "Température > 27°C", "desc": "Augmenter la fréquence de 15%."}
-  ],
-  "lumiere": "Tolère une lumière faible à vive. Éviter le soleil brûlant derrière vitre.",
-  "temperature": "16 à 30°C.",
-  "sos": [
-    {"q": "Base molle", "a": "Excès d’eau → stopper l’arrosage 10 jours et vérifier le drainage."},
-    {"q": "Feuilles plissées", "a": "Manque d’eau prolongé → augmenter légèrement la dose au prochain arrosage."}
-  ],
-  "solution": {
-    "titre": "Substrat très drainant",
-    "desc": "Utiliser un mélange pour cactus ou plantes grasses afin d’éviter toute stagnation d’eau."
-  }
-},
 {
   "slug": "chlorophytum",
   "nom": "Chlorophytum",
