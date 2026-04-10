@@ -1,170 +1,219 @@
 <!doctype html>
 <html lang="fr">
 <head>
-<meta charset="utf-8"/>
-<meta name="viewport" content="width=device-width, initial-scale=1"/>
-<title>Plante</title>
-<meta name="description" content="Fiche plante pratique avec arrosage chiffré et conseils concrets."/>
-<link rel="stylesheet" href="assets/css/style.css"/>
+  <meta charset="utf-8"/>
+  <meta name="viewport" content="width=device-width, initial-scale=1"/>
+  <title>Plante</title>
+  <meta name="description" content="Fiche plante pratique avec arrosage chiffré et conseils concrets."/>
+  <link rel="stylesheet" href="assets/css/style.css"/>
 </head>
 <body>
 
-<div class="container" id="app"></div>
+  <div class="container" id="app"></div>
 
-<script>
-const params = new URLSearchParams(window.location.search);
-const slug = params.get("slug");
+  <script>
+    const params = new URLSearchParams(window.location.search);
+    const slug = params.get("slug");
+    const app = document.getElementById("app");
 
-const app = document.getElementById("app");
+    if (!slug) {
+      app.innerHTML = `
+        <section class="section">
+          <h1>Plante non spécifiée</h1>
+          <p class="small">Utilise : plante.html?slug=nom-de-la-plante</p>
+          <a href="index.html">Retour accueil</a>
+        </section>
+      `;
+    } else {
+      fetch("data/plantes.json")
+        .then(res => res.json())
+        .then(data => {
+          const plante = data.find(p => p.slug === slug);
 
-if (!slug) {
-  app.innerHTML = `
-    <section class="section">
-      <h1>Plante non spécifiée</h1>
-      <p class="small">Utilise : plante.html?slug=nom-de-la-plante</p>
-      <a href="index.html">Retour accueil</a>
-    </section>
-  `;
-} else {
+          if (!plante) {
+            app.innerHTML = `
+              <section class="section">
+                <h1>Plante introuvable</h1>
+                <a href="index.html">Retour accueil</a>
+              </section>
+            `;
+            return;
+          }
 
-fetch("data/plantes.json")
-.then(res => res.json())
-.then(data => {
+          document.title = plante.nom + " — mode d’emploi";
+          document.querySelector("meta[name=description]").setAttribute(
+            "content",
+            `Conseils concrets pour ${plante.nom} : arrosage en centilitres, ajustements, diagnostic rapide.`
+          );
 
-  const plante = data.find(p => p.slug === slug);
+          const image = plante.image || "assets/images/placeholder.jpg";
 
-  if (!plante) {
-    app.innerHTML = `
-      <section class="section">
-        <h1>Plante introuvable</h1>
-        <a href="index.html">Retour accueil</a>
-      </section>
-    `;
-    return;
-  }
+          app.innerHTML = `
+            <div class="small" style="margin-top:18px">
+              <a href="index.html">← Retour</a>
+            </div>
 
-  // --- SEO dynamique ---
-  document.title = plante.nom + " — mode d’emploi";
-  document.querySelector("meta[name=description]").setAttribute(
-    "content",
-    `Conseils concrets pour ${plante.nom} : arrosage en centilitres, ajustements, diagnostic rapide.`
-  );
+            <section class="plantHero">
+              <div class="plantHeroMedia">
+                <div class="bg" style="background-image:url('${image}')"></div>
+                <div class="plantHeroContent">
+                  <div class="kicker">${plante.categorie || "Fiche plante"}</div>
+                  <h1>${plante.nom}</h1>
 
-  const image = plante.image || "assets/images/placeholder.jpg";
+                  <div class="chips">
+                    ${(plante.chips || []).map(c => `<span class="chip">${c}</span>`).join("")}
+                  </div>
 
-  app.innerHTML = `
-  <div class="small" style="margin-top:18px">
-    <a href="index.html">← Retour</a>
-  </div>
+                  <p class="small" style="color:rgba(255,255,255,.78);max-width:70ch;margin:0">
+                    ${plante.intro || ""}
+                  </p>
+                </div>
+              </div>
+            </section>
 
-  <section class="plantHero">
-    <div class="plantHeroMedia">
-      <div class="bg" style="background-image:url('${image}')"></div>
-      <div class="plantHeroContent">
-        <div class="kicker">${plante.categorie || "Fiche plante"}</div>
-        <h1>${plante.nom}</h1>
+            <section class="section">
+              <div class="sectionHeader">
+                <h2 class="sectionTitle">Arrosage</h2>
+                <p class="sectionSub">
+                  Référence pour ${plante.climat_reference || "climat standard"} —
+                  ${plante.saison_reference || "saison actuelle"}
+                </p>
+              </div>
 
-        <div class="chips">
-          ${(plante.chips || []).map(c => `<span class="chip">${c}</span>`).join("")}
-        </div>
+              <table class="table">
+                <tr><th>Pot</th><th>Dose</th><th>Fréquence</th></tr>
+                ${(plante.arrosage || []).map(a => `
+                  <tr>
+                    <td>${a.pot}</td>
+                    <td><strong>${a.dose}</strong></td>
+                    <td>${a.freq}</td>
+                  </tr>
+                `).join("")}
+              </table>
 
-        <p class="small" style="color:rgba(255,255,255,.78);max-width:70ch;margin:0">
-          ${plante.intro || ""}
-        </p>
-      </div>
-    </div>
-  </section>
+              <div class="callout" style="margin-top:14px">
+                <strong>Risque principal :</strong> ${plante.risque_principal || "—"}
+              </div>
+            </section>
 
-  <section class="section">
-    <div class="sectionHeader">
-      <h2 class="sectionTitle">Arrosage</h2>
-      <p class="sectionSub">
-        Référence pour ${plante.climat_reference || "climat standard"} —
-        ${plante.saison_reference || "saison actuelle"}
-      </p>
-    </div>
+            <section class="section">
+              <div class="sectionHeader">
+                <h2 class="sectionTitle">Ajustements</h2>
+                <p class="sectionSub">Observe → applique → réévalue sous 7 jours.</p>
+              </div>
 
-    <table class="table">
-      <tr><th>Pot</th><th>Dose</th><th>Fréquence</th></tr>
-      ${(plante.arrosage || []).map(a => `
-        <tr>
-          <td>${a.pot}</td>
-          <td><strong>${a.dose}</strong></td>
-          <td>${a.freq}</td>
-        </tr>
-      `).join("")}
-    </table>
+              ${(plante.ajustements || []).map(a => `
+                <p><strong>${a.titre}</strong><br/>
+                <span class="small">${a.desc}</span></p>
+              `).join("")}
+            </section>
 
-    <div class="callout" style="margin-top:14px">
-      <strong>Risque principal :</strong> ${plante.risque_principal || "—"}
-    </div>
-  </section>
+            <section class="section">
+              <div class="grid2">
+                <div class="card">
+                  <div class="cardPad">
+                    <h2>Lumière</h2>
+                    <p class="small">${plante.lumiere || ""}</p>
+                  </div>
+                </div>
 
-  <section class="section">
-    <div class="sectionHeader">
-      <h2 class="sectionTitle">Ajustements</h2>
-      <p class="sectionSub">Observe → applique → réévalue sous 7 jours.</p>
-    </div>
+                <div class="card">
+                  <div class="cardPad">
+                    <h2>Température</h2>
+                    <p class="small">${plante.temperature || ""}</p>
+                  </div>
+                </div>
+              </div>
+            </section>
 
-    ${(plante.ajustements || []).map(a => `
-      <p><strong>${a.titre}</strong><br/>
-      <span class="small">${a.desc}</span></p>
-    `).join("")}
-  </section>
+            <section class="section">
+              <div class="sectionHeader">
+                <h2 class="sectionTitle">SOS</h2>
+                <p class="sectionSub">${plante.usage || ""}</p>
+              </div>
 
-  <section class="section">
-    <div class="grid2">
-      <div class="card"><div class="cardPad">
-        <h2>Lumière</h2>
-        <p class="small">${plante.lumiere || ""}</p>
-      </div></div>
+              <div class="faq">
+                ${(plante.sos || []).map(s => `
+                  <details>
+                    <summary>${s.q}</summary>
+                    <p>${s.a}</p>
+                  </details>
+                `).join("")}
+              </div>
+            </section>
 
-      <div class="card"><div class="cardPad">
-        <h2>Température</h2>
-        <p class="small">${plante.temperature || ""}</p>
-      </div></div>
-    </div>
-  </section>
+            <section class="section">
+              <div class="sectionHeader">
+                <h2 class="sectionTitle">Solution recommandée</h2>
+              </div>
 
-  <section class="section">
-    <div class="sectionHeader">
-      <h2 class="sectionTitle">SOS</h2>
-      <p class="sectionSub">${plante.usage || ""}</p>
-    </div>
+              <div class="solution">
+                <strong>${plante.solution?.titre || ""}</strong>
+                <div class="small">${plante.solution?.desc || ""}</div>
+              </div>
+            </section>
 
-    <div class="faq">
-      ${(plante.sos || []).map(s => `
-        <details>
-          <summary>${s.q}</summary>
-          <p>${s.a}</p>
-        </details>
-      `).join("")}
-    </div>
-  </section>
+            <section class="section" style="padding-top:0">
+              <div class="small">
+                Catégorie : ${plante.categorie || ""} ·
+                Usage : ${plante.usage || ""} ·
+                Climat : ${plante.climat_reference || ""} ·
+                Saison : ${plante.saison_reference || ""}
+              </div>
+            </section>
 
-  <section class="section">
-    <div class="sectionHeader">
-      <h2 class="sectionTitle">Solution recommandée</h2>
-    </div>
+            <section class="section" style="padding-top:0">
+              <div class="sectionHeader">
+                <h2 class="sectionTitle">QR code</h2>
+                <p class="sectionSub">Créer un QR code pour cette fiche.</p>
+              </div>
 
-    <div class="solution">
-      <strong>${plante.solution?.titre || ""}</strong>
-      <div class="small">${plante.solution?.desc || ""}</div>
-    </div>
-  </section>
+              <div class="card">
+                <div class="cardPad">
+                  <div class="ctaRow">
+                    <button class="pill" id="generateQrBtn" type="button">Générer le QR code</button>
+                    <a class="pill" id="downloadQrBtn" href="#" download="qr-code-plante.png" style="display:none;">Télécharger le QR</a>
+                  </div>
 
-  <section class="section" style="padding-top:0">
-    <div class="small">
-      Catégorie : ${plante.categorie || ""} ·
-      Usage : ${plante.usage || ""} ·
-      Climat : ${plante.climat_reference || ""} ·
-      Saison : ${plante.saison_reference || ""}
-    </div>
-  </section>
-  `;
-});
-}
-</script>
+                  <div id="qrContainer" style="margin-top:18px; display:none;">
+                    <img id="qrImage" alt="QR code de la fiche plante" style="max-width:220px; border-radius:16px; background:#fff; padding:12px; border:1px solid rgba(0,0,0,.08);" />
+                    <p class="small" style="margin-top:12px;">Ce QR code pointe vers cette page exacte.</p>
+                  </div>
+                </div>
+              </div>
+            </section>
+          `;
+
+          const generateQrBtn = document.getElementById("generateQrBtn");
+          const downloadQrBtn = document.getElementById("downloadQrBtn");
+          const qrContainer = document.getElementById("qrContainer");
+          const qrImage = document.getElementById("qrImage");
+
+          if (generateQrBtn && qrImage && downloadQrBtn && qrContainer) {
+            generateQrBtn.addEventListener("click", () => {
+              const pageUrl = window.location.href;
+              const qrUrl = `https://api.qrserver.com/v1/create-qr-code/?size=300x300&data=${encodeURIComponent(pageUrl)}`;
+
+              qrImage.src = qrUrl;
+              qrContainer.style.display = "block";
+              downloadQrBtn.href = qrUrl;
+              downloadQrBtn.style.display = "inline-flex";
+              downloadQrBtn.setAttribute("download", `qr-${plante.slug}.png`);
+            });
+          }
+        })
+        .catch(error => {
+          console.error("Erreur chargement JSON :", error);
+          app.innerHTML = `
+            <section class="section">
+              <h1>Erreur de chargement</h1>
+              <p class="small">Impossible de charger les données de la plante.</p>
+              <a href="index.html">Retour accueil</a>
+            </section>
+          `;
+        });
+    }
+  </script>
 
 </body>
 </html>
