@@ -223,5 +223,125 @@
       "titre": "Pot percé obligatoire",
       "desc": "Toujours utiliser un pot drainant pour éviter l’asphyxie racinaire."
     }
+  },
+  {
+    "slug": "calathea-orbifolia",
+    "nom": "Calathea orbifolia",
+    "categorie": "plante tropicale",
+    "risque_principal": "air trop sec",
+    "climat_reference": "climat tempéré intérieur",
+    "usage": "intérieur lumineux indirect",
+    "saison_reference": "toute saison",
+    "image": "assets/images/calathea_orbifolia.jpg",
+    "chips": ["feuillage graphique", "tropicale", "exigeante"],
+    "intro": "Plante tropicale au feuillage spectaculaire. Sensible à l’humidité et à la qualité de l’eau.",
+    "arrosage": [
+      {"pot": "14 cm", "dose": "25 cl", "freq": "tous les 5 jours"},
+      {"pot": "20 cm", "dose": "50 cl", "freq": "tous les 6 jours"}
+    ],
+    "ajustements": [
+      {"titre": "Air sec", "desc": "Augmenter humidité ambiante de 30%."},
+      {"titre": "Lumière faible", "desc": "Espacer l’arrosage de 20%."}
+    ],
+    "lumiere": "Lumière indirecte douce, sans soleil direct.",
+    "temperature": "18 à 26°C, éviter les variations.",
+    "sos": [
+      {"q": "Feuilles qui s’enroulent", "a": "Air trop sec → augmenter humidité."},
+      {"q": "Taches brunes", "a": "Eau calcaire → utiliser eau filtrée."}
+    ],
+    "solution": {
+      "titre": "Humidité élevée",
+      "desc": "Placer près d’un humidificateur ou sur lit de billes d’argile humides."
+    }
+  },
+  {
+    "slug": "sansevieria",
+    "nom": "Sansevieria (Langue de belle-mère)",
+    "categorie": "plante d’intérieur",
+    "risque_principal": "excès d’eau",
+    "climat_reference": "climat sec intérieur",
+    "usage": "intérieur facile",
+    "saison_reference": "toute saison",
+    "image": "assets/images/sansevieria.jpg",
+    "chips": ["ultra facile", "graphique", "résistante"],
+    "intro": "Plante très résistante idéale pour débutants. Supporte sécheresse et faible luminosité.",
+    "arrosage": [
+      {"pot": "12 cm", "dose": "10 cl", "freq": "tous les 15 jours"},
+      {"pot": "20 cm", "dose": "25 cl", "freq": "tous les 20 jours"}
+    ],
+    "ajustements": [
+      {"titre": "Hiver", "desc": "Espacer à 1 fois par mois."},
+      {"titre": "Chaleur > 27°C", "desc": "Arroser légèrement plus souvent."}
+    ],
+    "lumiere": "Tolère faible lumière, préfère lumière indirecte.",
+    "temperature": "15 à 30°C.",
+    "sos": [
+      {"q": "Feuilles molles", "a": "Excès d’eau → stopper arrosage 2 semaines."},
+      {"q": "Feuilles qui plient", "a": "Manque de lumière → déplacer vers zone plus lumineuse."}
+    ],
+    "solution": {
+      "titre": "Substrat très drainant",
+      "desc": "Utiliser mélange cactus avec sable ou perlite."
+    }
+  },
+  {
+    "slug": "alocasia-polly",
+    "nom": "Alocasia Polly",
+    "categorie": "plante tropicale",
+    "risque_principal": "excès d’eau",
+    "climat_reference": "climat tropical intérieur",
+    "usage": "intérieur lumineux",
+    "saison_reference": "printemps été",
+    "image": "assets/images/alocasia_polly.jpg",
+    "chips": ["feuillage graphique", "tropicale", "exigeante"],
+    "intro": "Plante spectaculaire aux feuilles nervurées. Demande lumière et humidité.",
+    "arrosage": [
+      {"pot": "12 cm", "dose": "20 cl", "freq": "tous les 5 jours"},
+      {"pot": "18 cm", "dose": "40 cl", "freq": "tous les 6 jours"}
+    ],
+    "ajustements": [
+      {"titre": "Hiver", "desc": "Réduire arrosage de 40%."},
+      {"titre": "Air sec", "desc": "Augmenter humidité de 25%."}
+    ],
+    "lumiere": "Lumière vive indirecte.",
+    "temperature": "20 à 28°C.",
+    "sos": [
+      {"q": "Feuilles qui jaunissent", "a": "Excès d’eau → réduire arrosage."},
+      {"q": "Feuilles qui tombent", "a": "Choc thermique → stabiliser environnement."}
+    ],
+    "solution": {
+      "titre": "Drainage + chaleur",
+      "desc": "Pot percé + substrat aéré + éviter le froid."
+    }
+  },
+  {
+    "slug": "pilea-peperomioides",
+    "nom": "Pilea peperomioides",
+    "categorie": "plante d’intérieur",
+    "risque_principal": "excès d’eau",
+    "climat_reference": "climat tempéré intérieur",
+    "usage": "intérieur lumineux",
+    "saison_reference": "toute saison",
+    "image": "assets/images/pilea.jpg",
+    "chips": ["design", "facile", "bouturable"],
+    "intro": "Plante graphique aux feuilles rondes. Facile à multiplier et à entretenir.",
+    "arrosage": [
+      {"pot": "12 cm", "dose": "15 cl", "freq": "tous les 6 jours"},
+      {"pot": "18 cm", "dose": "30 cl", "freq": "tous les 7 jours"}
+    ],
+    "ajustements": [
+      {"titre": "Faible lumière", "desc": "Espacer arrosage de 20%."},
+      {"titre": "Chaleur", "desc": "Augmenter fréquence de 15%."}
+    ],
+    "lumiere": "Lumière vive indirecte.",
+    "temperature": "18 à 26°C.",
+    "sos": [
+      {"q": "Feuilles tombantes", "a": "Manque d’eau → arroser légèrement."},
+      {"q": "Feuilles jaunes", "a": "Excès d’eau → réduire de 30%."}
+    ],
+    "solution": {
+      "titre": "Rotation régulière",
+      "desc": "Tourner la plante chaque semaine pour une croissance homogène."
+    }
   }
 ]
