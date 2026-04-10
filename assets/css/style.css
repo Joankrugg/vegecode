@@ -352,6 +352,7 @@ details p{margin:10px 0 0;color:var(--muted)}
 .solution .pill{color:var(--ink);border-color:rgba(30,30,27,.22);background:rgba(255,255,255,.45)}
 .solution .pill:hover{border-color:rgba(30,30,27,.45)}
 
+.ctaRow .pill{background: green;}
 /* Responsive */
 @media (max-width: 940px){
   .heroGrid{grid-template-columns:1fr;align-items:start}
