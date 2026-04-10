@@ -644,6 +644,155 @@
     "titre": "Humidité élevée",
     "desc": "Maintenir un environnement humide (plateau d’eau ou regroupement de plantes)."
   }
+},
+  {
+  "slug": "basilic",
+  "nom": "Basilic",
+  "categorie": "plante aromatique",
+  "risque_principal": "manque d’eau",
+  "climat_reference": "climat tempéré",
+  "usage": "intérieur lumineux ou balcon",
+  "saison_reference": "été",
+  "image": "assets/images/basilic.jpg",
+  "chips": ["aromatique", "rapide", "cuisine"],
+  "intro": "Plante gourmande en eau et en lumière. Très sensible au froid.",
+  "arrosage": [
+    {"pot": "12 cm", "dose": "20 cl", "freq": "tous les 2 jours"},
+    {"pot": "18 cm", "dose": "35 cl", "freq": "tous les 2 jours"}
+  ],
+  "ajustements": [
+    {"titre": "Chaleur > 28°C", "desc": "Arroser tous les jours avec +10% d’eau."},
+    {"titre": "Faible lumière", "desc": "Réduire dose de 20%."}
+  ],
+  "lumiere": "Minimum 6h de soleil direct.",
+  "temperature": "20 à 30°C. Meurt en dessous de 10°C.",
+  "sos": [
+    {"q": "Feuilles molles", "a": "Manque d’eau → arroser immédiatement."},
+    {"q": "Tiges noires", "a": "Excès d’eau → réduire arrosage et améliorer drainage."}
+  ],
+  "solution": {
+    "titre": "Arrosage fréquent",
+    "desc": "Maintenir la terre humide en continu sans la détremper."
+  }
+},
+  {
+  "slug": "menthe",
+  "nom": "Menthe",
+  "categorie": "plante aromatique",
+  "risque_principal": "manque d’eau",
+  "climat_reference": "climat tempéré",
+  "usage": "extérieur ou balcon",
+  "saison_reference": "printemps-été",
+  "image": "assets/images/menthe.jpg",
+  "chips": ["envahissante", "fraîcheur", "facile"],
+  "intro": "Plante très vigoureuse. Demande beaucoup d’eau et s’étend rapidement.",
+  "arrosage": [
+    {"pot": "14 cm", "dose": "25 cl", "freq": "tous les 2 jours"},
+    {"pot": "20 cm", "dose": "45 cl", "freq": "tous les 2 jours"}
+  ],
+  "ajustements": [
+    {"titre": "Soleil direct", "desc": "Augmenter fréquence de 20%."},
+    {"titre": "Temps humide", "desc": "Réduire fréquence de 20%."}
+  ],
+  "lumiere": "Soleil ou mi-ombre.",
+  "temperature": "15 à 30°C.",
+  "sos": [
+    {"q": "Feuilles molles", "a": "Manque d’eau → arroser immédiatement."},
+    {"q": "Feuilles jaunissantes", "a": "Excès d’eau → réduire arrosage."}
+  ],
+  "solution": {
+    "titre": "Arrosage constant",
+    "desc": "Ne jamais laisser la terre sécher complètement."
+  }
+},
+  {
+  "slug": "thym",
+  "nom": "Thym",
+  "categorie": "plante aromatique",
+  "risque_principal": "excès d’eau",
+  "climat_reference": "climat méditerranéen",
+  "usage": "extérieur plein soleil",
+  "saison_reference": "toute saison",
+  "image": "assets/images/thym.jpg",
+  "chips": ["méditerranéen", "sec", "résistant"],
+  "intro": "Plante méditerranéenne qui préfère la sécheresse à l’humidité.",
+  "arrosage": [
+    {"pot": "12 cm", "dose": "10 cl", "freq": "tous les 7 jours"},
+    {"pot": "18 cm", "dose": "20 cl", "freq": "tous les 8 jours"}
+  ],
+  "ajustements": [
+    {"titre": "Pluie fréquente", "desc": "Stopper l’arrosage."},
+    {"titre": "Canicule", "desc": "Augmenter fréquence de 15%."}
+  ],
+  "lumiere": "Plein soleil minimum 6h.",
+  "temperature": "10 à 35°C.",
+  "sos": [
+    {"q": "Base noire", "a": "Excès d’eau → arrêter arrosage immédiatement."},
+    {"q": "Croissance lente", "a": "Manque de soleil → exposer plein sud."}
+  ],
+  "solution": {
+    "titre": "Drainage extrême",
+    "desc": "Substrat sableux très drainant obligatoire."
+  }
+},
+  {
+  "slug": "romarin",
+  "nom": "Romarin",
+  "categorie": "plante aromatique",
+  "risque_principal": "excès d’eau",
+  "climat_reference": "climat méditerranéen",
+  "usage": "extérieur plein soleil",
+  "saison_reference": "toute saison",
+  "image": "assets/images/romarin.jpg",
+  "chips": ["résistant", "plein soleil", "méditerranéen"],
+  "intro": "Plante très résistante adaptée aux environnements secs.",
+  "arrosage": [
+    {"pot": "18 cm", "dose": "15 cl", "freq": "tous les 7 jours"},
+    {"pot": "25 cm", "dose": "30 cl", "freq": "tous les 8 jours"}
+  ],
+  "ajustements": [
+    {"titre": "Pluie fréquente", "desc": "Stopper arrosage."},
+    {"titre": "Chaleur intense", "desc": "Augmenter fréquence de 15%."}
+  ],
+  "lumiere": "Plein soleil obligatoire.",
+  "temperature": "10 à 35°C.",
+  "sos": [
+    {"q": "Feuilles noires", "a": "Excès d’eau → réduire arrosage immédiatement."},
+    {"q": "Croissance faible", "a": "Manque de soleil → exposer plein sud."}
+  ],
+  "solution": {
+    "titre": "Sol sec et drainant",
+    "desc": "Utiliser un substrat sableux pour éviter toute humidité stagnante."
+  }
+},
+  {
+  "slug": "persil",
+  "nom": "Persil",
+  "categorie": "plante aromatique",
+  "risque_principal": "manque d’eau",
+  "climat_reference": "climat tempéré",
+  "usage": "extérieur ou balcon",
+  "saison_reference": "printemps-été",
+  "image": "assets/images/persil.jpg",
+  "chips": ["cuisine", "rapide", "fragile"],
+  "intro": "Plante fragile qui demande un arrosage régulier et une bonne lumière.",
+  "arrosage": [
+    {"pot": "12 cm", "dose": "18 cl", "freq": "tous les 3 jours"},
+    {"pot": "18 cm", "dose": "35 cl", "freq": "tous les 3 jours"}
+  ],
+  "ajustements": [
+    {"titre": "Chaleur > 28°C", "desc": "Augmenter fréquence de 20%."},
+    {"titre": "Faible lumière", "desc": "Réduire dose de 20%."}
+  ],
+  "lumiere": "Lumière vive ou soleil doux.",
+  "temperature": "15 à 25°C.",
+  "sos": [
+    {"q": "Feuilles molles", "a": "Manque d’eau → arroser immédiatement."},
+    {"q": "Feuilles jaunes", "a": "Excès d’eau → réduire arrosage."}
+  ],
+  "solution": {
+    "titre": "Arrosage régulier",
+    "desc": "Maintenir la terre humide en continu."
+  }
 }
-  
 ]
