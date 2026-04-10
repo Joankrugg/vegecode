@@ -343,5 +343,156 @@
       "titre": "Rotation régulière",
       "desc": "Tourner la plante chaque semaine pour une croissance homogène."
     }
+  },
+  {
+    "slug": "philodendron-scandens",
+    "nom": "Philodendron scandens",
+    "categorie": "plante tropicale",
+    "risque_principal": "excès d’eau",
+    "climat_reference": "climat tempéré intérieur",
+    "usage": "intérieur lumineux à mi-ombre",
+    "saison_reference": "toute saison",
+    "image": "assets/images/philodendron_scandens.jpg",
+    "chips": ["retombante", "facile", "tropicale"],
+    "intro": "Plante retombante très simple à vivre. Elle tolère la lumière moyenne mais pousse mieux près d’une fenêtre.",
+    "arrosage": [
+      {"pot": "12 cm", "dose": "14 cl", "freq": "tous les 6 jours"},
+      {"pot": "18 cm", "dose": "28 cl", "freq": "tous les 7 jours"}
+    ],
+    "ajustements": [
+      {"titre": "Lumière faible", "desc": "Réduire la dose de 20% et espacer de 20%."},
+      {"titre": "Température > 26°C", "desc": "Augmenter la fréquence de 20%."}
+    ],
+    "lumiere": "Lumière indirecte. Supporte la mi-ombre mais croissance plus lente.",
+    "temperature": "18 à 27°C.",
+    "sos": [
+      {"q": "Feuilles jaunes", "a": "Excès d’eau → réduire l’arrosage de 30%."},
+      {"q": "Tiges longues et clairsemées", "a": "Manque de lumière → rapprocher d’une fenêtre."}
+    ],
+    "solution": {
+      "titre": "Substrat léger",
+      "desc": "Mélange 70% terreau plantes vertes et 30% perlite pour garder un sol aéré."
+    }
+  },
+  {
+  "slug": "sansevieria",
+  "nom": "Sansevieria",
+  "categorie": "plante verte d’intérieur",
+  "risque_principal": "excès d’eau",
+  "climat_reference": "climat tempéré intérieur",
+  "usage": "intérieur peu lumineux",
+  "saison_reference": "toute saison",
+  "image": "assets/images/sansevieria.jpg",
+  "chips": ["très résistante", "graphique", "faible arrosage"],
+  "intro": "Plante très résistante idéale pour les oublieux. Elle préfère clairement le manque d’eau à l’excès.",
+  "arrosage": [
+    {"pot": "12 cm", "dose": "8 cl", "freq": "tous les 12 jours"},
+    {"pot": "18 cm", "dose": "18 cl", "freq": "tous les 15 jours"},
+    {"pot": "24 cm", "dose": "30 cl", "freq": "tous les 18 jours"}
+  ],
+  "ajustements": [
+    {"titre": "Pièce sombre", "desc": "Espacer la fréquence de 25%."},
+    {"titre": "Température > 27°C", "desc": "Augmenter la fréquence de 15%."}
+  ],
+  "lumiere": "Tolère une lumière faible à vive. Éviter le soleil brûlant derrière vitre.",
+  "temperature": "16 à 30°C.",
+  "sos": [
+    {"q": "Base molle", "a": "Excès d’eau → stopper l’arrosage 10 jours et vérifier le drainage."},
+    {"q": "Feuilles plissées", "a": "Manque d’eau prolongé → augmenter légèrement la dose au prochain arrosage."}
+  ],
+  "solution": {
+    "titre": "Substrat très drainant",
+    "desc": "Utiliser un mélange pour cactus ou plantes grasses afin d’éviter toute stagnation d’eau."
   }
+},
+{
+  "slug": "chlorophytum",
+  "nom": "Chlorophytum",
+  "categorie": "plante verte d’intérieur",
+  "risque_principal": "air trop sec",
+  "climat_reference": "climat tempéré intérieur",
+  "usage": "intérieur lumineux",
+  "saison_reference": "toute saison",
+  "image": "assets/images/chlorophytum.jpg",
+  "chips": ["facile", "retombante", "débutant"],
+  "intro": "Plante généreuse et simple. Elle pousse vite si la lumière est correcte et l’air pas trop sec.",
+  "arrosage": [
+    {"pot": "12 cm", "dose": "16 cl", "freq": "tous les 5 jours"},
+    {"pot": "18 cm", "dose": "30 cl", "freq": "tous les 6 jours"}
+  ],
+  "ajustements": [
+    {"titre": "Air sec", "desc": "Augmenter l’humidité ambiante de 20%."},
+    {"titre": "Lumière faible", "desc": "Réduire la dose de 20%."}
+  ],
+  "lumiere": "Lumière vive indirecte. Tolère la lumière moyenne.",
+  "temperature": "18 à 26°C.",
+  "sos": [
+    {"q": "Pointes brunes", "a": "Air trop sec → augmenter l’humidité ambiante et éloigner d’un radiateur."},
+    {"q": "Feuilles jaunes", "a": "Excès d’eau → réduire la dose de 25%."}
+  ],
+  "solution": {
+    "titre": "Arrosage régulier sans excès",
+    "desc": "Maintenir un substrat légèrement humide sans laisser d’eau stagner dans la soucoupe."
+  }
+},
+{
+  "slug": "aloe-vera",
+  "nom": "Aloe vera",
+  "categorie": "plante grasse",
+  "risque_principal": "excès d’eau",
+  "climat_reference": "climat tempéré intérieur",
+  "usage": "intérieur très lumineux",
+  "saison_reference": "toute saison",
+  "image": "assets/images/aloe_vera.jpg",
+  "chips": ["plante grasse", "soin", "faible arrosage"],
+  "intro": "Plante grasse facile si elle reçoit beaucoup de lumière et très peu d’eau.",
+  "arrosage": [
+    {"pot": "12 cm", "dose": "8 cl", "freq": "tous les 12 jours"},
+    {"pot": "18 cm", "dose": "18 cl", "freq": "tous les 15 jours"}
+  ],
+  "ajustements": [
+    {"titre": "Température > 28°C", "desc": "Augmenter la fréquence de 15%."},
+    {"titre": "Lumière faible", "desc": "Espacer la fréquence de 20%."}
+  ],
+  "lumiere": "Plein soleil doux ou lumière très vive.",
+  "temperature": "18 à 30°C.",
+  "sos": [
+    {"q": "Feuilles molles", "a": "Excès d’eau → stopper l’arrosage 10 jours puis réduire de 30%."},
+    {"q": "Feuilles fines et pâles", "a": "Manque de lumière → rapprocher d’une fenêtre très lumineuse."}
+  ],
+  "solution": {
+    "titre": "Mélange spécial cactus",
+    "desc": "Utiliser un substrat minéral très drainant pour garder les racines au sec."
+  }
+},
+{
+  "slug": "areca",
+  "nom": "Areca",
+  "categorie": "plante tropicale",
+  "risque_principal": "air trop sec",
+  "climat_reference": "climat tempéré intérieur",
+  "usage": "intérieur lumineux",
+  "saison_reference": "toute saison",
+  "image": "assets/images/areca.jpg",
+  "chips": ["palmier d’intérieur", "feuillage léger", "ambiance tropicale"],
+  "intro": "Palmier d’intérieur apprécié pour son feuillage souple. Il aime la lumière et déteste l’air sec.",
+  "arrosage": [
+    {"pot": "17 cm", "dose": "25 cl", "freq": "tous les 5 jours"},
+    {"pot": "24 cm", "dose": "45 cl", "freq": "tous les 6 jours"}
+  ],
+  "ajustements": [
+    {"titre": "Air sec", "desc": "Augmenter l’humidité ambiante de 20%."},
+    {"titre": "Pièce fraîche", "desc": "Réduire la dose de 20%."}
+  ],
+  "lumiere": "Lumière vive indirecte, sans soleil brûlant direct.",
+  "temperature": "18 à 26°C.",
+  "sos": [
+    {"q": "Pointes brunes", "a": "Air trop sec → augmenter humidité et éloigner du chauffage."},
+    {"q": "Palmes jaunes", "a": "Excès d’eau → réduire la dose de 25% et vérifier le drainage."}
+  ],
+  "solution": {
+    "titre": "Humidité renforcée",
+    "desc": "Placer la plante loin des radiateurs et maintenir une ambiance plus humide."
+  }
+}
 ]
