@@ -585,36 +585,6 @@
   }
 },
   {
-  "slug": "calathea-orbifolia",
-  "nom": "Calathea orbifolia",
-  "categorie": "plante tropicale",
-  "risque_principal": "air trop sec",
-  "climat_reference": "climat tempéré intérieur",
-  "usage": "intérieur lumineux indirect",
-  "saison_reference": "toute saison",
-  "image": "assets/images/calathea.jpg",
-  "chips": ["feuillage graphique", "sensible", "tropicale"],
-  "intro": "Plante décorative exigeante. Demande humidité et régularité.",
-  "arrosage": [
-    {"pot": "14 cm", "dose": "20 cl", "freq": "tous les 5 jours"},
-    {"pot": "20 cm", "dose": "35 cl", "freq": "tous les 6 jours"}
-  ],
-  "ajustements": [
-    {"titre": "Air sec", "desc": "Augmenter humidité de 30%."},
-    {"titre": "Température élevée", "desc": "Augmenter fréquence de 15%."}
-  ],
-  "lumiere": "Lumière indirecte, jamais de soleil direct.",
-  "temperature": "18 à 25°C.",
-  "sos": [
-    {"q": "Bords bruns", "a": "Air trop sec → augmenter humidité ambiante."},
-    {"q": "Feuilles qui s’enroulent", "a": "Manque d’eau → augmenter dose de 20%."}
-  ],
-  "solution": {
-    "titre": "Humidité élevée",
-    "desc": "Maintenir un environnement humide (plateau d’eau ou regroupement de plantes)."
-  }
-},
-  {
   "slug": "basilic",
   "nom": "Basilic",
   "categorie": "plante aromatique",
@@ -622,7 +592,7 @@
   "climat_reference": "climat tempéré",
   "usage": "intérieur lumineux ou balcon",
   "saison_reference": "été",
-  "image": "assets/images/basilic.jpg",
+  "image": "assets/images/pexels-didsss-13995284.jpg",
   "chips": ["aromatique", "rapide", "cuisine"],
   "intro": "Plante gourmande en eau et en lumière. Très sensible au froid.",
   "arrosage": [
