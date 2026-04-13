@@ -2826,5 +2826,174 @@
     },
     "tags": {"lumiere": "forte", "eau": "faible", "entretien": "facile"},
     "toxicite": {"animaux": false, "humains": "aucune"}
+  },
+
+  {
+    "slug": "hedera-helix",
+    "nom": "Lierre (Hedera helix)",
+    "categorie": "plante grimpante",
+    "risque_principal": "excès d’eau",
+    "climat_reference": "climat tempéré intérieur",
+    "usage": "intérieur lumineux à ombragé",
+    "saison_reference": "toute saison",
+    "image": "assets/images/hedera.jpg",
+    "chips": ["grimpante", "facile", "dense"],
+    "intro": "Plante grimpante très adaptable, idéale en suspension ou sur support.",
+    "arrosage": [
+      {"pot": "12 cm", "dose": "14 cl", "freq": "tous les 6 jours"}
+    ],
+    "ajustements": [
+      {"titre": "Lumière faible", "desc": "Réduire l’arrosage de 20%."}
+    ],
+    "lumiere": "Lumière moyenne à vive.",
+    "temperature": "10 à 24°C.",
+    "sos": [
+      {"q": "Feuilles sèches", "a": "Air trop sec → augmenter humidité."},
+      {"q": "Feuilles jaunes", "a": "Excès d’eau → réduire arrosage."}
+    ],
+    "erreurs": [
+      {"titre": "Air trop sec", "desc": "Favorise parasites et dessèchement."},
+      {"titre": "Eau stagnante", "desc": "Racines sensibles à l’humidité excessive."}
+    ],
+    "solution": {
+      "titre": "Taille régulière",
+      "desc": "Favorise une plante dense et saine."
+    },
+    "tags": {"lumiere": "moyenne", "eau": "moderee", "entretien": "facile"},
+    "toxicite": {"animaux": true, "humains": "toxique"}
+  },
+
+  {
+    "slug": "codiaeum-variegatum",
+    "nom": "Croton",
+    "categorie": "plante tropicale",
+    "risque_principal": "manque de lumière",
+    "climat_reference": "climat chaud intérieur",
+    "usage": "intérieur très lumineux",
+    "saison_reference": "toute saison",
+    "image": "assets/images/croton.jpg",
+    "chips": ["coloré", "tropicale", "exigeante"],
+    "intro": "Plante tropicale aux couleurs vives, très sensible à son environnement.",
+    "arrosage": [
+      {"pot": "14 cm", "dose": "22 cl", "freq": "tous les 5 jours"}
+    ],
+    "ajustements": [
+      {"titre": "Manque de lumière", "desc": "Augmenter exposition immédiatement."}
+    ],
+    "lumiere": "Très lumineuse.",
+    "temperature": "20 à 28°C.",
+    "sos": [
+      {"q": "Feuilles qui tombent", "a": "Changement brutal → stabiliser environnement."}
+    ],
+    "erreurs": [
+      {"titre": "Changer souvent de place", "desc": "Très mal toléré."},
+      {"titre": "Manque de lumière", "desc": "Perte de couleur rapide."}
+    ],
+    "solution": {
+      "titre": "Stabilité",
+      "desc": "Lumière constante et environnement stable."
+    },
+    "tags": {"lumiere": "forte", "eau": "moderee", "entretien": "exigeant"},
+    "toxicite": {"animaux": true, "humains": "toxique"}
+  },
+
+  {
+    "slug": "aspidistra-elatior",
+    "nom": "Aspidistra",
+    "categorie": "plante d’intérieur",
+    "risque_principal": "excès d’eau",
+    "climat_reference": "climat tempéré intérieur",
+    "usage": "intérieur sombre",
+    "saison_reference": "toute saison",
+    "image": "assets/images/aspidistra.jpg",
+    "chips": ["ultra résistante", "ombre", "facile"],
+    "intro": "Plante quasi indestructible idéale pour les endroits difficiles.",
+    "arrosage": [
+      {"pot": "16 cm", "dose": "20 cl", "freq": "tous les 10 jours"}
+    ],
+    "ajustements": [
+      {"titre": "Lumière faible", "desc": "Réduire arrosage."}
+    ],
+    "lumiere": "Faible à moyenne.",
+    "temperature": "10 à 25°C.",
+    "sos": [
+      {"q": "Feuilles jaunes", "a": "Excès d’eau → espacer arrosage."}
+    ],
+    "erreurs": [
+      {"titre": "Trop arroser", "desc": "Même robuste, elle peut pourrir."}
+    ],
+    "solution": {
+      "titre": "Minimalisme",
+      "desc": "Moins d’eau = meilleure santé."
+    },
+    "tags": {"lumiere": "faible", "eau": "faible", "entretien": "facile"},
+    "toxicite": {"animaux": false, "humains": "aucune"}
+  },
+
+  {
+    "slug": "oxalis-triangularis",
+    "nom": "Oxalis triangularis",
+    "categorie": "plante d’intérieur",
+    "risque_principal": "manque de lumière",
+    "climat_reference": "climat tempéré intérieur",
+    "usage": "intérieur lumineux",
+    "saison_reference": "printemps été",
+    "image": "assets/images/oxalis.jpg",
+    "chips": ["feuillage violet", "original"],
+    "intro": "Plante décorative dont les feuilles réagissent à la lumière.",
+    "arrosage": [
+      {"pot": "12 cm", "dose": "15 cl", "freq": "tous les 6 jours"}
+    ],
+    "ajustements": [
+      {"titre": "Dormance", "desc": "Réduire arrosage fortement."}
+    ],
+    "lumiere": "Lumière vive indirecte.",
+    "temperature": "18 à 25°C.",
+    "sos": [
+      {"q": "Feuilles fermées", "a": "Manque de lumière → déplacer."}
+    ],
+    "erreurs": [
+      {"titre": "Ignorer la dormance", "desc": "Cycle naturel mal compris."}
+    ],
+    "solution": {
+      "titre": "Cycle naturel",
+      "desc": "Respecter périodes actives et repos."
+    },
+    "tags": {"lumiere": "forte", "eau": "moderee", "entretien": "modere"},
+    "toxicite": {"animaux": true, "humains": "legere"}
+  },
+
+  {
+    "slug": "peperomia-argyreia",
+    "nom": "Peperomia pastèque",
+    "categorie": "plante d’intérieur",
+    "risque_principal": "excès d’eau",
+    "climat_reference": "climat tempéré intérieur",
+    "usage": "intérieur lumineux",
+    "saison_reference": "toute saison",
+    "image": "assets/images/peperomia-watermelon.jpg",
+    "chips": ["compacte", "graphique"],
+    "intro": "Petite plante décorative au feuillage original rappelant une pastèque.",
+    "arrosage": [
+      {"pot": "12 cm", "dose": "12 cl", "freq": "tous les 7 jours"}
+    ],
+    "ajustements": [
+      {"titre": "Faible lumière", "desc": "Espacer arrosage de 20%."}
+    ],
+    "lumiere": "Lumière indirecte.",
+    "temperature": "18 à 26°C.",
+    "sos": [
+      {"q": "Feuilles molles", "a": "Excès d’eau → réduire arrosage."}
+    ],
+    "erreurs": [
+      {"titre": "Arroser trop souvent", "desc": "Plante sensible à l’humidité."}
+    ],
+    "solution": {
+      "titre": "Substrat léger",
+      "desc": "Favoriser drainage et aération."
+    },
+    "tags": {"lumiere": "moyenne", "eau": "faible", "entretien": "facile"},
+    "toxicite": {"animaux": false, "humains": "aucune"}
   }
+]
 ]
