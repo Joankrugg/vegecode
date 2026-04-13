@@ -2306,5 +2306,175 @@
     },
     "tags": {"lumiere": "faible", "eau": "moderee", "entretien": "facile"},
     "toxicite": {"animaux": true, "humains": "legere"}
+  },
+  [
+  {
+    "slug": "schefflera-arboricola",
+    "nom": "Schefflera arboricola",
+    "categorie": "plante d’intérieur",
+    "risque_principal": "excès d’eau",
+    "climat_reference": "climat tempéré intérieur",
+    "usage": "intérieur lumineux",
+    "saison_reference": "toute saison",
+    "image": "assets/images/schefflera.jpg",
+    "chips": ["facile", "résistante", "feuillage dense"],
+    "intro": "Plante robuste au feuillage en ombrelle, idéale pour un entretien simple et une belle densité.",
+    "arrosage": [
+      {"pot": "16 cm", "dose": "25 cl", "freq": "tous les 7 jours"},
+      {"pot": "24 cm", "dose": "50 cl", "freq": "tous les 9 jours"}
+    ],
+    "ajustements": [
+      {"titre": "Lumière faible", "desc": "Réduire la dose de 20%."},
+      {"titre": "Température élevée", "desc": "Augmenter légèrement la fréquence."}
+    ],
+    "lumiere": "Lumière indirecte à vive.",
+    "temperature": "18 à 26°C.",
+    "sos": [
+      {"q": "Feuilles qui tombent", "a": "Excès d’eau ou changement brusque → stabiliser et réduire arrosage."},
+      {"q": "Feuilles pâles", "a": "Manque de lumière → rapprocher d’une fenêtre."}
+    ],
+    "erreurs": [
+      {"titre": "Arrosage trop fréquent", "desc": "Le schefflera tolère mieux un manque qu’un excès d’eau."},
+      {"titre": "Changements d’emplacement fréquents", "desc": "Peut provoquer une chute de feuilles."}
+    ],
+    "solution": {
+      "titre": "Stabilité",
+      "desc": "Trouver un emplacement lumineux et ne plus le déplacer."
+    },
+    "tags": {"lumiere": "moyenne", "eau": "moderee", "entretien": "facile"},
+    "toxicite": {"animaux": true, "humains": "legere"}
+  },
+
+  {
+    "slug": "peperomia-obtusifolia",
+    "nom": "Peperomia obtusifolia",
+    "categorie": "plante d’intérieur",
+    "risque_principal": "excès d’eau",
+    "climat_reference": "climat tempéré intérieur",
+    "usage": "intérieur lumineux",
+    "saison_reference": "toute saison",
+    "image": "assets/images/peperomia.jpg",
+    "chips": ["compacte", "facile", "feuilles épaisses"],
+    "intro": "Petite plante compacte aux feuilles épaisses, parfaite pour les petits espaces.",
+    "arrosage": [
+      {"pot": "12 cm", "dose": "12 cl", "freq": "tous les 8 jours"}
+    ],
+    "ajustements": [
+      {"titre": "Faible lumière", "desc": "Espacer l’arrosage de 20%."}
+    ],
+    "lumiere": "Lumière indirecte.",
+    "temperature": "18 à 26°C.",
+    "sos": [
+      {"q": "Feuilles molles", "a": "Excès d’eau → stopper arrosage quelques jours."}
+    ],
+    "erreurs": [
+      {"titre": "Arroser comme une plante tropicale", "desc": "Les feuilles stockent déjà de l’eau."}
+    ],
+    "solution": {
+      "titre": "Arrosage modéré",
+      "desc": "Laisser sécher légèrement entre deux apports."
+    },
+    "tags": {"lumiere": "moyenne", "eau": "faible", "entretien": "facile"},
+    "toxicite": {"animaux": false, "humains": "aucune"}
+  },
+
+  {
+    "slug": "oxalis-triangularis",
+    "nom": "Oxalis triangularis",
+    "categorie": "plante d’intérieur",
+    "risque_principal": "manque de lumière",
+    "climat_reference": "climat tempéré intérieur",
+    "usage": "intérieur lumineux",
+    "saison_reference": "printemps été",
+    "image": "assets/images/oxalis.jpg",
+    "chips": ["feuillage violet", "original"],
+    "intro": "Plante décorative au feuillage violet qui s’ouvre et se ferme avec la lumière.",
+    "arrosage": [
+      {"pot": "12 cm", "dose": "15 cl", "freq": "tous les 6 jours"}
+    ],
+    "ajustements": [
+      {"titre": "Dormance", "desc": "Réduire fortement l’arrosage pendant les phases de repos."}
+    ],
+    "lumiere": "Lumière vive indirecte.",
+    "temperature": "18 à 25°C.",
+    "sos": [
+      {"q": "Feuilles qui se referment en permanence", "a": "Manque de lumière → déplacer vers zone plus lumineuse."}
+    ],
+    "erreurs": [
+      {"titre": "Arroser pendant la dormance", "desc": "Peut faire pourrir les bulbes."}
+    ],
+    "solution": {
+      "titre": "Cycle naturel",
+      "desc": "Respecter les phases de repos sans paniquer."
+    },
+    "tags": {"lumiere": "forte", "eau": "moderee", "entretien": "modere"},
+    "toxicite": {"animaux": true, "humains": "legere"}
+  },
+
+  {
+    "slug": "colocasia",
+    "nom": "Colocasia",
+    "categorie": "plante tropicale",
+    "risque_principal": "manque d’eau",
+    "climat_reference": "climat humide intérieur",
+    "usage": "intérieur lumineux",
+    "saison_reference": "printemps été",
+    "image": "assets/images/colocasia.jpg",
+    "chips": ["feuillage XXL", "tropicale"],
+    "intro": "Plante spectaculaire aux grandes feuilles, très gourmande en eau et en lumière.",
+    "arrosage": [
+      {"pot": "20 cm", "dose": "50 cl", "freq": "tous les 4 jours"}
+    ],
+    "ajustements": [
+      {"titre": "Air sec", "desc": "Augmenter humidité de 30%."}
+    ],
+    "lumiere": "Lumière vive.",
+    "temperature": "20 à 30°C.",
+    "sos": [
+      {"q": "Feuilles qui tombent", "a": "Manque d’eau → arroser immédiatement."}
+    ],
+    "erreurs": [
+      {"titre": "Sous-arrosage", "desc": "La colocasia demande un sol constamment humide."}
+    ],
+    "solution": {
+      "titre": "Arrosage généreux",
+      "desc": "Maintenir un sol toujours légèrement humide."
+    },
+    "tags": {"lumiere": "forte", "eau": "elevee", "entretien": "exigeant"},
+    "toxicite": {"animaux": true, "humains": "toxique"}
+  },
+
+  {
+    "slug": "caladium",
+    "nom": "Caladium",
+    "categorie": "plante tropicale",
+    "risque_principal": "manque d’eau",
+    "climat_reference": "climat humide intérieur",
+    "usage": "intérieur lumineux indirect",
+    "saison_reference": "printemps été",
+    "image": "assets/images/caladium.jpg",
+    "chips": ["coloré", "feuillage décoratif"],
+    "intro": "Plante tropicale très décorative mais sensible aux variations d’eau et de lumière.",
+    "arrosage": [
+      {"pot": "14 cm", "dose": "25 cl", "freq": "tous les 5 jours"}
+    ],
+    "ajustements": [
+      {"titre": "Dormance", "desc": "Réduire fortement l’arrosage en automne."}
+    ],
+    "lumiere": "Lumière indirecte vive.",
+    "temperature": "20 à 28°C.",
+    "sos": [
+      {"q": "Feuilles qui tombent", "a": "Entrée en dormance ou manque d’eau → ajuster."}
+    ],
+    "erreurs": [
+      {"titre": "Ignorer la dormance", "desc": "Le caladium disparaît naturellement en hiver."}
+    ],
+    "solution": {
+      "titre": "Cycle saisonnier",
+      "desc": "Accepter la dormance et reprendre l’arrosage au printemps."
+    },
+    "tags": {"lumiere": "moyenne", "eau": "elevee", "entretien": "exigeant"},
+    "toxicite": {"animaux": true, "humains": "toxique"}
   }
+]
 ]
