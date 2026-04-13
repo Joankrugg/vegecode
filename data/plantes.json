@@ -1,87 +1,40 @@
 [
   {
-  "slug": "monstera-deliciosa",
-  "nom": "Monstera deliciosa",
-  "aliases": ["monstera", "plante gruyère"],
-  "categorie": "plante_tropicale",
-  "difficulte": "facile",
-  "toxicite": {
-    "animaux": true,
-    "humains": "legerement_toxique"
-  },
-  "risque_principal": "excès_eau",
-  "climat_reference": "interieur_tempere",
-  "usage": ["interieur", "lumineux"],
-  "saison_reference": "printemps",
-
-  "image": "assets/images/monstera-deliciosa-kara-eads-zcVArTF8Frs-unsplash.jpg",
-
-  "chips": ["feuillage XXL", "facile", "croissance rapide"],
-
-  "intro": "Plante tropicale robuste au feuillage découpé, idéale pour créer un effet jungle en intérieur.",
-
-  "arrosage": [
-    {"pot_cm": 12, "dose_cl": 20, "freq_jours": 7},
-    {"pot_cm": 18, "dose_cl": 40, "freq_jours": 7},
-    {"pot_cm": 24, "dose_cl": 70, "freq_jours": 7}
-  ],
-
-  "conditions": {
-    "lumiere": {
-      "type": "indirecte",
-      "intensite": "vive"
-    },
-    "temperature": {
-      "min": 18,
-      "max": 26
+    "slug": "monstera-deliciosa",
+    "nom": "Monstera deliciosa",
+    "categorie": "Plante tropicale",
+    "risque_principal": "Excès d’arrosage",
+    "climat_reference": "climat tempéré intérieur",
+    "usage": "intérieur lumineux",
+    "saison_reference": "printemps",
+    "image": "assets/images/monstera-deliciosa-kara-eads-zcVArTF8Frs-unsplash.jpg",
+    "chips": ["feuillage XXL", "facile", "croissance rapide", "tropicale"],
+    "intro": "Plante tropicale robuste au grand feuillage découpé. Adaptée aux intérieurs lumineux, elle redémarre activement sa croissance au printemps.",
+    "arrosage": [
+      {"pot": "12 cm", "dose": "20 cl", "freq": "tous les 7 jours"},
+      {"pot": "18 cm", "dose": "40 cl", "freq": "tous les 7 jours"},
+      {"pot": "24 cm", "dose": "70 cl", "freq": "tous les 7 jours"}
+    ],
+    "ajustements": [
+      {"titre": "Lumière faible", "desc": "Réduire la dose d’arrosage de 20% et espacer la fréquence de 30%."},
+      {"titre": "Chaleur supérieure à 25°C", "desc": "Augmenter la fréquence d’arrosage de 20%."}
+    ],
+    "lumiere": "Exposition lumineuse indirecte, à moins de 2 m d’une fenêtre orientée est ou ouest.",
+    "temperature": "18°C à 26°C. Éviter les courants d’air froids inférieurs à 15°C.",
+    "sos": [
+      {"q": "Feuilles jaunes", "a": "Substrat détrempé → laisser sécher 5 jours puis réduire l’arrosage de 30%."},
+      {"q": "Feuilles sans découpe", "a": "Manque de lumière → rapprocher de 1 m d’une source lumineuse."},
+      {"q": "Bords bruns secs", "a": "Air trop sec → augmenter l’humidité ambiante de 20%."}
+    ],
+    "erreurs": [
+      {"titre": "Laisser de l’eau dans la soucoupe", "desc": "L’eau stagnante étouffe les racines et provoque vite un jaunissement du feuillage."},
+      {"titre": "La mettre en plein soleil de midi", "desc": "Le feuillage peut brûler derrière une vitre, surtout en été."}
+    ],
+    "solution": {
+      "titre": "Substrat drainant obligatoire",
+      "desc": "Rempoter au printemps dans un mélange 70% terreau plantes vertes et 30% perlite ou billes d’argile pour éviter l’excès d’eau."
     }
   },
-
-  "ajustements": [
-    {
-      "condition": "lumiere_faible",
-      "action": "reduire_arrosage",
-      "valeur": "-20%"
-    },
-    {
-      "condition": "chaleur",
-      "action": "augmenter_frequence",
-      "valeur": "+20%"
-    }
-  ],
-
-  "sos": [
-    {
-      "probleme": "feuilles_jaunes",
-      "cause": "excès_eau",
-      "solution": "laisser_secher_5_jours"
-    },
-    {
-      "probleme": "pas_de_trous",
-      "cause": "manque_lumiere",
-      "solution": "rapprocher_lumiere"
-    }
-  ],
-
-  "erreurs": [
-    {
-      "code": "eau_stagnante",
-      "desc": "L’eau stagnante provoque l’asphyxie des racines."
-    },
-    {
-      "code": "plein_soleil",
-      "desc": "Le soleil direct brûle les feuilles."
-    }
-  ],
-
-  "solution": {
-    "type": "substrat",
-    "recette": {
-      "terreau": "70%",
-      "drainant": "30%"
-    }
-  }
-},
   {
     "slug": "monstera-adansonii",
     "nom": "Monstera adansonii",
