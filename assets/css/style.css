@@ -353,6 +353,7 @@ details p{margin:10px 0 0;color:var(--muted)}
 .solution .pill:hover{border-color:rgba(30,30,27,.45)}
 
 .ctaRow .pill {background: green;}
+.cardPad .pill {background: green;}
 #generateQrBtn {background: green;}
 /* Responsive */
 @media (max-width: 940px){
