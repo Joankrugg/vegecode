@@ -2649,5 +2649,182 @@
     },
     "tags": {"lumiere": "faible", "eau": "moderee", "entretien": "modere"},
     "toxicite": {"animaux": false, "humains": "aucune"}
+  },
+
+  {
+    "slug": "nephrolepis-exaltata",
+    "nom": "Fougère de Boston",
+    "categorie": "plante tropicale",
+    "risque_principal": "air trop sec",
+    "climat_reference": "climat humide intérieur",
+    "usage": "intérieur ombragé",
+    "saison_reference": "toute saison",
+    "image": "assets/images/nephrolepis.jpg",
+    "chips": ["fougère", "humidité", "retombante"],
+    "intro": "Fougère classique au feuillage dense, parfaite pour apporter de la fraîcheur mais exigeante en humidité.",
+    "arrosage": [
+      {"pot": "14 cm", "dose": "22 cl", "freq": "tous les 4 jours"},
+      {"pot": "20 cm", "dose": "45 cl", "freq": "tous les 5 jours"}
+    ],
+    "ajustements": [
+      {"titre": "Air sec", "desc": "Augmenter l’humidité ambiante de 30%."},
+      {"titre": "Hiver", "desc": "Espacer légèrement l’arrosage."}
+    ],
+    "lumiere": "Lumière douce à indirecte.",
+    "temperature": "18 à 25°C.",
+    "sos": [
+      {"q": "Feuilles sèches", "a": "Air trop sec → augmenter humidité."},
+      {"q": "Feuilles qui jaunissent", "a": "Excès d’eau → réduire arrosage de 25%."}
+    ],
+    "erreurs": [
+      {"titre": "La placer près d’un radiateur", "desc": "L’air sec détruit rapidement le feuillage."},
+      {"titre": "Laisser sécher complètement", "desc": "La fougère ne tolère pas le dessèchement."}
+    ],
+    "solution": {
+      "titre": "Humidité constante",
+      "desc": "Brumiser régulièrement ou utiliser un humidificateur."
+    },
+    "tags": {"lumiere": "faible", "eau": "elevee", "entretien": "exigeant"},
+    "toxicite": {"animaux": false, "humains": "aucune"}
+  },
+
+  {
+    "slug": "ficus-ginseng",
+    "nom": "Ficus ginseng",
+    "categorie": "bonsaï",
+    "risque_principal": "excès d’eau",
+    "climat_reference": "climat tempéré intérieur",
+    "usage": "intérieur lumineux",
+    "saison_reference": "toute saison",
+    "image": "assets/images/ficus-ginseng.jpg",
+    "chips": ["bonsaï", "décoratif", "mini arbre"],
+    "intro": "Bonsaï accessible avec un tronc sculptural. Demande régularité et lumière.",
+    "arrosage": [
+      {"pot": "10 cm", "dose": "10 cl", "freq": "tous les 5 jours"}
+    ],
+    "ajustements": [
+      {"titre": "Lumière faible", "desc": "Réduire la fréquence d’arrosage."},
+      {"titre": "Chaleur", "desc": "Augmenter légèrement la fréquence."}
+    ],
+    "lumiere": "Lumière vive indirecte.",
+    "temperature": "18 à 26°C.",
+    "sos": [
+      {"q": "Chute de feuilles", "a": "Changement brutal → stabiliser environnement."},
+      {"q": "Feuilles jaunes", "a": "Excès d’eau → réduire arrosage."}
+    ],
+    "erreurs": [
+      {"titre": "Changer souvent de place", "desc": "Très sensible aux variations."},
+      {"titre": "Arroser mécaniquement", "desc": "Adapter selon saison et lumière."}
+    ],
+    "solution": {
+      "titre": "Régularité",
+      "desc": "Arrosage léger mais fréquent et lumière stable."
+    },
+    "tags": {"lumiere": "forte", "eau": "moderee", "entretien": "modere"},
+    "toxicite": {"animaux": true, "humains": "legere"}
+  },
+
+  {
+    "slug": "spathiphyllum",
+    "nom": "Spathiphyllum",
+    "categorie": "plante fleurie",
+    "risque_principal": "manque d’eau",
+    "climat_reference": "climat humide intérieur",
+    "usage": "intérieur ombragé",
+    "saison_reference": "toute saison",
+    "image": "assets/images/spathiphyllum.jpg",
+    "chips": ["fleurie", "facile", "signal visuel"],
+    "intro": "Plante qui indique quand elle a soif en s’affaissant, parfaite pour débutants.",
+    "arrosage": [
+      {"pot": "14 cm", "dose": "25 cl", "freq": "tous les 5 jours"}
+    ],
+    "ajustements": [
+      {"titre": "Chaleur", "desc": "Augmenter fréquence d’arrosage."}
+    ],
+    "lumiere": "Faible à moyenne.",
+    "temperature": "18 à 26°C.",
+    "sos": [
+      {"q": "Plante affaissée", "a": "Manque d’eau → arroser immédiatement."},
+      {"q": "Feuilles jaunes", "a": "Excès d’eau → réduire arrosage."}
+    ],
+    "erreurs": [
+      {"titre": "Attendre trop longtemps", "desc": "Elle se flétrit rapidement."},
+      {"titre": "Eau stagnante", "desc": "Provoque jaunissement rapide."}
+    ],
+    "solution": {
+      "titre": "Observation simple",
+      "desc": "Arroser dès que la plante s’affaisse légèrement."
+    },
+    "tags": {"lumiere": "faible", "eau": "elevee", "entretien": "facile"},
+    "toxicite": {"animaux": true, "humains": "toxique"}
+  },
+
+  {
+    "slug": "anthurium",
+    "nom": "Anthurium",
+    "categorie": "plante fleurie",
+    "risque_principal": "excès d’eau",
+    "climat_reference": "climat humide intérieur",
+    "usage": "intérieur lumineux indirect",
+    "saison_reference": "toute saison",
+    "image": "assets/images/anthurium.jpg",
+    "chips": ["fleurie", "tropicale", "décorative"],
+    "intro": "Plante tropicale élégante avec floraison durable.",
+    "arrosage": [
+      {"pot": "14 cm", "dose": "20 cl", "freq": "tous les 6 jours"}
+    ],
+    "ajustements": [
+      {"titre": "Air sec", "desc": "Augmenter humidité ambiante."}
+    ],
+    "lumiere": "Lumière vive indirecte.",
+    "temperature": "18 à 26°C.",
+    "sos": [
+      {"q": "Fleurs ternes", "a": "Manque de lumière → rapprocher fenêtre."},
+      {"q": "Feuilles jaunes", "a": "Excès d’eau → réduire arrosage."}
+    ],
+    "erreurs": [
+      {"titre": "Arrosage excessif", "desc": "Très sensible à la pourriture racinaire."},
+      {"titre": "Manque de lumière", "desc": "Bloque la floraison."}
+    ],
+    "solution": {
+      "titre": "Équilibre",
+      "desc": "Lumière + humidité = floraison régulière."
+    },
+    "tags": {"lumiere": "forte", "eau": "moderee", "entretien": "modere"},
+    "toxicite": {"animaux": true, "humains": "toxique"}
+  },
+
+  {
+    "slug": "cactus",
+    "nom": "Cactus",
+    "categorie": "plante grasse",
+    "risque_principal": "excès d’eau",
+    "climat_reference": "climat sec intérieur",
+    "usage": "intérieur très lumineux",
+    "saison_reference": "toute saison",
+    "image": "assets/images/cactus.jpg",
+    "chips": ["ultra facile", "sec", "soleil"],
+    "intro": "Plante minimaliste qui demande presque rien… sauf de ne pas trop l’aimer.",
+    "arrosage": [
+      {"pot": "12 cm", "dose": "6 cl", "freq": "tous les 15 jours"}
+    ],
+    "ajustements": [
+      {"titre": "Hiver", "desc": "Réduire à 1 fois par mois."}
+    ],
+    "lumiere": "Plein soleil.",
+    "temperature": "15 à 35°C.",
+    "sos": [
+      {"q": "Cactus mou", "a": "Excès d’eau → arrêter arrosage immédiatement."}
+    ],
+    "erreurs": [
+      {"titre": "Arroser comme une plante classique", "desc": "C’est le moyen le plus rapide de le tuer."},
+      {"titre": "Manque de lumière", "desc": "Le cactus s’étire et devient fragile."}
+    ],
+    "solution": {
+      "titre": "Minimalisme",
+      "desc": "Peu d’eau, beaucoup de lumière."
+    },
+    "tags": {"lumiere": "forte", "eau": "faible", "entretien": "facile"},
+    "toxicite": {"animaux": false, "humains": "aucune"}
   }
 ]
