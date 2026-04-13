@@ -2137,5 +2137,108 @@
       "animaux": false,
       "humains": "aucune"
     }
+  },
+  {
+    "slug": "dracaena-marginata",
+    "nom": "Dracaena marginata",
+    "categorie": "plante d’intérieur",
+    "risque_principal": "excès d’eau",
+    "climat_reference": "climat tempéré intérieur",
+    "usage": "intérieur lumineux à mi-ombre",
+    "saison_reference": "toute saison",
+    "image": "assets/images/dracaena-marginata.jpg",
+    "chips": ["facile", "résistante", "graphique"],
+    "intro": "Plante élancée très résistante, idéale pour structurer un espace sans entretien compliqué.",
+    "arrosage": [
+      {"pot": "14 cm", "dose": "18 cl", "freq": "tous les 8 jours"},
+      {"pot": "22 cm", "dose": "40 cl", "freq": "tous les 10 jours"}
+    ],
+    "ajustements": [
+      {"titre": "Lumière faible", "desc": "Réduire la dose de 20% et espacer de 20%."},
+      {"titre": "Chaleur élevée", "desc": "Augmenter légèrement la fréquence d’arrosage."}
+    ],
+    "lumiere": "Lumière indirecte à moyenne.",
+    "temperature": "18 à 26°C.",
+    "sos": [
+      {"q": "Pointes brunes", "a": "Air trop sec → augmenter l’humidité ambiante."},
+      {"q": "Feuilles jaunes", "a": "Excès d’eau → réduire la dose de 30%."}
+    ],
+    "erreurs": [
+      {"titre": "Arroser trop souvent", "desc": "Les racines pourrissent rapidement en sol humide constant."},
+      {"titre": "La placer dans un coin sombre", "desc": "La croissance ralentit fortement et les feuilles tombent."}
+    ],
+    "solution": {
+      "titre": "Substrat drainant",
+      "desc": "Ajouter 30% de perlite pour éviter la stagnation d’eau."
+    },
+    "tags": {"lumiere": "moyenne", "eau": "faible", "entretien": "facile"},
+    "toxicite": {"animaux": true, "humains": "legere"}
+  },
+
+  {
+    "slug": "yucca-elephantipes",
+    "nom": "Yucca elephantipes",
+    "categorie": "plante d’intérieur",
+    "risque_principal": "excès d’eau",
+    "climat_reference": "climat sec intérieur",
+    "usage": "intérieur très lumineux",
+    "saison_reference": "toute saison",
+    "image": "assets/images/yucca.jpg",
+    "chips": ["résistant", "soleil", "facile"],
+    "intro": "Plante robuste qui adore la lumière et tolère les oublis d’arrosage.",
+    "arrosage": [
+      {"pot": "18 cm", "dose": "20 cl", "freq": "tous les 10 jours"}
+    ],
+    "ajustements": [
+      {"titre": "Hiver", "desc": "Espacer l’arrosage de 30%."},
+      {"titre": "Chaleur forte", "desc": "Augmenter légèrement la fréquence."}
+    ],
+    "lumiere": "Lumière vive à directe.",
+    "temperature": "15 à 30°C.",
+    "sos": [
+      {"q": "Tronc mou", "a": "Excès d’eau → stopper l’arrosage immédiatement."}
+    ],
+    "erreurs": [
+      {"titre": "Le traiter comme une plante tropicale", "desc": "Trop d’eau est fatal pour un yucca."}
+    ],
+    "solution": {
+      "titre": "Substrat sec",
+      "desc": "Utiliser un mélange type cactus."
+    },
+    "tags": {"lumiere": "forte", "eau": "faible", "entretien": "facile"},
+    "toxicite": {"animaux": true, "humains": "legere"}
+  },
+
+  {
+    "slug": "fittonia",
+    "nom": "Fittonia",
+    "categorie": "plante tropicale",
+    "risque_principal": "manque d’eau",
+    "climat_reference": "climat humide intérieur",
+    "usage": "intérieur lumineux indirect",
+    "saison_reference": "toute saison",
+    "image": "assets/images/fittonia.jpg",
+    "chips": ["compacte", "colorée"],
+    "intro": "Petite plante nerveuse qui flétrit vite sans eau mais repart rapidement.",
+    "arrosage": [
+      {"pot": "10 cm", "dose": "10 cl", "freq": "tous les 3 jours"}
+    ],
+    "ajustements": [
+      {"titre": "Air sec", "desc": "Augmenter l’humidité ambiante de 30%."}
+    ],
+    "lumiere": "Lumière douce.",
+    "temperature": "18 à 24°C.",
+    "sos": [
+      {"q": "Plante totalement molle", "a": "Manque d’eau → arroser immédiatement, récupération en quelques heures."}
+    ],
+    "erreurs": [
+      {"titre": "Attendre trop longtemps avant d’arroser", "desc": "La fittonia s’effondre très vite sans eau."}
+    ],
+    "solution": {
+      "titre": "Arrosage régulier",
+      "desc": "Maintenir un substrat légèrement humide."
+    },
+    "tags": {"lumiere": "faible", "eau": "elevee", "entretien": "modere"},
+    "toxicite": {"animaux": false, "humains": "aucune"}
   }
 ]
