@@ -2754,5 +2754,5 @@
     },
     "tags": {"lumiere": "forte", "eau": "moderee", "entretien": "exigeant"},
     "toxicite": {"animaux": true, "humains": "toxique"}
-  },
+  }
 ]
