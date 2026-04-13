@@ -8,31 +8,78 @@
     "usage": "intérieur lumineux",
     "saison_reference": "printemps",
     "image": "assets/images/monstera-deliciosa-kara-eads-zcVArTF8Frs-unsplash.jpg",
-    "chips": ["feuillage XXL", "facile", "croissance rapide", "tropicale"],
+    "chips": [
+      "feuillage XXL",
+      "facile",
+      "croissance rapide",
+      "tropicale"
+    ],
     "intro": "Plante tropicale robuste au grand feuillage découpé. Adaptée aux intérieurs lumineux, elle redémarre activement sa croissance au printemps.",
     "arrosage": [
-      {"pot": "12 cm", "dose": "20 cl", "freq": "tous les 7 jours"},
-      {"pot": "18 cm", "dose": "40 cl", "freq": "tous les 7 jours"},
-      {"pot": "24 cm", "dose": "70 cl", "freq": "tous les 7 jours"}
+      {
+        "pot": "12 cm",
+        "dose": "20 cl",
+        "freq": "tous les 7 jours"
+      },
+      {
+        "pot": "18 cm",
+        "dose": "40 cl",
+        "freq": "tous les 7 jours"
+      },
+      {
+        "pot": "24 cm",
+        "dose": "70 cl",
+        "freq": "tous les 7 jours"
+      }
     ],
     "ajustements": [
-      {"titre": "Lumière faible", "desc": "Réduire la dose d’arrosage de 20% et espacer la fréquence de 30%."},
-      {"titre": "Chaleur supérieure à 25°C", "desc": "Augmenter la fréquence d’arrosage de 20%."}
+      {
+        "titre": "Lumière faible",
+        "desc": "Réduire la dose d’arrosage de 20% et espacer la fréquence de 30%."
+      },
+      {
+        "titre": "Chaleur supérieure à 25°C",
+        "desc": "Augmenter la fréquence d’arrosage de 20%."
+      }
     ],
     "lumiere": "Exposition lumineuse indirecte, à moins de 2 m d’une fenêtre orientée est ou ouest.",
     "temperature": "18°C à 26°C. Éviter les courants d’air froids inférieurs à 15°C.",
     "sos": [
-      {"q": "Feuilles jaunes", "a": "Substrat détrempé → laisser sécher 5 jours puis réduire l’arrosage de 30%."},
-      {"q": "Feuilles sans découpe", "a": "Manque de lumière → rapprocher de 1 m d’une source lumineuse."},
-      {"q": "Bords bruns secs", "a": "Air trop sec → augmenter l’humidité ambiante de 20%."}
+      {
+        "q": "Feuilles jaunes",
+        "a": "Substrat détrempé → laisser sécher 5 jours puis réduire l’arrosage de 30%."
+      },
+      {
+        "q": "Feuilles sans découpe",
+        "a": "Manque de lumière → rapprocher de 1 m d’une source lumineuse."
+      },
+      {
+        "q": "Bords bruns secs",
+        "a": "Air trop sec → augmenter l’humidité ambiante de 20%."
+      }
     ],
     "erreurs": [
-      {"titre": "Laisser de l’eau dans la soucoupe", "desc": "L’eau stagnante étouffe les racines et provoque vite un jaunissement du feuillage."},
-      {"titre": "La mettre en plein soleil de midi", "desc": "Le feuillage peut brûler derrière une vitre, surtout en été."}
+      {
+        "titre": "Laisser de l’eau dans la soucoupe",
+        "desc": "L’eau stagnante étouffe les racines et provoque vite un jaunissement du feuillage."
+      },
+      {
+        "titre": "La mettre en plein soleil de midi",
+        "desc": "Le feuillage peut brûler derrière une vitre, surtout en été."
+      }
     ],
     "solution": {
       "titre": "Substrat drainant obligatoire",
       "desc": "Rempoter au printemps dans un mélange 70% terreau plantes vertes et 30% perlite ou billes d’argile pour éviter l’excès d’eau."
+    },
+    "tags": {
+      "lumiere": "moyenne",
+      "eau": "faible",
+      "entretien": "facile"
+    },
+    "toxicite": {
+      "animaux": true,
+      "humains": "legere"
     }
   },
   {
@@ -44,31 +91,77 @@
     "usage": "intérieur lumineux",
     "saison_reference": "toute saison",
     "image": "assets/images/pexels-junior-fossile-1833670655-28430921.jpg",
-    "chips": ["feuillage perforé", "grimpante", "tropicale"],
+    "chips": [
+      "feuillage perforé",
+      "grimpante",
+      "tropicale"
+    ],
     "intro": "Plante tropicale au feuillage ajouré. Croissance rapide en lumière vive indirecte.",
     "arrosage": [
-      {"pot": "12 cm", "dose": "18 cl", "freq": "tous les 6 jours"},
-      {"pot": "17 cm", "dose": "35 cl", "freq": "tous les 7 jours"},
-      {"pot": "22 cm", "dose": "55 cl", "freq": "tous les 7 jours"}
+      {
+        "pot": "12 cm",
+        "dose": "18 cl",
+        "freq": "tous les 6 jours"
+      },
+      {
+        "pot": "17 cm",
+        "dose": "35 cl",
+        "freq": "tous les 7 jours"
+      },
+      {
+        "pot": "22 cm",
+        "dose": "55 cl",
+        "freq": "tous les 7 jours"
+      }
     ],
     "ajustements": [
-      {"titre": "Lumière faible", "desc": "Réduire la dose d’arrosage de 25% et espacer de 20%."},
-      {"titre": "Température > 26°C", "desc": "Augmenter la fréquence de 20%."}
+      {
+        "titre": "Lumière faible",
+        "desc": "Réduire la dose d’arrosage de 25% et espacer de 20%."
+      },
+      {
+        "titre": "Température > 26°C",
+        "desc": "Augmenter la fréquence de 20%."
+      }
     ],
     "lumiere": "Lumière vive indirecte, à moins de 1,5 m d’une fenêtre orientée est ou ouest.",
     "temperature": "18 à 27°C. Éviter les courants d’air froids.",
     "sos": [
-      {"q": "Feuilles jaunes", "a": "Excès d’eau → laisser sécher 5 jours puis réduire la dose de 30%."},
-      {"q": "Feuilles petites sans perforation", "a": "Manque de lumière → rapprocher de 1 m d’une fenêtre."},
-      {"q": "Bords bruns", "a": "Air trop sec → augmenter l’humidité ambiante de 20%."}
+      {
+        "q": "Feuilles jaunes",
+        "a": "Excès d’eau → laisser sécher 5 jours puis réduire la dose de 30%."
+      },
+      {
+        "q": "Feuilles petites sans perforation",
+        "a": "Manque de lumière → rapprocher de 1 m d’une fenêtre."
+      },
+      {
+        "q": "Bords bruns",
+        "a": "Air trop sec → augmenter l’humidité ambiante de 20%."
+      }
     ],
     "erreurs": [
-      {"titre": "Oublier le tuteur", "desc": "Sans support, la plante s’étire et garde un feuillage moins dense."},
-      {"titre": "Arroser à calendrier fixe toute l’année", "desc": "En hiver, le substrat sèche plus lentement et l’excès d’eau arrive vite."}
+      {
+        "titre": "Oublier le tuteur",
+        "desc": "Sans support, la plante s’étire et garde un feuillage moins dense."
+      },
+      {
+        "titre": "Arroser à calendrier fixe toute l’année",
+        "desc": "En hiver, le substrat sèche plus lentement et l’excès d’eau arrive vite."
+      }
     ],
     "solution": {
       "titre": "Substrat aéré obligatoire",
       "desc": "Mélange 60% terreau, 20% perlite et 20% écorces pour favoriser l’oxygénation des racines."
+    },
+    "tags": {
+      "lumiere": "forte",
+      "eau": "faible",
+      "entretien": "modere"
+    },
+    "toxicite": {
+      "animaux": true,
+      "humains": "legere"
     }
   },
   {
@@ -80,30 +173,73 @@
     "usage": "intérieur lumineux",
     "saison_reference": "toute saison",
     "image": "assets/images/feey-17UXXzGF7RA-unsplash.jpg",
-    "chips": ["feuilles épaisses", "robuste", "croissance verticale"],
+    "chips": [
+      "feuilles épaisses",
+      "robuste",
+      "croissance verticale"
+    ],
     "intro": "Plante résistante à grandes feuilles brillantes. Tolère les oublis d’arrosage mais craint l’excès d’eau.",
     "arrosage": [
-      {"pot": "14 cm", "dose": "22 cl", "freq": "tous les 8 jours"},
-      {"pot": "20 cm", "dose": "45 cl", "freq": "tous les 9 jours"},
-      {"pot": "24 cm", "dose": "65 cl", "freq": "tous les 10 jours"}
+      {
+        "pot": "14 cm",
+        "dose": "22 cl",
+        "freq": "tous les 8 jours"
+      },
+      {
+        "pot": "20 cm",
+        "dose": "45 cl",
+        "freq": "tous les 9 jours"
+      },
+      {
+        "pot": "24 cm",
+        "dose": "65 cl",
+        "freq": "tous les 10 jours"
+      }
     ],
     "ajustements": [
-      {"titre": "Lumière faible", "desc": "Réduire la dose de 25% et espacer de 20%."},
-      {"titre": "Température > 26°C", "desc": "Augmenter la fréquence de 20%."}
+      {
+        "titre": "Lumière faible",
+        "desc": "Réduire la dose de 25% et espacer de 20%."
+      },
+      {
+        "titre": "Température > 26°C",
+        "desc": "Augmenter la fréquence de 20%."
+      }
     ],
     "lumiere": "Lumière vive indirecte, à moins de 2 m d’une fenêtre.",
     "temperature": "18 à 27°C stable.",
     "sos": [
-      {"q": "Feuilles jaunes", "a": "Excès d’eau → réduire la dose de 30% et vérifier le drainage."},
-      {"q": "Feuilles ternes", "a": "Manque de lumière → rapprocher d’une fenêtre lumineuse."}
+      {
+        "q": "Feuilles jaunes",
+        "a": "Excès d’eau → réduire la dose de 30% et vérifier le drainage."
+      },
+      {
+        "q": "Feuilles ternes",
+        "a": "Manque de lumière → rapprocher d’une fenêtre lumineuse."
+      }
     ],
     "erreurs": [
-      {"titre": "Le changer souvent de place", "desc": "Le ficus aime la stabilité. Les déplacements fréquents le stressent."},
-      {"titre": "Nettoyer rarement les feuilles", "desc": "La poussière réduit la lumière reçue et ternit vite son feuillage."}
+      {
+        "titre": "Le changer souvent de place",
+        "desc": "Le ficus aime la stabilité. Les déplacements fréquents le stressent."
+      },
+      {
+        "titre": "Nettoyer rarement les feuilles",
+        "desc": "La poussière réduit la lumière reçue et ternit vite son feuillage."
+      }
     ],
     "solution": {
       "titre": "Drainage renforcé",
       "desc": "Pot percé + 3 cm de billes d’argile au fond pour éviter l’asphyxie racinaire."
+    },
+    "tags": {
+      "lumiere": "forte",
+      "eau": "faible",
+      "entretien": "modere"
+    },
+    "toxicite": {
+      "animaux": true,
+      "humains": "legere"
     }
   },
   {
@@ -115,29 +251,67 @@
     "usage": "intérieur très lumineux",
     "saison_reference": "toute saison",
     "image": "assets/images/pexels-vovkapanda-6208087.jpg",
-    "chips": ["feuilles XXL", "plante graphique"],
+    "chips": [
+      "feuilles XXL",
+      "plante graphique"
+    ],
     "intro": "Plante décorative à grandes feuilles en forme de violon. Demande stabilité et lumière intense.",
     "arrosage": [
-      {"pot": "17 cm", "dose": "28 cl", "freq": "tous les 7 jours"},
-      {"pot": "24 cm", "dose": "55 cl", "freq": "tous les 8 jours"}
+      {
+        "pot": "17 cm",
+        "dose": "28 cl",
+        "freq": "tous les 7 jours"
+      },
+      {
+        "pot": "24 cm",
+        "dose": "55 cl",
+        "freq": "tous les 8 jours"
+      }
     ],
     "ajustements": [
-      {"titre": "Air sec", "desc": "Augmenter humidité ambiante de 20%."},
-      {"titre": "Pièce sombre", "desc": "Réduire dose de 30% et déplacer plus près d’une fenêtre."}
+      {
+        "titre": "Air sec",
+        "desc": "Augmenter humidité ambiante de 20%."
+      },
+      {
+        "titre": "Pièce sombre",
+        "desc": "Réduire dose de 30% et déplacer plus près d’une fenêtre."
+      }
     ],
     "lumiere": "Minimum 6 heures de lumière vive indirecte.",
     "temperature": "18 à 26°C constante.",
     "sos": [
-      {"q": "Taches brunes centrales", "a": "Excès d’eau → réduire arrosage de 30%."},
-      {"q": "Chute soudaine des feuilles", "a": "Variation thermique → stabiliser température."}
+      {
+        "q": "Taches brunes centrales",
+        "a": "Excès d’eau → réduire arrosage de 30%."
+      },
+      {
+        "q": "Chute soudaine des feuilles",
+        "a": "Variation thermique → stabiliser température."
+      }
     ],
     "erreurs": [
-      {"titre": "Le placer loin d’une fenêtre", "desc": "Le lyrata se dégarnit vite quand la lumière manque."},
-      {"titre": "Tourner le pot tous les jours", "desc": "Une rotation trop fréquente perturbe son orientation et son équilibre."}
+      {
+        "titre": "Le placer loin d’une fenêtre",
+        "desc": "Le lyrata se dégarnit vite quand la lumière manque."
+      },
+      {
+        "titre": "Tourner le pot tous les jours",
+        "desc": "Une rotation trop fréquente perturbe son orientation et son équilibre."
+      }
     ],
     "solution": {
       "titre": "Arrosage fractionné",
       "desc": "Verser la dose en deux fois espacées de 10 minutes."
+    },
+    "tags": {
+      "lumiere": "forte",
+      "eau": "faible",
+      "entretien": "modere"
+    },
+    "toxicite": {
+      "animaux": true,
+      "humains": "legere"
     }
   },
   {
@@ -149,29 +323,67 @@
     "usage": "intérieur lumineux stable",
     "saison_reference": "toute saison",
     "image": "assets/images/pexels-vladyslav-huivyk-94105841-12516295.jpg",
-    "chips": ["feuillage dense", "sensible aux déplacements"],
+    "chips": [
+      "feuillage dense",
+      "sensible aux déplacements"
+    ],
     "intro": "Arbre d’intérieur au feuillage fin. Déteste les changements brusques de lumière ou de température.",
     "arrosage": [
-      {"pot": "14 cm", "dose": "20 cl", "freq": "tous les 9 jours"},
-      {"pot": "22 cm", "dose": "50 cl", "freq": "tous les 10 jours"}
+      {
+        "pot": "14 cm",
+        "dose": "20 cl",
+        "freq": "tous les 9 jours"
+      },
+      {
+        "pot": "22 cm",
+        "dose": "50 cl",
+        "freq": "tous les 10 jours"
+      }
     ],
     "ajustements": [
-      {"titre": "Chaleur > 25°C", "desc": "Augmenter fréquence de 15%."},
-      {"titre": "Faible luminosité", "desc": "Réduire dose de 25%."}
+      {
+        "titre": "Chaleur > 25°C",
+        "desc": "Augmenter fréquence de 15%."
+      },
+      {
+        "titre": "Faible luminosité",
+        "desc": "Réduire dose de 25%."
+      }
     ],
     "lumiere": "Lumière vive indirecte, sans soleil direct prolongé.",
     "temperature": "18 à 25°C stable.",
     "sos": [
-      {"q": "Chute importante de feuilles", "a": "Changement d’environnement → stabiliser sans déplacer 30 jours."},
-      {"q": "Feuilles jaunes", "a": "Excès d’eau → réduire dose de 30%."}
+      {
+        "q": "Chute importante de feuilles",
+        "a": "Changement d’environnement → stabiliser sans déplacer 30 jours."
+      },
+      {
+        "q": "Feuilles jaunes",
+        "a": "Excès d’eau → réduire dose de 30%."
+      }
     ],
     "erreurs": [
-      {"titre": "Le déplacer après achat puis encore après", "desc": "Chaque changement peut déclencher une chute de feuilles."},
-      {"titre": "Le mettre dans un courant d’air", "desc": "Les variations brutales de température lui vont aussi bien qu’un lundi matin."}
+      {
+        "titre": "Le déplacer après achat puis encore après",
+        "desc": "Chaque changement peut déclencher une chute de feuilles."
+      },
+      {
+        "titre": "Le mettre dans un courant d’air",
+        "desc": "Les variations brutales de température lui vont aussi bien qu’un lundi matin."
+      }
     ],
     "solution": {
       "titre": "Emplacement définitif",
       "desc": "Éviter tout déplacement fréquent pour limiter le stress."
+    },
+    "tags": {
+      "lumiere": "forte",
+      "eau": "moderee",
+      "entretien": "modere"
+    },
+    "toxicite": {
+      "animaux": true,
+      "humains": "legere"
     }
   },
   {
@@ -183,29 +395,68 @@
     "usage": "intérieur lumineux à ombragé",
     "saison_reference": "toute saison",
     "image": "assets/images/pexels-guesc-22710659.jpg",
-    "chips": ["facile", "retombante", "tolère l’ombre"],
+    "chips": [
+      "facile",
+      "retombante",
+      "tolère l’ombre"
+    ],
     "intro": "Plante idéale pour débuter. Supporte lumière moyenne et variations légères.",
     "arrosage": [
-      {"pot": "12 cm", "dose": "15 cl", "freq": "tous les 6 jours"},
-      {"pot": "18 cm", "dose": "28 cl", "freq": "tous les 7 jours"}
+      {
+        "pot": "12 cm",
+        "dose": "15 cl",
+        "freq": "tous les 6 jours"
+      },
+      {
+        "pot": "18 cm",
+        "dose": "28 cl",
+        "freq": "tous les 7 jours"
+      }
     ],
     "ajustements": [
-      {"titre": "Pièce sombre", "desc": "Réduire dose de 25%."},
-      {"titre": "Température > 27°C", "desc": "Augmenter fréquence de 20%."}
+      {
+        "titre": "Pièce sombre",
+        "desc": "Réduire dose de 25%."
+      },
+      {
+        "titre": "Température > 27°C",
+        "desc": "Augmenter fréquence de 20%."
+      }
     ],
     "lumiere": "Tolère lumière moyenne, croissance optimale en lumière vive indirecte.",
     "temperature": "18 à 28°C.",
     "sos": [
-      {"q": "Feuilles jaunes", "a": "Excès d’eau → réduire de 30%."},
-      {"q": "Feuilles pâles", "a": "Manque de lumière → rapprocher de 1 m d’une fenêtre."}
+      {
+        "q": "Feuilles jaunes",
+        "a": "Excès d’eau → réduire de 30%."
+      },
+      {
+        "q": "Feuilles pâles",
+        "a": "Manque de lumière → rapprocher de 1 m d’une fenêtre."
+      }
     ],
     "erreurs": [
-      {"titre": "Laisser les lianes dans l’obscurité totale", "desc": "Le pothos survit à l’ombre mais perd vite couleur et densité."},
-      {"titre": "Arroser par habitude chaque semaine", "desc": "Si la pièce est fraîche, la terre garde l’humidité plus longtemps."}
+      {
+        "titre": "Laisser les lianes dans l’obscurité totale",
+        "desc": "Le pothos survit à l’ombre mais perd vite couleur et densité."
+      },
+      {
+        "titre": "Arroser par habitude chaque semaine",
+        "desc": "Si la pièce est fraîche, la terre garde l’humidité plus longtemps."
+      }
     ],
     "solution": {
       "titre": "Substrat léger",
       "desc": "Ajouter 30% perlite pour éviter la stagnation d’eau."
+    },
+    "tags": {
+      "lumiere": "forte",
+      "eau": "faible",
+      "entretien": "facile"
+    },
+    "toxicite": {
+      "animaux": true,
+      "humains": "legere"
     }
   },
   {
@@ -217,29 +468,68 @@
     "usage": "intérieur lumineux indirect",
     "saison_reference": "toute saison",
     "image": "assets/images/pexels-kenzero14-22610794.jpg",
-    "chips": ["feuillage argenté", "retombante", "facile"],
+    "chips": [
+      "feuillage argenté",
+      "retombante",
+      "facile"
+    ],
     "intro": "Plante décorative au feuillage argenté. Demande lumière indirecte et arrosage maîtrisé.",
     "arrosage": [
-      {"pot": "12 cm", "dose": "14 cl", "freq": "tous les 6 jours"},
-      {"pot": "18 cm", "dose": "30 cl", "freq": "tous les 7 jours"}
+      {
+        "pot": "12 cm",
+        "dose": "14 cl",
+        "freq": "tous les 6 jours"
+      },
+      {
+        "pot": "18 cm",
+        "dose": "30 cl",
+        "freq": "tous les 7 jours"
+      }
     ],
     "ajustements": [
-      {"titre": "Air sec", "desc": "Augmenter humidité de 20%."},
-      {"titre": "Faible lumière", "desc": "Réduire dose de 20%."}
+      {
+        "titre": "Air sec",
+        "desc": "Augmenter humidité de 20%."
+      },
+      {
+        "titre": "Faible lumière",
+        "desc": "Réduire dose de 20%."
+      }
     ],
     "lumiere": "Lumière vive indirecte sans soleil direct.",
     "temperature": "18 à 26°C.",
     "sos": [
-      {"q": "Feuilles ternes", "a": "Manque de lumière → déplacer plus près d’une fenêtre."},
-      {"q": "Tiges molles", "a": "Excès d’eau → réduire fréquence de 30%."}
+      {
+        "q": "Feuilles ternes",
+        "a": "Manque de lumière → déplacer plus près d’une fenêtre."
+      },
+      {
+        "q": "Tiges molles",
+        "a": "Excès d’eau → réduire fréquence de 30%."
+      }
     ],
     "erreurs": [
-      {"titre": "Le mettre au soleil direct", "desc": "Les feuilles argentées peuvent marquer rapidement."},
-      {"titre": "Utiliser un cache-pot sans drainage", "desc": "Le scindapsus n’aime pas du tout baigner dans l’eau."}
+      {
+        "titre": "Le mettre au soleil direct",
+        "desc": "Les feuilles argentées peuvent marquer rapidement."
+      },
+      {
+        "titre": "Utiliser un cache-pot sans drainage",
+        "desc": "Le scindapsus n’aime pas du tout baigner dans l’eau."
+      }
     ],
     "solution": {
       "titre": "Pot percé obligatoire",
       "desc": "Toujours utiliser un pot drainant pour éviter l’asphyxie racinaire."
+    },
+    "tags": {
+      "lumiere": "forte",
+      "eau": "faible",
+      "entretien": "facile"
+    },
+    "toxicite": {
+      "animaux": true,
+      "humains": "legere"
     }
   },
   {
@@ -251,29 +541,68 @@
     "usage": "intérieur lumineux indirect",
     "saison_reference": "toute saison",
     "image": "assets/images/pexels-jardindeneko-29309553.jpg",
-    "chips": ["feuillage graphique", "tropicale", "exigeante"],
+    "chips": [
+      "feuillage graphique",
+      "tropicale",
+      "exigeante"
+    ],
     "intro": "Plante tropicale au feuillage spectaculaire. Sensible à l’humidité et à la qualité de l’eau.",
     "arrosage": [
-      {"pot": "14 cm", "dose": "25 cl", "freq": "tous les 5 jours"},
-      {"pot": "20 cm", "dose": "50 cl", "freq": "tous les 6 jours"}
+      {
+        "pot": "14 cm",
+        "dose": "25 cl",
+        "freq": "tous les 5 jours"
+      },
+      {
+        "pot": "20 cm",
+        "dose": "50 cl",
+        "freq": "tous les 6 jours"
+      }
     ],
     "ajustements": [
-      {"titre": "Air sec", "desc": "Augmenter humidité ambiante de 30%."},
-      {"titre": "Lumière faible", "desc": "Espacer l’arrosage de 20%."}
+      {
+        "titre": "Air sec",
+        "desc": "Augmenter humidité ambiante de 30%."
+      },
+      {
+        "titre": "Lumière faible",
+        "desc": "Espacer l’arrosage de 20%."
+      }
     ],
     "lumiere": "Lumière indirecte douce, sans soleil direct.",
     "temperature": "18 à 26°C, éviter les variations.",
     "sos": [
-      {"q": "Feuilles qui s’enroulent", "a": "Air trop sec → augmenter humidité."},
-      {"q": "Taches brunes", "a": "Eau calcaire → utiliser eau filtrée."}
+      {
+        "q": "Feuilles qui s’enroulent",
+        "a": "Air trop sec → augmenter humidité."
+      },
+      {
+        "q": "Taches brunes",
+        "a": "Eau calcaire → utiliser eau filtrée."
+      }
     ],
     "erreurs": [
-      {"titre": "Arroser avec une eau très calcaire", "desc": "Les bords du feuillage marquent vite."},
-      {"titre": "La placer près d’un radiateur", "desc": "L’air sec lui va aussi bien qu’un sèche-cheveux sur une fougère."}
+      {
+        "titre": "Arroser avec une eau très calcaire",
+        "desc": "Les bords du feuillage marquent vite."
+      },
+      {
+        "titre": "La placer près d’un radiateur",
+        "desc": "L’air sec lui va aussi bien qu’un sèche-cheveux sur une fougère."
+      }
     ],
     "solution": {
       "titre": "Humidité élevée",
       "desc": "Placer près d’un humidificateur ou sur lit de billes d’argile humides."
+    },
+    "tags": {
+      "lumiere": "forte",
+      "eau": "moderee",
+      "entretien": "exigeant"
+    },
+    "toxicite": {
+      "animaux": true,
+      "humains": "legere"
     }
   },
   {
@@ -285,29 +614,68 @@
     "usage": "intérieur facile",
     "saison_reference": "toute saison",
     "image": "assets/images/pexels-damir-22863428.jpg",
-    "chips": ["ultra facile", "graphique", "résistante"],
+    "chips": [
+      "ultra facile",
+      "graphique",
+      "résistante"
+    ],
     "intro": "Plante très résistante idéale pour débutants. Supporte sécheresse et faible luminosité.",
     "arrosage": [
-      {"pot": "12 cm", "dose": "10 cl", "freq": "tous les 15 jours"},
-      {"pot": "20 cm", "dose": "25 cl", "freq": "tous les 20 jours"}
+      {
+        "pot": "12 cm",
+        "dose": "10 cl",
+        "freq": "tous les 15 jours"
+      },
+      {
+        "pot": "20 cm",
+        "dose": "25 cl",
+        "freq": "tous les 20 jours"
+      }
     ],
     "ajustements": [
-      {"titre": "Hiver", "desc": "Espacer à 1 fois par mois."},
-      {"titre": "Chaleur > 27°C", "desc": "Arroser légèrement plus souvent."}
+      {
+        "titre": "Hiver",
+        "desc": "Espacer à 1 fois par mois."
+      },
+      {
+        "titre": "Chaleur > 27°C",
+        "desc": "Arroser légèrement plus souvent."
+      }
     ],
     "lumiere": "Tolère faible lumière, préfère lumière indirecte.",
     "temperature": "15 à 30°C.",
     "sos": [
-      {"q": "Feuilles molles", "a": "Excès d’eau → stopper arrosage 2 semaines."},
-      {"q": "Feuilles qui plient", "a": "Manque de lumière → déplacer vers zone plus lumineuse."}
+      {
+        "q": "Feuilles molles",
+        "a": "Excès d’eau → stopper arrosage 2 semaines."
+      },
+      {
+        "q": "Feuilles qui plient",
+        "a": "Manque de lumière → déplacer vers zone plus lumineuse."
+      }
     ],
     "erreurs": [
-      {"titre": "La traiter comme une plante tropicale", "desc": "Trop d’eau est le moyen le plus rapide de la faire pourrir."},
-      {"titre": "La laisser dans un pot sans trou", "desc": "Même increvable, elle a ses limites."}
+      {
+        "titre": "La traiter comme une plante tropicale",
+        "desc": "Trop d’eau est le moyen le plus rapide de la faire pourrir."
+      },
+      {
+        "titre": "La laisser dans un pot sans trou",
+        "desc": "Même increvable, elle a ses limites."
+      }
     ],
     "solution": {
       "titre": "Substrat très drainant",
       "desc": "Utiliser mélange cactus avec sable ou perlite."
+    },
+    "tags": {
+      "lumiere": "faible",
+      "eau": "faible",
+      "entretien": "facile"
+    },
+    "toxicite": {
+      "animaux": false,
+      "humains": "aucune"
     }
   },
   {
@@ -319,29 +687,68 @@
     "usage": "intérieur lumineux",
     "saison_reference": "printemps été",
     "image": "assets/images/pexels-jardindeneko-31964235.jpg",
-    "chips": ["feuillage graphique", "tropicale", "exigeante"],
+    "chips": [
+      "feuillage graphique",
+      "tropicale",
+      "exigeante"
+    ],
     "intro": "Plante spectaculaire aux feuilles nervurées. Demande lumière et humidité.",
     "arrosage": [
-      {"pot": "12 cm", "dose": "20 cl", "freq": "tous les 5 jours"},
-      {"pot": "18 cm", "dose": "40 cl", "freq": "tous les 6 jours"}
+      {
+        "pot": "12 cm",
+        "dose": "20 cl",
+        "freq": "tous les 5 jours"
+      },
+      {
+        "pot": "18 cm",
+        "dose": "40 cl",
+        "freq": "tous les 6 jours"
+      }
     ],
     "ajustements": [
-      {"titre": "Hiver", "desc": "Réduire arrosage de 40%."},
-      {"titre": "Air sec", "desc": "Augmenter humidité de 25%."}
+      {
+        "titre": "Hiver",
+        "desc": "Réduire arrosage de 40%."
+      },
+      {
+        "titre": "Air sec",
+        "desc": "Augmenter humidité de 25%."
+      }
     ],
     "lumiere": "Lumière vive indirecte.",
     "temperature": "20 à 28°C.",
     "sos": [
-      {"q": "Feuilles qui jaunissent", "a": "Excès d’eau → réduire arrosage."},
-      {"q": "Feuilles qui tombent", "a": "Choc thermique → stabiliser environnement."}
+      {
+        "q": "Feuilles qui jaunissent",
+        "a": "Excès d’eau → réduire arrosage."
+      },
+      {
+        "q": "Feuilles qui tombent",
+        "a": "Choc thermique → stabiliser environnement."
+      }
     ],
     "erreurs": [
-      {"titre": "La laisser au froid la nuit", "desc": "L’alocasia réagit vite aux variations et peut perdre des feuilles."},
-      {"titre": "Confondre humidité de l’air et humidité du sol", "desc": "Elle aime l’air humide, pas les racines noyées."}
+      {
+        "titre": "La laisser au froid la nuit",
+        "desc": "L’alocasia réagit vite aux variations et peut perdre des feuilles."
+      },
+      {
+        "titre": "Confondre humidité de l’air et humidité du sol",
+        "desc": "Elle aime l’air humide, pas les racines noyées."
+      }
     ],
     "solution": {
       "titre": "Drainage + chaleur",
       "desc": "Pot percé + substrat aéré + éviter le froid."
+    },
+    "tags": {
+      "lumiere": "forte",
+      "eau": "faible",
+      "entretien": "exigeant"
+    },
+    "toxicite": {
+      "animaux": true,
+      "humains": "legere"
     }
   },
   {
@@ -353,29 +760,68 @@
     "usage": "intérieur lumineux",
     "saison_reference": "toute saison",
     "image": "assets/images/pexels-plantsandgraphics-7180559.jpg",
-    "chips": ["design", "facile", "bouturable"],
+    "chips": [
+      "design",
+      "facile",
+      "bouturable"
+    ],
     "intro": "Plante graphique aux feuilles rondes. Facile à multiplier et à entretenir.",
     "arrosage": [
-      {"pot": "12 cm", "dose": "15 cl", "freq": "tous les 6 jours"},
-      {"pot": "18 cm", "dose": "30 cl", "freq": "tous les 7 jours"}
+      {
+        "pot": "12 cm",
+        "dose": "15 cl",
+        "freq": "tous les 6 jours"
+      },
+      {
+        "pot": "18 cm",
+        "dose": "30 cl",
+        "freq": "tous les 7 jours"
+      }
     ],
     "ajustements": [
-      {"titre": "Faible lumière", "desc": "Espacer arrosage de 20%."},
-      {"titre": "Chaleur", "desc": "Augmenter fréquence de 15%."}
+      {
+        "titre": "Faible lumière",
+        "desc": "Espacer arrosage de 20%."
+      },
+      {
+        "titre": "Chaleur",
+        "desc": "Augmenter fréquence de 15%."
+      }
     ],
     "lumiere": "Lumière vive indirecte.",
     "temperature": "18 à 26°C.",
     "sos": [
-      {"q": "Feuilles tombantes", "a": "Manque d’eau → arroser légèrement."},
-      {"q": "Feuilles jaunes", "a": "Excès d’eau → réduire de 30%."}
+      {
+        "q": "Feuilles tombantes",
+        "a": "Manque d’eau → arroser légèrement."
+      },
+      {
+        "q": "Feuilles jaunes",
+        "a": "Excès d’eau → réduire de 30%."
+      }
     ],
     "erreurs": [
-      {"titre": "La laisser pousser d’un seul côté", "desc": "Sans rotation hebdomadaire, elle se déforme vite."},
-      {"titre": "Arroser avant que la surface sèche", "desc": "Le pilea aime un peu de respiration entre deux apports."}
+      {
+        "titre": "La laisser pousser d’un seul côté",
+        "desc": "Sans rotation hebdomadaire, elle se déforme vite."
+      },
+      {
+        "titre": "Arroser avant que la surface sèche",
+        "desc": "Le pilea aime un peu de respiration entre deux apports."
+      }
     ],
     "solution": {
       "titre": "Rotation régulière",
       "desc": "Tourner la plante chaque semaine pour une croissance homogène."
+    },
+    "tags": {
+      "lumiere": "forte",
+      "eau": "faible",
+      "entretien": "facile"
+    },
+    "toxicite": {
+      "animaux": false,
+      "humains": "aucune"
     }
   },
   {
@@ -387,29 +833,68 @@
     "usage": "intérieur lumineux à mi-ombre",
     "saison_reference": "toute saison",
     "image": "assets/images/pexels-phiraphonsrithakae-10620419.jpg",
-    "chips": ["retombante", "facile", "tropicale"],
+    "chips": [
+      "retombante",
+      "facile",
+      "tropicale"
+    ],
     "intro": "Plante retombante très simple à vivre. Elle tolère la lumière moyenne mais pousse mieux près d’une fenêtre.",
     "arrosage": [
-      {"pot": "12 cm", "dose": "14 cl", "freq": "tous les 6 jours"},
-      {"pot": "18 cm", "dose": "28 cl", "freq": "tous les 7 jours"}
+      {
+        "pot": "12 cm",
+        "dose": "14 cl",
+        "freq": "tous les 6 jours"
+      },
+      {
+        "pot": "18 cm",
+        "dose": "28 cl",
+        "freq": "tous les 7 jours"
+      }
     ],
     "ajustements": [
-      {"titre": "Lumière faible", "desc": "Réduire la dose de 20% et espacer de 20%."},
-      {"titre": "Température > 26°C", "desc": "Augmenter la fréquence de 20%."}
+      {
+        "titre": "Lumière faible",
+        "desc": "Réduire la dose de 20% et espacer de 20%."
+      },
+      {
+        "titre": "Température > 26°C",
+        "desc": "Augmenter la fréquence de 20%."
+      }
     ],
     "lumiere": "Lumière indirecte. Supporte la mi-ombre mais croissance plus lente.",
     "temperature": "18 à 27°C.",
     "sos": [
-      {"q": "Feuilles jaunes", "a": "Excès d’eau → réduire l’arrosage de 30%."},
-      {"q": "Tiges longues et clairsemées", "a": "Manque de lumière → rapprocher d’une fenêtre."}
+      {
+        "q": "Feuilles jaunes",
+        "a": "Excès d’eau → réduire l’arrosage de 30%."
+      },
+      {
+        "q": "Tiges longues et clairsemées",
+        "a": "Manque de lumière → rapprocher d’une fenêtre."
+      }
     ],
     "erreurs": [
-      {"titre": "Couper trop rarement", "desc": "Une taille légère aide à garder une plante dense et pas juste trois lianes tristes."},
-      {"titre": "Laisser les tiges dans un coin sombre", "desc": "La croissance devient vite fine et déséquilibrée."}
+      {
+        "titre": "Couper trop rarement",
+        "desc": "Une taille légère aide à garder une plante dense et pas juste trois lianes tristes."
+      },
+      {
+        "titre": "Laisser les tiges dans un coin sombre",
+        "desc": "La croissance devient vite fine et déséquilibrée."
+      }
     ],
     "solution": {
       "titre": "Substrat léger",
       "desc": "Mélange 70% terreau plantes vertes et 30% perlite pour garder un sol aéré."
+    },
+    "tags": {
+      "lumiere": "moyenne",
+      "eau": "faible",
+      "entretien": "facile"
+    },
+    "toxicite": {
+      "animaux": true,
+      "humains": "legere"
     }
   },
   {
@@ -421,29 +906,68 @@
     "usage": "intérieur lumineux",
     "saison_reference": "toute saison",
     "image": "assets/images/pexels-endah-widiarti-434389214-15597565.jpg",
-    "chips": ["facile", "retombante", "débutant"],
+    "chips": [
+      "facile",
+      "retombante",
+      "débutant"
+    ],
     "intro": "Plante généreuse et simple. Elle pousse vite si la lumière est correcte et l’air pas trop sec.",
     "arrosage": [
-      {"pot": "12 cm", "dose": "16 cl", "freq": "tous les 5 jours"},
-      {"pot": "18 cm", "dose": "30 cl", "freq": "tous les 6 jours"}
+      {
+        "pot": "12 cm",
+        "dose": "16 cl",
+        "freq": "tous les 5 jours"
+      },
+      {
+        "pot": "18 cm",
+        "dose": "30 cl",
+        "freq": "tous les 6 jours"
+      }
     ],
     "ajustements": [
-      {"titre": "Air sec", "desc": "Augmenter l’humidité ambiante de 20%."},
-      {"titre": "Lumière faible", "desc": "Réduire la dose de 20%."}
+      {
+        "titre": "Air sec",
+        "desc": "Augmenter l’humidité ambiante de 20%."
+      },
+      {
+        "titre": "Lumière faible",
+        "desc": "Réduire la dose de 20%."
+      }
     ],
     "lumiere": "Lumière vive indirecte. Tolère la lumière moyenne.",
     "temperature": "18 à 26°C.",
     "sos": [
-      {"q": "Pointes brunes", "a": "Air trop sec → augmenter l’humidité ambiante et éloigner d’un radiateur."},
-      {"q": "Feuilles jaunes", "a": "Excès d’eau → réduire la dose de 25%."}
+      {
+        "q": "Pointes brunes",
+        "a": "Air trop sec → augmenter l’humidité ambiante et éloigner d’un radiateur."
+      },
+      {
+        "q": "Feuilles jaunes",
+        "a": "Excès d’eau → réduire la dose de 25%."
+      }
     ],
     "erreurs": [
-      {"titre": "Le mettre au-dessus d’un radiateur", "desc": "Les pointes sèchent vite dans un air trop chaud."},
-      {"titre": "Laisser les rejets s’entasser trop longtemps", "desc": "La plante s’épuise plus vite quand le pot devient trop serré."}
+      {
+        "titre": "Le mettre au-dessus d’un radiateur",
+        "desc": "Les pointes sèchent vite dans un air trop chaud."
+      },
+      {
+        "titre": "Laisser les rejets s’entasser trop longtemps",
+        "desc": "La plante s’épuise plus vite quand le pot devient trop serré."
+      }
     ],
     "solution": {
       "titre": "Arrosage régulier sans excès",
       "desc": "Maintenir un substrat légèrement humide sans laisser d’eau stagner dans la soucoupe."
+    },
+    "tags": {
+      "lumiere": "forte",
+      "eau": "moderee",
+      "entretien": "facile"
+    },
+    "toxicite": {
+      "animaux": false,
+      "humains": "aucune"
     }
   },
   {
@@ -455,29 +979,68 @@
     "usage": "intérieur très lumineux",
     "saison_reference": "toute saison",
     "image": "assets/images/pexels-elizabeth-ntalalai-875281533-36687266.jpg",
-    "chips": ["plante grasse", "soin", "faible arrosage"],
+    "chips": [
+      "plante grasse",
+      "soin",
+      "faible arrosage"
+    ],
     "intro": "Plante grasse facile si elle reçoit beaucoup de lumière et très peu d’eau.",
     "arrosage": [
-      {"pot": "12 cm", "dose": "8 cl", "freq": "tous les 12 jours"},
-      {"pot": "18 cm", "dose": "18 cl", "freq": "tous les 15 jours"}
+      {
+        "pot": "12 cm",
+        "dose": "8 cl",
+        "freq": "tous les 12 jours"
+      },
+      {
+        "pot": "18 cm",
+        "dose": "18 cl",
+        "freq": "tous les 15 jours"
+      }
     ],
     "ajustements": [
-      {"titre": "Température > 28°C", "desc": "Augmenter la fréquence de 15%."},
-      {"titre": "Lumière faible", "desc": "Espacer la fréquence de 20%."}
+      {
+        "titre": "Température > 28°C",
+        "desc": "Augmenter la fréquence de 15%."
+      },
+      {
+        "titre": "Lumière faible",
+        "desc": "Espacer la fréquence de 20%."
+      }
     ],
     "lumiere": "Plein soleil doux ou lumière très vive.",
     "temperature": "18 à 30°C.",
     "sos": [
-      {"q": "Feuilles molles", "a": "Excès d’eau → stopper l’arrosage 10 jours puis réduire de 30%."},
-      {"q": "Feuilles fines et pâles", "a": "Manque de lumière → rapprocher d’une fenêtre très lumineuse."}
+      {
+        "q": "Feuilles molles",
+        "a": "Excès d’eau → stopper l’arrosage 10 jours puis réduire de 30%."
+      },
+      {
+        "q": "Feuilles fines et pâles",
+        "a": "Manque de lumière → rapprocher d’une fenêtre très lumineuse."
+      }
     ],
     "erreurs": [
-      {"titre": "La mettre dans un terreau universel compact", "desc": "Le drainage médiocre augmente fortement le risque de pourriture."},
-      {"titre": "Arroser comme une plante verte", "desc": "L’aloe stocke déjà de l’eau dans ses feuilles."}
+      {
+        "titre": "La mettre dans un terreau universel compact",
+        "desc": "Le drainage médiocre augmente fortement le risque de pourriture."
+      },
+      {
+        "titre": "Arroser comme une plante verte",
+        "desc": "L’aloe stocke déjà de l’eau dans ses feuilles."
+      }
     ],
     "solution": {
       "titre": "Mélange spécial cactus",
       "desc": "Utiliser un substrat minéral très drainant pour garder les racines au sec."
+    },
+    "tags": {
+      "lumiere": "forte",
+      "eau": "faible",
+      "entretien": "modere"
+    },
+    "toxicite": {
+      "animaux": false,
+      "humains": "aucune"
     }
   },
   {
@@ -489,29 +1052,68 @@
     "usage": "intérieur lumineux",
     "saison_reference": "toute saison",
     "image": "assets/images/pexels-mtyutina-8458248.jpg",
-    "chips": ["palmier d’intérieur", "feuillage léger", "ambiance tropicale"],
+    "chips": [
+      "palmier d’intérieur",
+      "feuillage léger",
+      "ambiance tropicale"
+    ],
     "intro": "Palmier d’intérieur apprécié pour son feuillage souple. Il aime la lumière et déteste l’air sec.",
     "arrosage": [
-      {"pot": "17 cm", "dose": "25 cl", "freq": "tous les 5 jours"},
-      {"pot": "24 cm", "dose": "45 cl", "freq": "tous les 6 jours"}
+      {
+        "pot": "17 cm",
+        "dose": "25 cl",
+        "freq": "tous les 5 jours"
+      },
+      {
+        "pot": "24 cm",
+        "dose": "45 cl",
+        "freq": "tous les 6 jours"
+      }
     ],
     "ajustements": [
-      {"titre": "Air sec", "desc": "Augmenter l’humidité ambiante de 20%."},
-      {"titre": "Pièce fraîche", "desc": "Réduire la dose de 20%."}
+      {
+        "titre": "Air sec",
+        "desc": "Augmenter l’humidité ambiante de 20%."
+      },
+      {
+        "titre": "Pièce fraîche",
+        "desc": "Réduire la dose de 20%."
+      }
     ],
     "lumiere": "Lumière vive indirecte, sans soleil brûlant direct.",
     "temperature": "18 à 26°C.",
     "sos": [
-      {"q": "Pointes brunes", "a": "Air trop sec → augmenter humidité et éloigner du chauffage."},
-      {"q": "Palmes jaunes", "a": "Excès d’eau → réduire la dose de 25% et vérifier le drainage."}
+      {
+        "q": "Pointes brunes",
+        "a": "Air trop sec → augmenter humidité et éloigner du chauffage."
+      },
+      {
+        "q": "Palmes jaunes",
+        "a": "Excès d’eau → réduire la dose de 25% et vérifier le drainage."
+      }
     ],
     "erreurs": [
-      {"titre": "Le coller contre une baie très chaude", "desc": "Le soleil brûlant direct peut jaunir les palmes."},
-      {"titre": "Ignorer l’air sec en hiver", "desc": "Les pointes brunissent vite quand le chauffage tourne."}
+      {
+        "titre": "Le coller contre une baie très chaude",
+        "desc": "Le soleil brûlant direct peut jaunir les palmes."
+      },
+      {
+        "titre": "Ignorer l’air sec en hiver",
+        "desc": "Les pointes brunissent vite quand le chauffage tourne."
+      }
     ],
     "solution": {
       "titre": "Humidité renforcée",
       "desc": "Placer la plante loin des radiateurs et maintenir une ambiance plus humide."
+    },
+    "tags": {
+      "lumiere": "forte",
+      "eau": "moderee",
+      "entretien": "modere"
+    },
+    "toxicite": {
+      "animaux": false,
+      "humains": "aucune"
     }
   },
   {
@@ -523,29 +1125,68 @@
     "usage": "intérieur lumineux à mi-ombre",
     "saison_reference": "toute saison",
     "image": "assets/images/pexels-sanjukta-1128603713-29414867.jpg",
-    "chips": ["palmier élégant", "résistant", "faible entretien"],
+    "chips": [
+      "palmier élégant",
+      "résistant",
+      "faible entretien"
+    ],
     "intro": "Palmier d’intérieur très résistant. Supporte les oublis et une lumière moyenne.",
     "arrosage": [
-      {"pot": "20 cm", "dose": "30 cl", "freq": "tous les 7 jours"},
-      {"pot": "30 cm", "dose": "60 cl", "freq": "tous les 8 jours"}
+      {
+        "pot": "20 cm",
+        "dose": "30 cl",
+        "freq": "tous les 7 jours"
+      },
+      {
+        "pot": "30 cm",
+        "dose": "60 cl",
+        "freq": "tous les 8 jours"
+      }
     ],
     "ajustements": [
-      {"titre": "Air sec", "desc": "Augmenter humidité ambiante de 20%."},
-      {"titre": "Faible lumière", "desc": "Réduire dose de 20%."}
+      {
+        "titre": "Air sec",
+        "desc": "Augmenter humidité ambiante de 20%."
+      },
+      {
+        "titre": "Faible lumière",
+        "desc": "Réduire dose de 20%."
+      }
     ],
     "lumiere": "Lumière indirecte, tolère la mi-ombre.",
     "temperature": "18 à 26°C.",
     "sos": [
-      {"q": "Pointes brunes", "a": "Air trop sec → augmenter humidité."},
-      {"q": "Feuilles jaunes", "a": "Excès d’eau → réduire arrosage de 30%."}
+      {
+        "q": "Pointes brunes",
+        "a": "Air trop sec → augmenter humidité."
+      },
+      {
+        "q": "Feuilles jaunes",
+        "a": "Excès d’eau → réduire arrosage de 30%."
+      }
     ],
     "erreurs": [
-      {"titre": "Le traiter comme un areca gourmand en eau", "desc": "Le kentia préfère un substrat légèrement sec entre deux apports."},
-      {"titre": "Le mettre dans un passage froid", "desc": "Les courants d’air abîment progressivement son feuillage."}
+      {
+        "titre": "Le traiter comme un areca gourmand en eau",
+        "desc": "Le kentia préfère un substrat légèrement sec entre deux apports."
+      },
+      {
+        "titre": "Le mettre dans un passage froid",
+        "desc": "Les courants d’air abîment progressivement son feuillage."
+      }
     ],
     "solution": {
       "titre": "Arrosage modéré",
       "desc": "Toujours laisser sécher légèrement le substrat entre deux arrosages."
+    },
+    "tags": {
+      "lumiere": "moyenne",
+      "eau": "faible",
+      "entretien": "modere"
+    },
+    "toxicite": {
+      "animaux": false,
+      "humains": "aucune"
     }
   },
   {
@@ -557,29 +1198,68 @@
     "usage": "intérieur sombre",
     "saison_reference": "toute saison",
     "image": "assets/images/pexels-julia-k-550489804-27677059.jpg",
-    "chips": ["ultra résistante", "faible lumière", "débutant"],
+    "chips": [
+      "ultra résistante",
+      "faible lumière",
+      "débutant"
+    ],
     "intro": "Plante extrêmement robuste. Parfaite pour les pièces peu lumineuses.",
     "arrosage": [
-      {"pot": "14 cm", "dose": "10 cl", "freq": "tous les 12 jours"},
-      {"pot": "20 cm", "dose": "25 cl", "freq": "tous les 15 jours"}
+      {
+        "pot": "14 cm",
+        "dose": "10 cl",
+        "freq": "tous les 12 jours"
+      },
+      {
+        "pot": "20 cm",
+        "dose": "25 cl",
+        "freq": "tous les 15 jours"
+      }
     ],
     "ajustements": [
-      {"titre": "Lumière faible", "desc": "Espacer la fréquence de 30%."},
-      {"titre": "Chaleur > 26°C", "desc": "Augmenter fréquence de 15%."}
+      {
+        "titre": "Lumière faible",
+        "desc": "Espacer la fréquence de 30%."
+      },
+      {
+        "titre": "Chaleur > 26°C",
+        "desc": "Augmenter fréquence de 15%."
+      }
     ],
     "lumiere": "Tolère lumière faible à moyenne.",
     "temperature": "18 à 28°C.",
     "sos": [
-      {"q": "Tiges molles", "a": "Excès d’eau → stopper arrosage 10 jours."},
-      {"q": "Feuilles ternes", "a": "Manque de lumière → déplacer vers zone plus claire."}
+      {
+        "q": "Tiges molles",
+        "a": "Excès d’eau → stopper arrosage 10 jours."
+      },
+      {
+        "q": "Feuilles ternes",
+        "a": "Manque de lumière → déplacer vers zone plus claire."
+      }
     ],
     "erreurs": [
-      {"titre": "Croire qu’elle aime l’eau parce qu’elle est brillante", "desc": "Ses tiges stockent déjà beaucoup de réserve."},
-      {"titre": "Arroser après chaque petit affaissement", "desc": "La reprise est lente, inutile de surcorriger."}
+      {
+        "titre": "Croire qu’elle aime l’eau parce qu’elle est brillante",
+        "desc": "Ses tiges stockent déjà beaucoup de réserve."
+      },
+      {
+        "titre": "Arroser après chaque petit affaissement",
+        "desc": "La reprise est lente, inutile de surcorriger."
+      }
     ],
     "solution": {
       "titre": "Arrosage minimal",
       "desc": "Toujours attendre que la terre soit totalement sèche."
+    },
+    "tags": {
+      "lumiere": "faible",
+      "eau": "faible",
+      "entretien": "modere"
+    },
+    "toxicite": {
+      "animaux": false,
+      "humains": "aucune"
     }
   },
   {
@@ -591,29 +1271,68 @@
     "usage": "intérieur lumineux indirect",
     "saison_reference": "toute saison",
     "image": "assets/images/pexels-pexlao-29268310.jpg",
-    "chips": ["floraison blanche", "plante facile", "dépolluante"],
+    "chips": [
+      "floraison blanche",
+      "plante facile",
+      "dépolluante"
+    ],
     "intro": "Plante expressive : elle indique immédiatement quand elle a soif.",
     "arrosage": [
-      {"pot": "12 cm", "dose": "18 cl", "freq": "tous les 4 jours"},
-      {"pot": "18 cm", "dose": "35 cl", "freq": "tous les 5 jours"}
+      {
+        "pot": "12 cm",
+        "dose": "18 cl",
+        "freq": "tous les 4 jours"
+      },
+      {
+        "pot": "18 cm",
+        "dose": "35 cl",
+        "freq": "tous les 5 jours"
+      }
     ],
     "ajustements": [
-      {"titre": "Chaleur > 25°C", "desc": "Augmenter fréquence de 20%."},
-      {"titre": "Faible lumière", "desc": "Réduire dose de 20%."}
+      {
+        "titre": "Chaleur > 25°C",
+        "desc": "Augmenter fréquence de 20%."
+      },
+      {
+        "titre": "Faible lumière",
+        "desc": "Réduire dose de 20%."
+      }
     ],
     "lumiere": "Lumière indirecte, éviter soleil direct.",
     "temperature": "18 à 26°C.",
     "sos": [
-      {"q": "Feuilles tombantes", "a": "Manque d’eau → arroser immédiatement."},
-      {"q": "Feuilles jaunes", "a": "Excès d’eau → réduire dose de 25%."}
+      {
+        "q": "Feuilles tombantes",
+        "a": "Manque d’eau → arroser immédiatement."
+      },
+      {
+        "q": "Feuilles jaunes",
+        "a": "Excès d’eau → réduire dose de 25%."
+      }
     ],
     "erreurs": [
-      {"titre": "Attendre trop avant d’arroser", "desc": "Le spathiphyllum flanche vite quand le substrat sèche trop."},
-      {"titre": "Le mettre au soleil direct", "desc": "Les feuilles peuvent brûler et jaunir plus vite."}
+      {
+        "titre": "Attendre trop avant d’arroser",
+        "desc": "Le spathiphyllum flanche vite quand le substrat sèche trop."
+      },
+      {
+        "titre": "Le mettre au soleil direct",
+        "desc": "Les feuilles peuvent brûler et jaunir plus vite."
+      }
     ],
     "solution": {
       "titre": "Arrosage régulier",
       "desc": "Maintenir une terre légèrement humide sans excès."
+    },
+    "tags": {
+      "lumiere": "forte",
+      "eau": "elevee",
+      "entretien": "facile"
+    },
+    "toxicite": {
+      "animaux": false,
+      "humains": "aucune"
     }
   },
   {
@@ -625,29 +1344,68 @@
     "usage": "intérieur lumineux",
     "saison_reference": "toute saison",
     "image": "assets/images/pexels-willemijn-doelman-2155820368-36393759 (1).jpg",
-    "chips": ["compacte", "feuilles épaisses", "facile"],
+    "chips": [
+      "compacte",
+      "feuilles épaisses",
+      "facile"
+    ],
     "intro": "Petite plante compacte qui stocke l’eau dans ses feuilles.",
     "arrosage": [
-      {"pot": "10 cm", "dose": "10 cl", "freq": "tous les 7 jours"},
-      {"pot": "14 cm", "dose": "18 cl", "freq": "tous les 8 jours"}
+      {
+        "pot": "10 cm",
+        "dose": "10 cl",
+        "freq": "tous les 7 jours"
+      },
+      {
+        "pot": "14 cm",
+        "dose": "18 cl",
+        "freq": "tous les 8 jours"
+      }
     ],
     "ajustements": [
-      {"titre": "Faible lumière", "desc": "Espacer la fréquence de 20%."},
-      {"titre": "Température > 27°C", "desc": "Augmenter fréquence de 15%."}
+      {
+        "titre": "Faible lumière",
+        "desc": "Espacer la fréquence de 20%."
+      },
+      {
+        "titre": "Température > 27°C",
+        "desc": "Augmenter fréquence de 15%."
+      }
     ],
     "lumiere": "Lumière vive indirecte.",
     "temperature": "18 à 26°C.",
     "sos": [
-      {"q": "Feuilles molles", "a": "Excès d’eau → réduire arrosage de 30%."},
-      {"q": "Feuilles ternes", "a": "Manque de lumière → rapprocher d’une fenêtre."}
+      {
+        "q": "Feuilles molles",
+        "a": "Excès d’eau → réduire arrosage de 30%."
+      },
+      {
+        "q": "Feuilles ternes",
+        "a": "Manque de lumière → rapprocher d’une fenêtre."
+      }
     ],
     "erreurs": [
-      {"titre": "Arroser avant séchage de surface", "desc": "Ses feuilles épaisses montrent qu’elle tolère très bien une petite attente."},
-      {"titre": "La placer dans une pièce froide", "desc": "Le développement ralentit vite et les excès d’eau deviennent plus risqués."}
+      {
+        "titre": "Arroser avant séchage de surface",
+        "desc": "Ses feuilles épaisses montrent qu’elle tolère très bien une petite attente."
+      },
+      {
+        "titre": "La placer dans une pièce froide",
+        "desc": "Le développement ralentit vite et les excès d’eau deviennent plus risqués."
+      }
     ],
     "solution": {
       "titre": "Substrat drainant",
       "desc": "Ajouter perlite pour éviter l’humidité stagnante."
+    },
+    "tags": {
+      "lumiere": "forte",
+      "eau": "faible",
+      "entretien": "facile"
+    },
+    "toxicite": {
+      "animaux": false,
+      "humains": "aucune"
     }
   },
   {
@@ -659,29 +1417,68 @@
     "usage": "intérieur lumineux ou balcon",
     "saison_reference": "été",
     "image": "assets/images/pexels-didsss-13995284.jpg",
-    "chips": ["aromatique", "rapide", "cuisine"],
+    "chips": [
+      "aromatique",
+      "rapide",
+      "cuisine"
+    ],
     "intro": "Plante gourmande en eau et en lumière. Très sensible au froid.",
     "arrosage": [
-      {"pot": "12 cm", "dose": "20 cl", "freq": "tous les 2 jours"},
-      {"pot": "18 cm", "dose": "35 cl", "freq": "tous les 2 jours"}
+      {
+        "pot": "12 cm",
+        "dose": "20 cl",
+        "freq": "tous les 2 jours"
+      },
+      {
+        "pot": "18 cm",
+        "dose": "35 cl",
+        "freq": "tous les 2 jours"
+      }
     ],
     "ajustements": [
-      {"titre": "Chaleur > 28°C", "desc": "Arroser tous les jours avec +10% d’eau."},
-      {"titre": "Faible lumière", "desc": "Réduire dose de 20%."}
+      {
+        "titre": "Chaleur > 28°C",
+        "desc": "Arroser tous les jours avec +10% d’eau."
+      },
+      {
+        "titre": "Faible lumière",
+        "desc": "Réduire dose de 20%."
+      }
     ],
     "lumiere": "Minimum 6h de soleil direct.",
     "temperature": "20 à 30°C. Meurt en dessous de 10°C.",
     "sos": [
-      {"q": "Feuilles molles", "a": "Manque d’eau → arroser immédiatement."},
-      {"q": "Tiges noires", "a": "Excès d’eau → réduire arrosage et améliorer drainage."}
+      {
+        "q": "Feuilles molles",
+        "a": "Manque d’eau → arroser immédiatement."
+      },
+      {
+        "q": "Tiges noires",
+        "a": "Excès d’eau → réduire arrosage et améliorer drainage."
+      }
     ],
     "erreurs": [
-      {"titre": "Le laisser dehors la nuit au printemps", "desc": "Le basilic déteste le froid et peut s’effondrer très vite."},
-      {"titre": "Le laisser fleurir trop tôt", "desc": "La plante se concentre sur les fleurs et produit moins de feuilles."}
+      {
+        "titre": "Le laisser dehors la nuit au printemps",
+        "desc": "Le basilic déteste le froid et peut s’effondrer très vite."
+      },
+      {
+        "titre": "Le laisser fleurir trop tôt",
+        "desc": "La plante se concentre sur les fleurs et produit moins de feuilles."
+      }
     ],
     "solution": {
       "titre": "Arrosage fréquent",
       "desc": "Maintenir la terre humide en continu sans la détremper."
+    },
+    "tags": {
+      "lumiere": "forte",
+      "eau": "elevee",
+      "entretien": "modere"
+    },
+    "toxicite": {
+      "animaux": false,
+      "humains": "aucune"
     }
   },
   {
@@ -693,29 +1490,68 @@
     "usage": "extérieur ou balcon",
     "saison_reference": "printemps-été",
     "image": "assets/images/pexels-gediel-c-araujo-jr-1861560-5246643.jpg",
-    "chips": ["envahissante", "fraîcheur", "facile"],
+    "chips": [
+      "envahissante",
+      "fraîcheur",
+      "facile"
+    ],
     "intro": "Plante très vigoureuse. Demande beaucoup d’eau et s’étend rapidement.",
     "arrosage": [
-      {"pot": "14 cm", "dose": "25 cl", "freq": "tous les 2 jours"},
-      {"pot": "20 cm", "dose": "45 cl", "freq": "tous les 2 jours"}
+      {
+        "pot": "14 cm",
+        "dose": "25 cl",
+        "freq": "tous les 2 jours"
+      },
+      {
+        "pot": "20 cm",
+        "dose": "45 cl",
+        "freq": "tous les 2 jours"
+      }
     ],
     "ajustements": [
-      {"titre": "Soleil direct", "desc": "Augmenter fréquence de 20%."},
-      {"titre": "Temps humide", "desc": "Réduire fréquence de 20%."}
+      {
+        "titre": "Soleil direct",
+        "desc": "Augmenter fréquence de 20%."
+      },
+      {
+        "titre": "Temps humide",
+        "desc": "Réduire fréquence de 20%."
+      }
     ],
     "lumiere": "Soleil ou mi-ombre.",
     "temperature": "15 à 30°C.",
     "sos": [
-      {"q": "Feuilles molles", "a": "Manque d’eau → arroser immédiatement."},
-      {"q": "Feuilles jaunissantes", "a": "Excès d’eau → réduire arrosage."}
+      {
+        "q": "Feuilles molles",
+        "a": "Manque d’eau → arroser immédiatement."
+      },
+      {
+        "q": "Feuilles jaunissantes",
+        "a": "Excès d’eau → réduire arrosage."
+      }
     ],
     "erreurs": [
-      {"titre": "La planter avec d’autres aromatiques dans le même bac", "desc": "La menthe prend vite toute la place."},
-      {"titre": "Laisser sécher complètement le pot", "desc": "Le feuillage perd vite sa fraîcheur et sa vigueur."}
+      {
+        "titre": "La planter avec d’autres aromatiques dans le même bac",
+        "desc": "La menthe prend vite toute la place."
+      },
+      {
+        "titre": "Laisser sécher complètement le pot",
+        "desc": "Le feuillage perd vite sa fraîcheur et sa vigueur."
+      }
     ],
     "solution": {
       "titre": "Arrosage constant",
       "desc": "Ne jamais laisser la terre sécher complètement."
+    },
+    "tags": {
+      "lumiere": "forte",
+      "eau": "elevee",
+      "entretien": "facile"
+    },
+    "toxicite": {
+      "animaux": false,
+      "humains": "aucune"
     }
   },
   {
@@ -727,29 +1563,68 @@
     "usage": "extérieur plein soleil",
     "saison_reference": "toute saison",
     "image": "assets/images/pexels-lauripoldre-18737111.jpg",
-    "chips": ["méditerranéen", "sec", "résistant"],
+    "chips": [
+      "méditerranéen",
+      "sec",
+      "résistant"
+    ],
     "intro": "Plante méditerranéenne qui préfère la sécheresse à l’humidité.",
     "arrosage": [
-      {"pot": "12 cm", "dose": "10 cl", "freq": "tous les 7 jours"},
-      {"pot": "18 cm", "dose": "20 cl", "freq": "tous les 8 jours"}
+      {
+        "pot": "12 cm",
+        "dose": "10 cl",
+        "freq": "tous les 7 jours"
+      },
+      {
+        "pot": "18 cm",
+        "dose": "20 cl",
+        "freq": "tous les 8 jours"
+      }
     ],
     "ajustements": [
-      {"titre": "Pluie fréquente", "desc": "Stopper l’arrosage."},
-      {"titre": "Canicule", "desc": "Augmenter fréquence de 15%."}
+      {
+        "titre": "Pluie fréquente",
+        "desc": "Stopper l’arrosage."
+      },
+      {
+        "titre": "Canicule",
+        "desc": "Augmenter fréquence de 15%."
+      }
     ],
     "lumiere": "Plein soleil minimum 6h.",
     "temperature": "10 à 35°C.",
     "sos": [
-      {"q": "Base noire", "a": "Excès d’eau → arrêter arrosage immédiatement."},
-      {"q": "Croissance lente", "a": "Manque de soleil → exposer plein sud."}
+      {
+        "q": "Base noire",
+        "a": "Excès d’eau → arrêter arrosage immédiatement."
+      },
+      {
+        "q": "Croissance lente",
+        "a": "Manque de soleil → exposer plein sud."
+      }
     ],
     "erreurs": [
-      {"titre": "Le cultiver dans une terre lourde", "desc": "Le thym aime les substrats pauvres et drainants."},
-      {"titre": "L’arroser après chaque pluie “par sécurité”", "desc": "Oui, les humains adorent tuer avec de bonnes intentions."}
+      {
+        "titre": "Le cultiver dans une terre lourde",
+        "desc": "Le thym aime les substrats pauvres et drainants."
+      },
+      {
+        "titre": "L’arroser après chaque pluie “par sécurité”",
+        "desc": "Oui, les humains adorent tuer avec de bonnes intentions."
+      }
     ],
     "solution": {
       "titre": "Drainage extrême",
       "desc": "Substrat sableux très drainant obligatoire."
+    },
+    "tags": {
+      "lumiere": "forte",
+      "eau": "faible",
+      "entretien": "modere"
+    },
+    "toxicite": {
+      "animaux": false,
+      "humains": "aucune"
     }
   },
   {
@@ -761,29 +1636,68 @@
     "usage": "extérieur plein soleil",
     "saison_reference": "toute saison",
     "image": "assets/images/pexels-christina99999-30856378.jpg",
-    "chips": ["résistant", "plein soleil", "méditerranéen"],
+    "chips": [
+      "résistant",
+      "plein soleil",
+      "méditerranéen"
+    ],
     "intro": "Plante très résistante adaptée aux environnements secs.",
     "arrosage": [
-      {"pot": "18 cm", "dose": "15 cl", "freq": "tous les 7 jours"},
-      {"pot": "25 cm", "dose": "30 cl", "freq": "tous les 8 jours"}
+      {
+        "pot": "18 cm",
+        "dose": "15 cl",
+        "freq": "tous les 7 jours"
+      },
+      {
+        "pot": "25 cm",
+        "dose": "30 cl",
+        "freq": "tous les 8 jours"
+      }
     ],
     "ajustements": [
-      {"titre": "Pluie fréquente", "desc": "Stopper arrosage."},
-      {"titre": "Chaleur intense", "desc": "Augmenter fréquence de 15%."}
+      {
+        "titre": "Pluie fréquente",
+        "desc": "Stopper arrosage."
+      },
+      {
+        "titre": "Chaleur intense",
+        "desc": "Augmenter fréquence de 15%."
+      }
     ],
     "lumiere": "Plein soleil obligatoire.",
     "temperature": "10 à 35°C.",
     "sos": [
-      {"q": "Feuilles noires", "a": "Excès d’eau → réduire arrosage immédiatement."},
-      {"q": "Croissance faible", "a": "Manque de soleil → exposer plein sud."}
+      {
+        "q": "Feuilles noires",
+        "a": "Excès d’eau → réduire arrosage immédiatement."
+      },
+      {
+        "q": "Croissance faible",
+        "a": "Manque de soleil → exposer plein sud."
+      }
     ],
     "erreurs": [
-      {"titre": "Le placer à l’ombre humide", "desc": "Le romarin y dépérit lentement mais sûrement."},
-      {"titre": "Le tailler dans du vieux bois sec sans prudence", "desc": "La reprise est plus difficile sur les parties très lignifiées."}
+      {
+        "titre": "Le placer à l’ombre humide",
+        "desc": "Le romarin y dépérit lentement mais sûrement."
+      },
+      {
+        "titre": "Le tailler dans du vieux bois sec sans prudence",
+        "desc": "La reprise est plus difficile sur les parties très lignifiées."
+      }
     ],
     "solution": {
       "titre": "Sol sec et drainant",
       "desc": "Utiliser un substrat sableux pour éviter toute humidité stagnante."
+    },
+    "tags": {
+      "lumiere": "forte",
+      "eau": "faible",
+      "entretien": "modere"
+    },
+    "toxicite": {
+      "animaux": false,
+      "humains": "aucune"
     }
   },
   {
@@ -795,29 +1709,68 @@
     "usage": "extérieur ou balcon",
     "saison_reference": "printemps-été",
     "image": "assets/images/pexels-kata-2159885029-36355763.jpg",
-    "chips": ["cuisine", "rapide", "fragile"],
+    "chips": [
+      "cuisine",
+      "rapide",
+      "fragile"
+    ],
     "intro": "Plante fragile qui demande un arrosage régulier et une bonne lumière.",
     "arrosage": [
-      {"pot": "12 cm", "dose": "18 cl", "freq": "tous les 3 jours"},
-      {"pot": "18 cm", "dose": "35 cl", "freq": "tous les 3 jours"}
+      {
+        "pot": "12 cm",
+        "dose": "18 cl",
+        "freq": "tous les 3 jours"
+      },
+      {
+        "pot": "18 cm",
+        "dose": "35 cl",
+        "freq": "tous les 3 jours"
+      }
     ],
     "ajustements": [
-      {"titre": "Chaleur > 28°C", "desc": "Augmenter fréquence de 20%."},
-      {"titre": "Faible lumière", "desc": "Réduire dose de 20%."}
+      {
+        "titre": "Chaleur > 28°C",
+        "desc": "Augmenter fréquence de 20%."
+      },
+      {
+        "titre": "Faible lumière",
+        "desc": "Réduire dose de 20%."
+      }
     ],
     "lumiere": "Lumière vive ou soleil doux.",
     "temperature": "15 à 25°C.",
     "sos": [
-      {"q": "Feuilles molles", "a": "Manque d’eau → arroser immédiatement."},
-      {"q": "Feuilles jaunes", "a": "Excès d’eau → réduire arrosage."}
+      {
+        "q": "Feuilles molles",
+        "a": "Manque d’eau → arroser immédiatement."
+      },
+      {
+        "q": "Feuilles jaunes",
+        "a": "Excès d’eau → réduire arrosage."
+      }
     ],
     "erreurs": [
-      {"titre": "Le laisser cuire au soleil brûlant tout l’après-midi", "desc": "Le persil préfère une lumière vive mais pas une punition solaire."},
-      {"titre": "Récolter tout d’un coup", "desc": "Il repart mieux avec des coupes régulières sur les tiges extérieures."}
+      {
+        "titre": "Le laisser cuire au soleil brûlant tout l’après-midi",
+        "desc": "Le persil préfère une lumière vive mais pas une punition solaire."
+      },
+      {
+        "titre": "Récolter tout d’un coup",
+        "desc": "Il repart mieux avec des coupes régulières sur les tiges extérieures."
+      }
     ],
     "solution": {
       "titre": "Arrosage régulier",
       "desc": "Maintenir la terre humide en continu."
+    },
+    "tags": {
+      "lumiere": "forte",
+      "eau": "elevee",
+      "entretien": "modere"
+    },
+    "toxicite": {
+      "animaux": false,
+      "humains": "aucune"
     }
   },
   {
@@ -829,29 +1782,68 @@
     "usage": "extérieur plein soleil",
     "saison_reference": "été",
     "image": "assets/images/pexels-anna-khomutova-3562984-5781229.jpg",
-    "chips": ["plein soleil", "méditerranéen", "résistant"],
+    "chips": [
+      "plein soleil",
+      "méditerranéen",
+      "résistant"
+    ],
     "intro": "Arbre méditerranéen robuste. Préfère la sécheresse à l’humidité.",
     "arrosage": [
-      {"pot": "25 cm", "dose": "35 cl", "freq": "tous les 6 jours"},
-      {"pot": "40 cm", "dose": "80 cl", "freq": "tous les 7 jours"}
+      {
+        "pot": "25 cm",
+        "dose": "35 cl",
+        "freq": "tous les 6 jours"
+      },
+      {
+        "pot": "40 cm",
+        "dose": "80 cl",
+        "freq": "tous les 7 jours"
+      }
     ],
     "ajustements": [
-      {"titre": "Pluie fréquente", "desc": "Stopper l’arrosage."},
-      {"titre": "Canicule", "desc": "Augmenter fréquence de 20%."}
+      {
+        "titre": "Pluie fréquente",
+        "desc": "Stopper l’arrosage."
+      },
+      {
+        "titre": "Canicule",
+        "desc": "Augmenter fréquence de 20%."
+      }
     ],
     "lumiere": "Plein soleil minimum 8h.",
     "temperature": "Supporte -5°C à 35°C.",
     "sos": [
-      {"q": "Feuilles ternes", "a": "Manque de soleil → exposer plein sud."},
-      {"q": "Feuilles qui tombent", "a": "Excès d’eau → réduire arrosage de 30%."}
+      {
+        "q": "Feuilles ternes",
+        "a": "Manque de soleil → exposer plein sud."
+      },
+      {
+        "q": "Feuilles qui tombent",
+        "a": "Excès d’eau → réduire arrosage de 30%."
+      }
     ],
     "erreurs": [
-      {"titre": "Le rentrer trop souvent puis le ressortir", "desc": "Les changements répétés de conditions le fatiguent."},
-      {"titre": "Utiliser un terreau trop riche et compact", "desc": "L’olivier préfère un sol drainant, pas une éponge nourricière."}
+      {
+        "titre": "Le rentrer trop souvent puis le ressortir",
+        "desc": "Les changements répétés de conditions le fatiguent."
+      },
+      {
+        "titre": "Utiliser un terreau trop riche et compact",
+        "desc": "L’olivier préfère un sol drainant, pas une éponge nourricière."
+      }
     ],
     "solution": {
       "titre": "Drainage obligatoire",
       "desc": "Substrat très drainant avec 40% de sable ou graviers."
+    },
+    "tags": {
+      "lumiere": "forte",
+      "eau": "faible",
+      "entretien": "modere"
+    },
+    "toxicite": {
+      "animaux": false,
+      "humains": "aucune"
     }
   },
   {
@@ -863,29 +1855,68 @@
     "usage": "extérieur ensoleillé ou véranda",
     "saison_reference": "printemps-été",
     "image": "assets/images/pexels-egor-litvinov-350217067-19042802.jpg",
-    "chips": ["fruitier", "soleil", "exigeant"],
+    "chips": [
+      "fruitier",
+      "soleil",
+      "exigeant"
+    ],
     "intro": "Arbre fruitier gourmand en eau et en nutriments. Très sensible aux oublis.",
     "arrosage": [
-      {"pot": "30 cm", "dose": "60 cl", "freq": "tous les 3 jours"},
-      {"pot": "50 cm", "dose": "120 cl", "freq": "tous les 3 jours"}
+      {
+        "pot": "30 cm",
+        "dose": "60 cl",
+        "freq": "tous les 3 jours"
+      },
+      {
+        "pot": "50 cm",
+        "dose": "120 cl",
+        "freq": "tous les 3 jours"
+      }
     ],
     "ajustements": [
-      {"titre": "Température > 30°C", "desc": "Arroser tous les 2 jours avec +20%."},
-      {"titre": "Temps humide", "desc": "Réduire fréquence de 20%."}
+      {
+        "titre": "Température > 30°C",
+        "desc": "Arroser tous les 2 jours avec +20%."
+      },
+      {
+        "titre": "Temps humide",
+        "desc": "Réduire fréquence de 20%."
+      }
     ],
     "lumiere": "Plein soleil minimum 6h.",
     "temperature": "10 à 35°C. Sensible au gel.",
     "sos": [
-      {"q": "Feuilles qui s’enroulent", "a": "Manque d’eau → augmenter arrosage de 30%."},
-      {"q": "Feuilles jaunes", "a": "Carence ou excès d’eau → vérifier drainage et fertilisation."}
+      {
+        "q": "Feuilles qui s’enroulent",
+        "a": "Manque d’eau → augmenter arrosage de 30%."
+      },
+      {
+        "q": "Feuilles jaunes",
+        "a": "Carence ou excès d’eau → vérifier drainage et fertilisation."
+      }
     ],
     "erreurs": [
-      {"titre": "Oublier l’engrais en saison", "desc": "Le citronnier en pot épuise vite son substrat."},
-      {"titre": "Le laisser prendre le gel", "desc": "Même bref, le froid peut abîmer feuillage, boutons et jeunes fruits."}
+      {
+        "titre": "Oublier l’engrais en saison",
+        "desc": "Le citronnier en pot épuise vite son substrat."
+      },
+      {
+        "titre": "Le laisser prendre le gel",
+        "desc": "Même bref, le froid peut abîmer feuillage, boutons et jeunes fruits."
+      }
     ],
     "solution": {
       "titre": "Arrosage régulier + engrais",
       "desc": "Apporter engrais agrumes toutes les 2 semaines en saison."
+    },
+    "tags": {
+      "lumiere": "forte",
+      "eau": "elevee",
+      "entretien": "modere"
+    },
+    "toxicite": {
+      "animaux": false,
+      "humains": "aucune"
     }
   },
   {
@@ -897,29 +1928,68 @@
     "usage": "extérieur plein soleil",
     "saison_reference": "été",
     "image": "assets/images/pexels-pixabay-248158.jpg",
-    "chips": ["sec", "soleil", "résistante"],
+    "chips": [
+      "sec",
+      "soleil",
+      "résistante"
+    ],
     "intro": "Plante qui préfère sécher plutôt que trop boire.",
     "arrosage": [
-      {"pot": "20 cm", "dose": "20 cl", "freq": "tous les 7 jours"},
-      {"pot": "30 cm", "dose": "40 cl", "freq": "tous les 8 jours"}
+      {
+        "pot": "20 cm",
+        "dose": "20 cl",
+        "freq": "tous les 7 jours"
+      },
+      {
+        "pot": "30 cm",
+        "dose": "40 cl",
+        "freq": "tous les 8 jours"
+      }
     ],
     "ajustements": [
-      {"titre": "Pluie fréquente", "desc": "Stopper arrosage complètement."},
-      {"titre": "Canicule", "desc": "Augmenter fréquence de 15%."}
+      {
+        "titre": "Pluie fréquente",
+        "desc": "Stopper arrosage complètement."
+      },
+      {
+        "titre": "Canicule",
+        "desc": "Augmenter fréquence de 15%."
+      }
     ],
     "lumiere": "Plein soleil obligatoire.",
     "temperature": "10 à 35°C.",
     "sos": [
-      {"q": "Base noire", "a": "Excès d’eau → stopper arrosage immédiatement."},
-      {"q": "Peu de fleurs", "a": "Manque de soleil → déplacer plein sud."}
+      {
+        "q": "Base noire",
+        "a": "Excès d’eau → stopper arrosage immédiatement."
+      },
+      {
+        "q": "Peu de fleurs",
+        "a": "Manque de soleil → déplacer plein sud."
+      }
     ],
     "erreurs": [
-      {"titre": "La planter en terre lourde", "desc": "La lavande déteste les sols qui gardent l’eau."},
-      {"titre": "La tondre trop bas dans le vieux bois", "desc": "La reprise devient plus difficile après une taille trop sévère."}
+      {
+        "titre": "La planter en terre lourde",
+        "desc": "La lavande déteste les sols qui gardent l’eau."
+      },
+      {
+        "titre": "La tondre trop bas dans le vieux bois",
+        "desc": "La reprise devient plus difficile après une taille trop sévère."
+      }
     ],
     "solution": {
       "titre": "Substrat sableux",
       "desc": "Ajouter 50% de sable pour éviter l’humidité stagnante."
+    },
+    "tags": {
+      "lumiere": "forte",
+      "eau": "faible",
+      "entretien": "modere"
+    },
+    "toxicite": {
+      "animaux": false,
+      "humains": "aucune"
     }
   },
   {
@@ -931,29 +2001,68 @@
     "usage": "extérieur ensoleillé",
     "saison_reference": "printemps-été",
     "image": "assets/images/pexels-merictuna-33077713.jpg",
-    "chips": ["floraison", "soleil", "classique"],
+    "chips": [
+      "floraison",
+      "soleil",
+      "classique"
+    ],
     "intro": "Plante exigeante en eau et en nutriments, surtout en période de floraison.",
     "arrosage": [
-      {"pot": "25 cm", "dose": "40 cl", "freq": "tous les 3 jours"},
-      {"pot": "40 cm", "dose": "80 cl", "freq": "tous les 3 jours"}
+      {
+        "pot": "25 cm",
+        "dose": "40 cl",
+        "freq": "tous les 3 jours"
+      },
+      {
+        "pot": "40 cm",
+        "dose": "80 cl",
+        "freq": "tous les 3 jours"
+      }
     ],
     "ajustements": [
-      {"titre": "Chaleur > 30°C", "desc": "Arroser tous les 2 jours."},
-      {"titre": "Temps humide", "desc": "Réduire fréquence de 20%."}
+      {
+        "titre": "Chaleur > 30°C",
+        "desc": "Arroser tous les 2 jours."
+      },
+      {
+        "titre": "Temps humide",
+        "desc": "Réduire fréquence de 20%."
+      }
     ],
     "lumiere": "Plein soleil minimum 6h.",
     "temperature": "10 à 30°C.",
     "sos": [
-      {"q": "Feuilles flétries", "a": "Manque d’eau → arroser immédiatement."},
-      {"q": "Taches noires", "a": "Maladie fongique → traiter rapidement."}
+      {
+        "q": "Feuilles flétries",
+        "a": "Manque d’eau → arroser immédiatement."
+      },
+      {
+        "q": "Taches noires",
+        "a": "Maladie fongique → traiter rapidement."
+      }
     ],
     "erreurs": [
-      {"titre": "Mouiller le feuillage en soirée trop souvent", "desc": "L’humidité prolongée favorise les maladies."},
-      {"titre": "Oublier de nourrir pendant la floraison", "desc": "En pot, le rosier consomme vite ses réserves."}
+      {
+        "titre": "Mouiller le feuillage en soirée trop souvent",
+        "desc": "L’humidité prolongée favorise les maladies."
+      },
+      {
+        "titre": "Oublier de nourrir pendant la floraison",
+        "desc": "En pot, le rosier consomme vite ses réserves."
+      }
     ],
     "solution": {
       "titre": "Arrosage + fertilisation",
       "desc": "Arroser régulièrement et ajouter engrais floraison toutes les 2 semaines."
+    },
+    "tags": {
+      "lumiere": "forte",
+      "eau": "elevee",
+      "entretien": "modere"
+    },
+    "toxicite": {
+      "animaux": false,
+      "humains": "aucune"
     }
   },
   {
@@ -965,29 +2074,68 @@
     "usage": "extérieur mi-ombre",
     "saison_reference": "printemps-été",
     "image": "assets/images/pexels-fewmiracles-497047241-17547722.jpg",
-    "chips": ["floraison abondante", "ombre", "eau"],
+    "chips": [
+      "floraison abondante",
+      "ombre",
+      "eau"
+    ],
     "intro": "Plante gourmande en eau. Déteste les périodes sèches prolongées.",
     "arrosage": [
-      {"pot": "25 cm", "dose": "50 cl", "freq": "tous les 2 jours"},
-      {"pot": "40 cm", "dose": "90 cl", "freq": "tous les 2 jours"}
+      {
+        "pot": "25 cm",
+        "dose": "50 cl",
+        "freq": "tous les 2 jours"
+      },
+      {
+        "pot": "40 cm",
+        "dose": "90 cl",
+        "freq": "tous les 2 jours"
+      }
     ],
     "ajustements": [
-      {"titre": "Chaleur > 28°C", "desc": "Arroser tous les jours."},
-      {"titre": "Temps humide", "desc": "Réduire fréquence de 20%."}
+      {
+        "titre": "Chaleur > 28°C",
+        "desc": "Arroser tous les jours."
+      },
+      {
+        "titre": "Temps humide",
+        "desc": "Réduire fréquence de 20%."
+      }
     ],
     "lumiere": "Mi-ombre, éviter soleil direct l’après-midi.",
     "temperature": "10 à 28°C.",
     "sos": [
-      {"q": "Feuilles molles", "a": "Manque d’eau → arroser immédiatement."},
-      {"q": "Fleurs fanées rapidement", "a": "Manque d’eau → augmenter fréquence de 30%."}
+      {
+        "q": "Feuilles molles",
+        "a": "Manque d’eau → arroser immédiatement."
+      },
+      {
+        "q": "Fleurs fanées rapidement",
+        "a": "Manque d’eau → augmenter fréquence de 30%."
+      }
     ],
     "erreurs": [
-      {"titre": "Le mettre en plein soleil l’après-midi", "desc": "Le feuillage grille vite et la floraison fatigue plus vite."},
-      {"titre": "Laisser sécher le pot plusieurs jours", "desc": "L’hortensia pardonne très peu les oublis prolongés."}
+      {
+        "titre": "Le mettre en plein soleil l’après-midi",
+        "desc": "Le feuillage grille vite et la floraison fatigue plus vite."
+      },
+      {
+        "titre": "Laisser sécher le pot plusieurs jours",
+        "desc": "L’hortensia pardonne très peu les oublis prolongés."
+      }
     ],
     "solution": {
       "titre": "Arrosage abondant",
       "desc": "Maintenir un sol humide en permanence sans stagnation."
+    },
+    "tags": {
+      "lumiere": "forte",
+      "eau": "elevee",
+      "entretien": "modere"
+    },
+    "toxicite": {
+      "animaux": false,
+      "humains": "aucune"
     }
   }
 ]
