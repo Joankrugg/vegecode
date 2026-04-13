@@ -2146,7 +2146,7 @@
     "climat_reference": "climat tempéré intérieur",
     "usage": "intérieur lumineux à mi-ombre",
     "saison_reference": "toute saison",
-    "image": "assets/images/dracaena-marginata.jpg",
+    "image": "assets/images/pexels-cintia-cerpa-dracaena.jpg",
     "chips": ["facile", "résistante", "graphique"],
     "intro": "Plante élancée très résistante, idéale pour structurer un espace sans entretien compliqué.",
     "arrosage": [
@@ -2452,7 +2452,7 @@
     "climat_reference": "climat humide intérieur",
     "usage": "intérieur lumineux indirect",
     "saison_reference": "printemps été",
-    "image": "assets/images/caladium.jpg",
+    "image": "assets/images/feey-caladium-unsplash.jpg",
     "chips": ["coloré", "feuillage décoratif"],
     "intro": "Plante tropicale très décorative mais sensible aux variations d’eau et de lumière.",
     "arrosage": [
@@ -2485,7 +2485,7 @@
     "climat_reference": "climat humide intérieur",
     "usage": "intérieur ombragé",
     "saison_reference": "toute saison",
-    "image": "assets/images/asplenium.jpg",
+    "image": "assets/images/jerome-fougere-unsplash.jpg",
     "chips": ["fougère", "feuillage large", "humidité"],
     "intro": "Fougère tropicale au feuillage ondulé, parfaite pour les ambiances humides et tamisées.",
     "arrosage": [
@@ -2521,7 +2521,7 @@
     "climat_reference": "climat tempéré intérieur",
     "usage": "intérieur sombre",
     "saison_reference": "toute saison",
-    "image": "assets/images/aspidistra.jpg",
+    "image": "assets/images/pexels-sonny-aspidistra.jpg",
     "chips": ["ultra résistante", "ombre", "facile"],
     "intro": "Plante quasi indestructible, idéale pour les environnements difficiles.",
     "arrosage": [
@@ -2554,7 +2554,7 @@
     "climat_reference": "climat humide intérieur",
     "usage": "intérieur lumineux indirect",
     "saison_reference": "toute saison",
-    "image": "assets/images/maranta.jpg",
+    "image": "assets/images/feey-maranta-unsplash.jpg",
     "chips": ["feuillage graphique", "tropicale"],
     "intro": "Plante au feuillage décoratif qui bouge avec la lumière.",
     "arrosage": [
@@ -2588,7 +2588,7 @@
     "climat_reference": "climat humide intérieur",
     "usage": "intérieur ombragé",
     "saison_reference": "toute saison",
-    "image": "assets/images/nephrolepis.jpg",
+    "image": "assets/images/pexels-maya-ali-boston.jpg",
     "chips": ["fougère", "humidité", "retombante"],
     "intro": "Fougère classique au feuillage dense, parfaite pour apporter de la fraîcheur mais exigeante en humidité.",
     "arrosage": [
@@ -2625,7 +2625,7 @@
     "climat_reference": "climat tempéré intérieur",
     "usage": "intérieur lumineux",
     "saison_reference": "toute saison",
-    "image": "assets/images/ficus-ginseng.jpg",
+    "image": "assets/images/pexels-elina-araja-ginseng.jpg",
     "chips": ["bonsaï", "décoratif", "mini arbre"],
     "intro": "Bonsaï accessible avec un tronc sculptural. Demande régularité et lumière.",
     "arrosage": [
@@ -2661,7 +2661,7 @@
     "climat_reference": "climat humide intérieur",
     "usage": "intérieur lumineux indirect",
     "saison_reference": "toute saison",
-    "image": "assets/images/anthurium.jpg",
+    "image": "assets/images/pexels-mariana-de-los-santos-anthurium.jpg",
     "chips": ["fleurie", "tropicale", "décorative"],
     "intro": "Plante tropicale élégante avec floraison durable.",
     "arrosage": [
@@ -2696,7 +2696,7 @@
     "climat_reference": "climat sec intérieur",
     "usage": "intérieur très lumineux",
     "saison_reference": "toute saison",
-    "image": "assets/images/cactus.jpg",
+    "image": "assets/images/pexels-hilaryh-cactus.jpg",
     "chips": ["ultra facile", "sec", "soleil"],
     "intro": "Plante minimaliste qui demande presque rien… sauf de ne pas trop l’aimer.",
     "arrosage": [
@@ -2730,7 +2730,7 @@
     "climat_reference": "climat chaud intérieur",
     "usage": "intérieur très lumineux",
     "saison_reference": "toute saison",
-    "image": "assets/images/croton.jpg",
+    "image": "assets/images/pexels-markus-winkler-croton.jpg",
     "chips": ["coloré", "tropicale", "exigeante"],
     "intro": "Plante tropicale aux couleurs vives, très sensible à son environnement.",
     "arrosage": [
