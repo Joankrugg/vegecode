@@ -37,14 +37,7 @@
 
       try {
         const res = await fetch("data/plantes.json", { cache: "no-store" });
-        if (!res.ok) {
-          throw new Error(`HTTP ${res.status} sur data/plantes.json`);
-        }
-
         const data = await res.json();
-        if (!Array.isArray(data)) {
-          throw new Error("Le JSON chargé n'est pas un tableau.");
-        }
 
         const plante = data.find(p => p && p.slug === slug);
         if (!plante) {
@@ -54,232 +47,160 @@
 
         document.title = `${plante.nom || "Plante"} — mode d’emploi`;
 
-        const metaDesc = document.querySelector('meta[name="description"]');
-        if (metaDesc) {
-          metaDesc.setAttribute(
-            "content",
-            `Conseils concrets pour ${plante.nom || "cette plante"} : arrosage en centilitres, ajustements, diagnostic rapide.`
-          );
-        }
+        // IMAGE
+        const image =
+          (typeof plante.image === "string" && plante.image) ||
+          (plante.image && plante.image.url) ||
+          "assets/images/placeholder.jpg";
 
-        const image = plante.image || "assets/images/placeholder.jpg";
+        // CHIPS
         const chipsHtml = (plante.chips || [])
           .map(c => `<span class="chip">${c}</span>`)
           .join("");
 
+        // BONUS CHIPS
+        const extraChips = `
+          ${plante.difficulte ? `<span class="chip">niveau : ${plante.difficulte}</span>` : ""}
+          ${plante.toxicite?.animaux ? `<span class="chip danger">toxique animaux</span>` : ""}
+        `;
+
+        // ARROSAGE
         const arrosageHtml = (plante.arrosage || [])
-          .map(a => `
-            <tr>
-              <td>${a.pot || ""}</td>
-              <td><strong>${a.dose || ""}</strong></td>
-              <td>${a.freq || ""}</td>
-            </tr>
-          `)
+          .map(a => {
+            if ("pot_cm" in a) {
+              return `
+                <tr>
+                  <td>${a.pot_cm} cm</td>
+                  <td><strong>${a.dose_cl} cl</strong></td>
+                  <td>tous les ${a.freq_jours} jours</td>
+                </tr>
+              `;
+            }
+            return `
+              <tr>
+                <td>${a.pot || ""}</td>
+                <td><strong>${a.dose || ""}</strong></td>
+                <td>${a.freq || ""}</td>
+              </tr>
+            `;
+          })
           .join("");
 
+        // AJUSTEMENTS
         const ajustementsHtml = (plante.ajustements || [])
           .map(a => `
             <p>
-              <strong>${a.titre || ""}</strong><br>
-              <span class="small">${a.desc || ""}</span>
+              <strong>${a.titre || a.condition || ""}</strong><br>
+              <span class="small">${a.desc || a.action || ""}</span>
             </p>
           `)
           .join("");
 
+        // SOS
         const sosHtml = (plante.sos || [])
-          .map(s => `
-            <details>
-              <summary>${s.q || ""}</summary>
-              <p>${s.a || ""}</p>
-            </details>
-          `)
+          .map(s => {
+            if (s.probleme) {
+              return `
+                <details>
+                  <summary>${s.probleme}</summary>
+                  <p><strong>Cause :</strong> ${s.cause || ""}</p>
+                  <p><strong>Solution :</strong> ${s.solution || ""}</p>
+                </details>
+              `;
+            }
+            return `
+              <details>
+                <summary>${s.q || ""}</summary>
+                <p>${s.a || ""}</p>
+              </details>
+            `;
+          })
           .join("");
 
-        const erreursHtml = Array.isArray(plante.erreurs) && plante.erreurs.length
-          ? `
-            <section class="section">
-              <div class="sectionHeader">
-                <h2 class="sectionTitle">Erreurs fréquentes</h2>
-                <p class="sectionSub">Les faux bons réflexes qui abîment la plante.</p>
-              </div>
-              <div class="faq">
-                ${plante.erreurs.map(e => {
-                  if (typeof e === "string") {
-                    return `
-                      <details>
-                        <summary>${e}</summary>
-                        <p></p>
-                      </details>
-                    `;
-                  }
-                  return `
-                    <details>
-                      <summary>${e.titre || ""}</summary>
-                      <p>${e.desc || ""}</p>
-                    </details>
-                  `;
-                }).join("")}
-              </div>
-            </section>
-          `
-          : "";
+        // CONDITIONS
+        const lumiere =
+          plante.conditions?.lumiere
+            ? `${plante.conditions.lumiere.type || ""} (${plante.conditions.lumiere.intensite || ""})`
+            : plante.lumiere || "";
+
+        const temperature =
+          plante.conditions?.temperature
+            ? `${plante.conditions.temperature.min}°C à ${plante.conditions.temperature.max}°C`
+            : plante.temperature || "";
+
+        const usage = Array.isArray(plante.usage)
+          ? plante.usage.join(", ")
+          : (plante.usage || "");
 
         app.innerHTML = `
-          <div class="small" style="margin-top:18px">
-            <a href="index.html">← Retour</a>
-          </div>
+          <div class="small"><a href="index.html">← Retour</a></div>
 
           <section class="plantHero">
             <div class="plantHeroMedia">
               <div class="bg" style="background-image:url('${image}')"></div>
               <div class="plantHeroContent">
-                <div class="kicker">${plante.categorie || "Fiche plante"}</div>
+                <div class="kicker">${plante.categorie || ""}</div>
                 <h1>${plante.nom || ""}</h1>
 
                 <div class="chips">
                   ${chipsHtml}
+                  ${extraChips}
                 </div>
 
-                <p class="small" style="color:rgba(255,255,255,.78);max-width:70ch;margin:0">
-                  ${plante.intro || ""}
-                </p>
+                <p class="small">${plante.intro || ""}</p>
               </div>
             </div>
           </section>
 
           <section class="section">
-            <div class="sectionHeader">
-              <h2 class="sectionTitle">Arrosage</h2>
-              <p class="sectionSub">
-                Référence pour ${plante.climat_reference || "climat standard"} —
-                ${plante.saison_reference || "saison actuelle"}
-              </p>
-            </div>
-
+            <h2>Arrosage</h2>
             <table class="table">
               <thead>
                 <tr><th>Pot</th><th>Dose</th><th>Fréquence</th></tr>
               </thead>
-              <tbody>
-                ${arrosageHtml}
-              </tbody>
+              <tbody>${arrosageHtml}</tbody>
             </table>
 
-            <div class="callout" style="margin-top:14px">
-              <strong>Risque principal :</strong> ${plante.risque_principal || "—"}
+            <div class="callout">
+              <strong>Risque :</strong> ${plante.risque_principal || ""}
             </div>
           </section>
 
           <section class="section">
-            <div class="sectionHeader">
-              <h2 class="sectionTitle">Ajustements</h2>
-              <p class="sectionSub">Observe → applique → réévalue sous 7 jours.</p>
-            </div>
-            ${ajustementsHtml || '<p class="small">Aucun ajustement renseigné.</p>'}
+            <h2>Ajustements</h2>
+            ${ajustementsHtml || "<p class='small'>Aucun</p>"}
           </section>
 
           <section class="section">
             <div class="grid2">
-              <div class="card">
-                <div class="cardPad">
-                  <h2>Lumière</h2>
-                  <p class="small">${plante.lumiere || ""}</p>
-                </div>
-              </div>
+              <div class="card"><div class="cardPad">
+                <h2>Lumière</h2>
+                <p class="small">${lumiere}</p>
+              </div></div>
 
-              <div class="card">
-                <div class="cardPad">
-                  <h2>Température</h2>
-                  <p class="small">${plante.temperature || ""}</p>
-                </div>
-              </div>
-            </div>
-          </section>
-
-          ${erreursHtml}
-
-          <section class="section">
-            <div class="sectionHeader">
-              <h2 class="sectionTitle">SOS</h2>
-              <p class="sectionSub">${plante.usage || ""}</p>
-            </div>
-            <div class="faq">
-              ${sosHtml || '<p class="small">Aucun diagnostic rapide renseigné.</p>'}
+              <div class="card"><div class="cardPad">
+                <h2>Température</h2>
+                <p class="small">${temperature}</p>
+              </div></div>
             </div>
           </section>
 
           <section class="section">
-            <div class="sectionHeader">
-              <h2 class="sectionTitle">Solution recommandée</h2>
-            </div>
-            <div class="solution">
-              <strong>${(plante.solution && plante.solution.titre) || ""}</strong>
-              <div class="small">${(plante.solution && plante.solution.desc) || ""}</div>
-            </div>
+            <h2>SOS</h2>
+            <div class="faq">${sosHtml}</div>
           </section>
 
-          <section class="section" style="padding-top:0">
+          <section class="section">
+            <h2>Infos</h2>
             <div class="small">
-              Catégorie : ${plante.categorie || ""} ·
-              Usage : ${plante.usage || ""} ·
+              Usage : ${usage} ·
               Climat : ${plante.climat_reference || ""} ·
               Saison : ${plante.saison_reference || ""}
             </div>
           </section>
-
-          <section class="section" style="padding-top:0">
-            <div class="sectionHeader">
-              <h2 class="sectionTitle">QR code</h2>
-              <p class="sectionSub">Créer, enregistrer ou partager le QR de cette fiche.</p>
-            </div>
-
-            <div class="card">
-              <div class="cardPad">
-                <div class="ctaRow">
-                  <button class="pill" id="generateQrBtn" type="button">Générer le QR code</button>
-                  <a class="pill" id="downloadQrBtn" href="#" download="qr-code-plante.png" style="display:none;">Télécharger le QR</a>
-                  <a class="pill" id="openQrBtn" href="#" target="_blank" rel="noopener" style="display:none;">Ouvrir l’image du QR</a>
-                </div>
-
-                <div id="qrContainer" style="margin-top:18px; display:none;">
-                  <img
-                    id="qrImage"
-                    alt="QR code de la fiche plante"
-                    style="max-width:220px; border-radius:16px; background:#fff; padding:12px; border:1px solid rgba(0,0,0,.08);"
-                  />
-                  <p class="small" style="margin-top:12px;">Ce QR code pointe vers cette page exacte.</p>
-                </div>
-              </div>
-            </div>
-          </section>
         `;
-
-        const generateQrBtn = document.getElementById("generateQrBtn");
-        const downloadQrBtn = document.getElementById("downloadQrBtn");
-        const openQrBtn = document.getElementById("openQrBtn");
-        const qrContainer = document.getElementById("qrContainer");
-        const qrImage = document.getElementById("qrImage");
-
-        if (generateQrBtn && qrImage && downloadQrBtn && openQrBtn && qrContainer) {
-          generateQrBtn.addEventListener("click", () => {
-            const pageUrl = window.location.href;
-            const qrUrl = `https://api.qrserver.com/v1/create-qr-code/?size=600x600&data=${encodeURIComponent(pageUrl)}`;
-
-            qrImage.src = qrUrl;
-            qrContainer.style.display = "block";
-
-            downloadQrBtn.href = qrUrl;
-            downloadQrBtn.style.display = "inline-flex";
-            downloadQrBtn.setAttribute("download", `qr-${plante.slug}.png`);
-
-            openQrBtn.href = qrUrl;
-            openQrBtn.style.display = "inline-flex";
-          });
-        }
-
-      } catch (error) {
-        console.error("Erreur chargement plante :", error);
-        renderError("Erreur de chargement", String(error));
+      } catch (e) {
+        renderError("Erreur", e.message);
       }
     })();
   </script>
