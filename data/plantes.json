@@ -2165,11 +2165,11 @@
     ],
     "erreurs": [
       {"titre": "Arroser trop souvent", "desc": "Les racines pourrissent rapidement en sol humide constant."},
-      {"titre": "La placer dans un coin sombre", "desc": "La croissance ralentit fortement et les feuilles tombent."}
+      {"titre": "La placer dans un coin sombre", "desc": "La croissance ralentit fortement."}
     ],
     "solution": {
       "titre": "Substrat drainant",
-      "desc": "Ajouter 30% de perlite pour éviter la stagnation d’eau."
+      "desc": "Ajouter 30% de perlite pour éviter l’eau stagnante."
     },
     "tags": {"lumiere": "moyenne", "eau": "faible", "entretien": "facile"},
     "toxicite": {"animaux": true, "humains": "legere"}
@@ -2196,49 +2196,115 @@
     "lumiere": "Lumière vive à directe.",
     "temperature": "15 à 30°C.",
     "sos": [
-      {"q": "Tronc mou", "a": "Excès d’eau → stopper l’arrosage immédiatement."}
+      {"q": "Tronc mou", "a": "Excès d’eau → stopper immédiatement l’arrosage."}
     ],
     "erreurs": [
-      {"titre": "Le traiter comme une plante tropicale", "desc": "Trop d’eau est fatal pour un yucca."}
+      {"titre": "Trop arroser", "desc": "Le yucca préfère la sécheresse à l’excès d’eau."}
     ],
     "solution": {
       "titre": "Substrat sec",
-      "desc": "Utiliser un mélange type cactus."
+      "desc": "Utiliser un mélange drainant type cactus."
     },
     "tags": {"lumiere": "forte", "eau": "faible", "entretien": "facile"},
     "toxicite": {"animaux": true, "humains": "legere"}
   },
 
   {
-    "slug": "fittonia",
-    "nom": "Fittonia",
+    "slug": "begonia-maculata",
+    "nom": "Begonia maculata",
     "categorie": "plante tropicale",
-    "risque_principal": "manque d’eau",
+    "risque_principal": "excès d’eau",
     "climat_reference": "climat humide intérieur",
-    "usage": "intérieur lumineux indirect",
-    "saison_reference": "toute saison",
-    "image": "assets/images/fittonia.jpg",
-    "chips": ["compacte", "colorée"],
-    "intro": "Petite plante nerveuse qui flétrit vite sans eau mais repart rapidement.",
+    "usage": "intérieur lumineux",
+    "saison_reference": "printemps été",
+    "image": "assets/images/begonia-maculata.jpg",
+    "chips": ["graphique", "feuillage décoratif"],
+    "intro": "Plante décorative au feuillage ponctué. Elle demande lumière et humidité.",
     "arrosage": [
-      {"pot": "10 cm", "dose": "10 cl", "freq": "tous les 3 jours"}
+      {"pot": "12 cm", "dose": "18 cl", "freq": "tous les 6 jours"}
     ],
     "ajustements": [
-      {"titre": "Air sec", "desc": "Augmenter l’humidité ambiante de 30%."}
+      {"titre": "Air sec", "desc": "Augmenter l’humidité de 25%."}
     ],
-    "lumiere": "Lumière douce.",
-    "temperature": "18 à 24°C.",
+    "lumiere": "Lumière vive indirecte.",
+    "temperature": "18 à 26°C.",
     "sos": [
-      {"q": "Plante totalement molle", "a": "Manque d’eau → arroser immédiatement, récupération en quelques heures."}
+      {"q": "Feuilles qui brunissent", "a": "Air trop sec → augmenter humidité."}
     ],
     "erreurs": [
-      {"titre": "Attendre trop longtemps avant d’arroser", "desc": "La fittonia s’effondre très vite sans eau."}
+      {"titre": "Pulvériser directement les feuilles", "desc": "Peut provoquer des taches."}
     ],
     "solution": {
-      "titre": "Arrosage régulier",
-      "desc": "Maintenir un substrat légèrement humide."
+      "titre": "Humidité indirecte",
+      "desc": "Utiliser un humidificateur ou billes d’argile."
     },
-    "tags": {"lumiere": "faible", "eau": "elevee", "entretien": "modere"},
-    "toxicite": {"animaux": false, "humains": "aucune"}
+    "tags": {"lumiere": "forte", "eau": "moderee", "entretien": "modere"},
+    "toxicite": {"animaux": true, "humains": "legere"}
+  },
+
+  {
+    "slug": "dieffenbachia",
+    "nom": "Dieffenbachia",
+    "categorie": "plante tropicale",
+    "risque_principal": "excès d’eau",
+    "climat_reference": "climat humide intérieur",
+    "usage": "intérieur lumineux",
+    "saison_reference": "toute saison",
+    "image": "assets/images/dieffenbachia.jpg",
+    "chips": ["feuillage large", "tropicale"],
+    "intro": "Plante tropicale au feuillage panaché, décorative mais sensible aux excès.",
+    "arrosage": [
+      {"pot": "14 cm", "dose": "20 cl", "freq": "tous les 6 jours"}
+    ],
+    "ajustements": [
+      {"titre": "Faible lumière", "desc": "Réduire l’arrosage de 20%."}
+    ],
+    "lumiere": "Lumière indirecte.",
+    "temperature": "18 à 26°C.",
+    "sos": [
+      {"q": "Feuilles molles", "a": "Excès d’eau → réduire immédiatement."}
+    ],
+    "erreurs": [
+      {"titre": "Sur-arrosage", "desc": "Très sensible à la pourriture racinaire."}
+    ],
+    "solution": {
+      "titre": "Drainage strict",
+      "desc": "Utiliser un pot percé et un substrat léger."
+    },
+    "tags": {"lumiere": "moyenne", "eau": "moderee", "entretien": "modere"},
+    "toxicite": {"animaux": true, "humains": "toxique"}
+  },
+
+  {
+    "slug": "aglaonema",
+    "nom": "Aglaonema",
+    "categorie": "plante d’intérieur",
+    "risque_principal": "excès d’eau",
+    "climat_reference": "climat tempéré intérieur",
+    "usage": "intérieur ombragé",
+    "saison_reference": "toute saison",
+    "image": "assets/images/aglaonema.jpg",
+    "chips": ["faible lumière", "facile"],
+    "intro": "Plante idéale pour zones peu lumineuses et entretien minimal.",
+    "arrosage": [
+      {"pot": "14 cm", "dose": "18 cl", "freq": "tous les 7 jours"}
+    ],
+    "ajustements": [
+      {"titre": "Faible lumière", "desc": "Espacer l’arrosage de 20%."}
+    ],
+    "lumiere": "Faible à moyenne.",
+    "temperature": "18 à 26°C.",
+    "sos": [
+      {"q": "Feuilles jaunes", "a": "Excès d’eau → réduire la dose."}
+    ],
+    "erreurs": [
+      {"titre": "Arrosage excessif", "desc": "Très fréquent en lumière faible."}
+    ],
+    "solution": {
+      "titre": "Arrosage modéré",
+      "desc": "Laisser sécher légèrement entre deux apports."
+    },
+    "tags": {"lumiere": "faible", "eau": "moderee", "entretien": "facile"},
+    "toxicite": {"animaux": true, "humains": "legere"}
   }
 ]
