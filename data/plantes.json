@@ -2307,7 +2307,7 @@
     "tags": {"lumiere": "faible", "eau": "moderee", "entretien": "facile"},
     "toxicite": {"animaux": true, "humains": "legere"}
   },
-  [
+
   {
     "slug": "schefflera-arboricola",
     "nom": "Schefflera arboricola",
@@ -2475,6 +2475,179 @@
     },
     "tags": {"lumiere": "moyenne", "eau": "elevee", "entretien": "exigeant"},
     "toxicite": {"animaux": true, "humains": "toxique"}
+  },
+
+  {
+    "slug": "asplenium-nidus",
+    "nom": "Fougère nid d’oiseau",
+    "categorie": "plante tropicale",
+    "risque_principal": "air trop sec",
+    "climat_reference": "climat humide intérieur",
+    "usage": "intérieur ombragé",
+    "saison_reference": "toute saison",
+    "image": "assets/images/asplenium.jpg",
+    "chips": ["fougère", "feuillage large", "humidité"],
+    "intro": "Fougère tropicale au feuillage ondulé, parfaite pour les ambiances humides et tamisées.",
+    "arrosage": [
+      {"pot": "14 cm", "dose": "20 cl", "freq": "tous les 4 jours"}
+    ],
+    "ajustements": [
+      {"titre": "Air sec", "desc": "Augmenter l’humidité ambiante de 30%."},
+      {"titre": "Lumière forte", "desc": "Espacer légèrement l’arrosage."}
+    ],
+    "lumiere": "Lumière douce à indirecte.",
+    "temperature": "18 à 26°C.",
+    "sos": [
+      {"q": "Pointes brunes", "a": "Air trop sec → augmenter humidité."},
+      {"q": "Feuilles ternes", "a": "Manque d’eau → arroser plus régulièrement."}
+    ],
+    "erreurs": [
+      {"titre": "Arroser le cœur de la plante", "desc": "Peut provoquer pourriture centrale."},
+      {"titre": "La placer en plein soleil", "desc": "Brûle rapidement le feuillage."}
+    ],
+    "solution": {
+      "titre": "Humidité stable",
+      "desc": "Utiliser un humidificateur ou billes d’argile humides."
+    },
+    "tags": {"lumiere": "faible", "eau": "elevee", "entretien": "exigeant"},
+    "toxicite": {"animaux": false, "humains": "aucune"}
+  },
+
+  {
+    "slug": "hedera-helix",
+    "nom": "Lierre (Hedera helix)",
+    "categorie": "plante grimpante",
+    "risque_principal": "excès d’eau",
+    "climat_reference": "climat tempéré intérieur",
+    "usage": "intérieur lumineux à ombragé",
+    "saison_reference": "toute saison",
+    "image": "assets/images/hedera.jpg",
+    "chips": ["grimpante", "facile", "dense"],
+    "intro": "Plante grimpante très adaptable, idéale en suspension ou sur support.",
+    "arrosage": [
+      {"pot": "12 cm", "dose": "14 cl", "freq": "tous les 6 jours"}
+    ],
+    "ajustements": [
+      {"titre": "Lumière faible", "desc": "Réduire l’arrosage de 20%."}
+    ],
+    "lumiere": "Lumière moyenne à vive.",
+    "temperature": "10 à 24°C.",
+    "sos": [
+      {"q": "Feuilles sèches", "a": "Air trop sec → augmenter humidité."},
+      {"q": "Feuilles jaunes", "a": "Excès d’eau → réduire arrosage."}
+    ],
+    "erreurs": [
+      {"titre": "Le garder en air sec", "desc": "Favorise parasites et dessèchement."},
+      {"titre": "Le noyer régulièrement", "desc": "Racines sensibles à l’eau stagnante."}
+    ],
+    "solution": {
+      "titre": "Taille régulière",
+      "desc": "Favorise une plante dense et saine."
+    },
+    "tags": {"lumiere": "moyenne", "eau": "moderee", "entretien": "facile"},
+    "toxicite": {"animaux": true, "humains": "toxique"}
+  },
+
+  {
+    "slug": "codiaeum-variegatum",
+    "nom": "Croton",
+    "categorie": "plante tropicale",
+    "risque_principal": "manque de lumière",
+    "climat_reference": "climat chaud intérieur",
+    "usage": "intérieur très lumineux",
+    "saison_reference": "toute saison",
+    "image": "assets/images/croton.jpg",
+    "chips": ["coloré", "tropicale", "exigeante"],
+    "intro": "Plante tropicale aux couleurs vives, exigeante en lumière et stabilité.",
+    "arrosage": [
+      {"pot": "14 cm", "dose": "22 cl", "freq": "tous les 5 jours"}
+    ],
+    "ajustements": [
+      {"titre": "Manque de lumière", "desc": "Augmenter exposition immédiatement."},
+      {"titre": "Air sec", "desc": "Augmenter humidité ambiante."}
+    ],
+    "lumiere": "Très lumineuse.",
+    "temperature": "20 à 28°C.",
+    "sos": [
+      {"q": "Feuilles qui tombent", "a": "Changement brutal → stabiliser environnement."},
+      {"q": "Couleurs ternes", "a": "Manque de lumière → rapprocher d’une fenêtre."}
+    ],
+    "erreurs": [
+      {"titre": "Changer souvent de place", "desc": "Le croton déteste les variations."},
+      {"titre": "Manque de lumière", "desc": "Perd rapidement ses couleurs."}
+    ],
+    "solution": {
+      "titre": "Stabilité lumineuse",
+      "desc": "Placer dans un endroit lumineux et ne plus déplacer."
+    },
+    "tags": {"lumiere": "forte", "eau": "moderee", "entretien": "exigeant"},
+    "toxicite": {"animaux": true, "humains": "toxique"}
+  },
+
+  {
+    "slug": "aspidistra-elatior",
+    "nom": "Aspidistra",
+    "categorie": "plante d’intérieur",
+    "risque_principal": "excès d’eau",
+    "climat_reference": "climat tempéré intérieur",
+    "usage": "intérieur sombre",
+    "saison_reference": "toute saison",
+    "image": "assets/images/aspidistra.jpg",
+    "chips": ["ultra résistante", "ombre", "facile"],
+    "intro": "Plante quasi indestructible, idéale pour les environnements difficiles.",
+    "arrosage": [
+      {"pot": "16 cm", "dose": "20 cl", "freq": "tous les 10 jours"}
+    ],
+    "ajustements": [
+      {"titre": "Lumière faible", "desc": "Réduire l’arrosage."}
+    ],
+    "lumiere": "Faible à moyenne.",
+    "temperature": "10 à 25°C.",
+    "sos": [
+      {"q": "Feuilles jaunissantes", "a": "Excès d’eau → espacer arrosage."}
+    ],
+    "erreurs": [
+      {"titre": "Arroser trop souvent", "desc": "Même robuste, elle n’aime pas l’humidité constante."}
+    ],
+    "solution": {
+      "titre": "Minimalisme",
+      "desc": "Moins tu t’en occupes, mieux elle se porte."
+    },
+    "tags": {"lumiere": "faible", "eau": "faible", "entretien": "facile"},
+    "toxicite": {"animaux": false, "humains": "aucune"}
+  },
+
+  {
+    "slug": "maranta-leuconeura",
+    "nom": "Maranta",
+    "categorie": "plante tropicale",
+    "risque_principal": "air trop sec",
+    "climat_reference": "climat humide intérieur",
+    "usage": "intérieur lumineux indirect",
+    "saison_reference": "toute saison",
+    "image": "assets/images/maranta.jpg",
+    "chips": ["feuillage graphique", "tropicale"],
+    "intro": "Plante au feuillage décoratif qui bouge avec la lumière.",
+    "arrosage": [
+      {"pot": "12 cm", "dose": "18 cl", "freq": "tous les 5 jours"}
+    ],
+    "ajustements": [
+      {"titre": "Air sec", "desc": "Augmenter humidité de 25%."}
+    ],
+    "lumiere": "Lumière douce.",
+    "temperature": "18 à 26°C.",
+    "sos": [
+      {"q": "Feuilles qui s’enroulent", "a": "Air trop sec → augmenter humidité."},
+      {"q": "Feuilles ternes", "a": "Manque de lumière douce."}
+    ],
+    "erreurs": [
+      {"titre": "Eau calcaire", "desc": "Provoque taches et dégradation du feuillage."}
+    ],
+    "solution": {
+      "titre": "Eau adaptée",
+      "desc": "Utiliser eau filtrée ou reposée."
+    },
+    "tags": {"lumiere": "faible", "eau": "moderee", "entretien": "modere"},
+    "toxicite": {"animaux": false, "humains": "aucune"}
   }
-]
 ]
